@@ -1,15 +1,15 @@
-.a-banner-wrapper{
+.a-banner-wrapper {
     padding: 20% 0 15%;
 }
 
-.a-banner-heroImg{
+.a-banner-heroImg {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .a-banner-heroImg,
-.a-banner-heroImgD{
+.a-banner-heroImgD {
     height: 200%;
 }
 
@@ -17,7 +17,7 @@
     display: none !important;
 } */
 
-.a-banner-caption{
+.a-banner-caption {
     padding-top: 4%;
 }
 
@@ -25,20 +25,20 @@ img.a-banner-company-img {
     width: 100px;
 }
 
-.a-banner-caption p{
+.a-banner-caption p {
     width: 70%;
 }
 
-.a-banner-trusted-brands{
+.a-banner-trusted-brands {
     padding: 2% 0%;
     font-weight: bold;
 }
 
-.a-banner-brands-caption{
+.a-banner-brands-caption {
     position: relative;
 }
 
-.a-banner-brands-caption div{
+.a-banner-brands-caption div {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -48,22 +48,36 @@ img.a-banner-company-img {
     margin: auto;
 }
 
-select{
-    padding: 10px 20px;
+select,
+.service {
     color: #fff;
     border-radius: 5px;
     font-weight: bold;
     background-color: #076847;
 }
 
+.service:hover {
+    color: #fff;
+    opacity: .9;
+}
 
-option{
+.service_menu {
+    border: none;
+}
+
+.service_menu a {
+    color: #076847 !important;
+    margin-bottom: 6px;
+
+}
+
+option {
     background-color: #fff;
     color: #076847;
     outline: none;
 }
 
-.a-banner-pattern{
+.a-banner-pattern {
     background-image: url('../../images/pattern.png');
     background-repeat: repeat-x;
     height: 150px;
@@ -72,37 +86,44 @@ option{
 
 
 /* MEDIA QUERY */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
-    .a-banner-wrapper{
+    .a-banner-wrapper {
         margin-top: 20%;
         margin: 0 auto;
     }
-    .a-banner{
+
+    .a-banner {
         padding-top: 30%;
     }
-    .a-banner-caption{
+
+    .a-banner-caption {
         padding: 0;
     }
-    .a-banner-heroImg{
+
+    .a-banner-heroImg {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         margin: 0 auto;
     }
+
     .a-banner-caption p {
         width: 100%;
     }
+
     select {
         width: 100%;
         padding-top: 10px;
     }
+
     .a-banner-brands-caption {
         position: relative;
         margin: 0 auto;
         display: flex;
         align-items: center;
     }
+
     /* .a-banner-brands-caption span{
         position: absolute;
         top: 0;
@@ -113,7 +134,7 @@ option{
         margin: 0 auto;
         color: #343434;
     } */
-    .a-banner-company-img{
+    .a-banner-company-img {
         width: 33.3%;
         padding-top: 5%;
     }
