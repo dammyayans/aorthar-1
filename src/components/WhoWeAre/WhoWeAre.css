@@ -1,0 +1,92 @@
+.a-wwa-wrapper{
+    padding: 8% 0 8%;
+}
+
+.image{
+    height: 100%;
+    padding: 1%;
+}
+
+.image-single{
+    width: 100%;
+}
+
+.a-wwa-caption{
+    padding-top: 5%;
+}
+
+.a-wwa-readmore{
+    text-decoration: none;
+    color: #076847;
+}
+.a-wwa-readmore:hover{
+    opacity: .8;
+}
+.a-wwa-readmore img{
+    width: 10%;
+    height: 10%;
+    margin-left: 3%;
+}
+
+.a-wwa-readmore:hover{
+    text-decoration: none;
+    color: #076847;
+}
+
+.a-wwa-sideline{
+    position: relative;
+}
+
+.a-find-us{
+    font-weight: 400;
+}
+
+.a-wwa-sideline div{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4%;
+}
+
+.a-wwa-sideline li{
+    list-style-type: none;
+    border-left: 1px solid #076847;
+    padding: 4px 0 4px;
+}
+
+.a-wwa-sideline li a{
+    padding-left: 20%;
+    text-decoration: none;
+    color: #076847;
+}
+
+.a-wwa-sideline li a:hover{
+    opacity: .8;
+}
+
+/* Meqia Query */
+@media screen and (max-width: 600px){
+    .a-wwa-caption{
+        padding: 0 !important;
+    }
+    .image:last-child{
+        margin-top: 2%;
+    }
+    .a-wwa-wrapper{
+        padding: 20% 0 20%;
+    }
+    .a-wwa-sideline{
+        display: inline-block;
+        margin-top: 50%;
+        display: flex;
+        margin: 0 auto;
+        margin: 50% 0 0 8%;
+    }
+    .image-single{
+        padding: 2% 10% 2%;
+    }
+    .a-wwa-sideline li {
+        list-style-type: none;
+        border-left: 1px solid #076847;
+        padding-left: 20%;
+    }
+}

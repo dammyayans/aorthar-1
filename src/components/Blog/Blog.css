@@ -1,0 +1,30 @@
+.a-blog-wrapper{
+    padding: 8% 0 8%;
+}
+
+.a-blog-heading h2{
+    padding-bottom: 4%;
+}
+
+.a-blog-cards-heading{
+    padding: 6% 4% 0%;
+    color: #076847;
+}
+
+.a-blog-cards p{
+    padding: 0% 4% 0%;
+}
+
+@media screen and (max-width: 600px){
+    .a-blog-wrapper{
+        padding: 20% 0 20%;
+    }
+    .a-blog-heading h2 {
+        padding-bottom: 8%;
+        display: flex;
+        justify-content: center;
+    }
+    .a-blog-cards{
+        padding-bottom: 10%;
+    }
+}

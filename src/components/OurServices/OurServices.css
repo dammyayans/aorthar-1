@@ -1,0 +1,19 @@
+
+.a-our-services-wrapper{
+    padding: 8% 0 8%;
+}
+
+h4{
+    padding-top: 20%;
+}
+
+/* Meqia Query */
+@media screen and (max-width: 600px){
+    .a-our-services-wrapper{
+        padding: 20% 0 20%;
+    }
+    h4 {
+        font-weight: bold;
+        padding-top: 10%;
+    }
+}

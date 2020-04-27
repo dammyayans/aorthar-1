@@ -1,0 +1,52 @@
+.a-our-works{
+    font-family: Helvetica;
+    font-weight: bold;
+    /* font-size: 250%; */
+    /* line-height: 110%; */
+}
+
+.push{
+    padding-top: 5px;
+}
+
+.push2{
+    padding: 15% 0 10%;
+}
+
+.push li{
+    list-style-type: none;
+}
+
+.a-our-work-process{
+    padding: 5% 0 2%;
+}
+
+.a-our-work-process span{
+    line-height: 95%;
+    /* font-size: 110%; */
+    font-weight: bold;
+}
+
+.a-our-work-process img{
+    width: 45px;
+}
+
+/* .a-our-work-process-heading{
+    
+} */
+
+
+@media screen and (max-width: 600px){
+    .move{
+        padding-top: 10%;
+    }
+
+    .push2{
+        padding-top: 45%;
+    }
+
+    .a-our-works{
+        font-size: 100%;
+    }
+}
+

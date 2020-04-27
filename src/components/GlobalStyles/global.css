@@ -1,0 +1,117 @@
+.bigText{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mediumText{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.b4{
+    font-weight: 400 !important;
+}
+.b7{
+    font-weight: 700 !important;
+}
+.b8{
+    font-weight: 800 !important;
+}
+
+.smallBoldText{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.smallText{
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.extraSmallText{
+    font-size: .8rem;
+    line-height: 1.4;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.smallestText{
+    font-size: .8rem;
+    line-height: 1.7;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.green{
+    color: #076847;
+}
+
+.white{
+    color: #fff !important;
+}
+
+.black{
+    color: #343434;
+}
+
+
+.whitebg, .whitebgNav{
+    background-color: #fff;
+    /*switch to #000; */
+}
+
+.greybg{
+    background-color: #F3F3F3;
+    /* switch to #111 */
+}
+
+.blackText{
+    color: #343434;
+    /* switch to #eee */
+}
+
+.toggleButton{
+    z-index: 2000;
+    position: fixed;
+    padding: 10px;
+    font-weight: bold;
+    border: 0;
+}
+
+a, input, textarea, button {
+    outline: none;
+    text-decoration: none !important;
+    font-family: inherit;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+
+@media screen and (max-width: 600px){
+    .bigGreenText{
+        color: #076847;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .bigDarkText{
+        color: #343434;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+    } 
+}

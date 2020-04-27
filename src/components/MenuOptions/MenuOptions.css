@@ -1,0 +1,37 @@
+.a-navbar-menu-banner{
+    position: fixed;
+    top: 0;
+    margin-top: 85px;
+    z-index: 9999999;
+    background-color: #ffffff;
+    padding-bottom: 40px;
+    display: none;
+}
+
+.a-navbar-menu-options{
+    padding-top: 40px;
+    color: #076847;
+}
+
+.a-navbar-menu-options div, a{
+    text-align: end;
+    text-decoration: none;
+    color: #076847;
+    padding-bottom: 20px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #076847;
+}
+
+.a-navbar-menu-boldheader{
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.a-navbar-bold-menus{
+    font-weight: bold;
+    padding-right: 5px;
+}
+

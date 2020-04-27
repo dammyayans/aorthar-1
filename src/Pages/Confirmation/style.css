@@ -1,0 +1,73 @@
+.a-our-works{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 250%;
+    color: #343434;
+    line-height: 110%;
+}
+
+.push{
+    padding-top: 5px;
+}
+
+.push3{
+    padding: 15% 0 5%;
+}
+
+.push h3{
+    font-size: 100%;
+    line-height: 110%;
+    font-weight: bold;
+}
+
+.push h3{
+    font-size: 110%;
+    font-weight: bold;
+    /* line */
+}
+
+.push li{
+    list-style-type: none;
+    font-size: 80%;
+}
+
+.a-our-work-process{
+    padding: 5% 0 2%;
+}
+
+.a-our-work-process span{
+    line-height: 95%;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.a-our-work-process img{
+    /* height: 50%; */
+    /* width: 50%; */
+    width: 45px;
+}
+
+.pp{
+    padding: 5% 0 10%;
+}
+
+
+
+.dark{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.dark a img{
+    transform: rotate(180deg);
+    margin-left: 2%;
+}
+
+.greenText{
+    color: #076847;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
