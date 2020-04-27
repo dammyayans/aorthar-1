@@ -4,6 +4,7 @@ import storage from "local-storage-fallback";
 
 import "./App.css";
 import "./components/Navbar/Navbar.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import { Container } from "react-bootstrap";
 

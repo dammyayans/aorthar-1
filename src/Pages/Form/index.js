@@ -91,6 +91,11 @@ export default function Form(props) {
                   />
                 </Col>
               </Row>
+              <Row>
+                <Col>
+                  <input type="file" />
+                </Col>
+              </Row>
               <Row className="mt-3">
                 <Col>
                   <p className="blackText bold">Project Brief</p>

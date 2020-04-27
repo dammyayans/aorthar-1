@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Dropdown } from "react-bootstrap";
 // import  { Link }  from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,6 +15,15 @@ import Placeholder3 from "../../images/Pelumi.png";
 // import OtherLinks from './';
 
 class GetStarted extends Component {
+  services = [
+    "Branding and Design",
+    "UI/UX",
+    "Content Marketing",
+    "Social Media Management",
+    "Motion Graphics",
+    "Software Development",
+  ];
+
   state = {
     randomQuote: { quote: "", image: "", author: "" },
   };
@@ -67,12 +76,23 @@ class GetStarted extends Component {
                   luxury of working with us or contact us <br />
                   below.
                 </p>
-                <select>
-                  <option>Select a service</option>
-                  <option>Design</option>
-                  <option>Design</option>
-                  <option>Design</option>
-                </select>
+                <Dropdown>
+                  <Dropdown.Toggle
+                    className="service"
+                    variant="default"
+                    id="dropdown-basic"
+                  >
+                    Select a service
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu className="service_menu">
+                    {this.services.map((service, i) => (
+                      <Dropdown.Item key={i} href={"/Form" + service}>
+                        {service}
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                </Dropdown>
                 <p className="a-get-started-contact blackText montserrat b7">
                   Send us a mail via{" "}
                   <a
@@ -90,7 +110,7 @@ class GetStarted extends Component {
                   <Col md="auto" className="a-get-started-testimonies">
                     <img src={this.state.randomQuote.image} alt="person" />
                     <div>
-                      <div className="a-get-started-words blackText smallestText blackText b4 montserrat">
+                      <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
                         <p className="white">{this.state.randomQuote.quote}</p>
                         <p className="white bold">
                           <span>- </span>
