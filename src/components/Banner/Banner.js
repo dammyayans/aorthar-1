@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // import  { Link }  from 'react-router-dom';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Dropdown } from "react-bootstrap";
 
 import "../GlobalStyles/global.css";
 import "./Banner.css";
@@ -17,6 +17,14 @@ import p1 from "../../images/person2.png";
 // import Slide from 'react-reveal/Slide';
 
 export default class Banner extends Component {
+  services = [
+    "Branding and Design",
+    "UI/UX",
+    "Content Marketing",
+    "Social Media Management",
+    "Motion Graphics",
+    "Software Development",
+  ];
   render() {
     return (
       <Container fluid className="whitebg">
@@ -24,11 +32,7 @@ export default class Banner extends Component {
           <Row className="a-banner-wrapper justify-content-md-center">
             <Col md={4} className="a-banner-heroImg">
               <Row className="justify-content-md-center heroheroL">
-                <img
-                  src={p1}
-                  alt="Hero Img"
-                  className="a-banner-heroImg"
-                />
+                <img src={p1} alt="Hero Img" className="a-banner-heroImg" />
               </Row>
               <Row className="justify-content-md-center heroheroD">
                 <img
@@ -48,17 +52,28 @@ export default class Banner extends Component {
                 that will pierce the heart of your targets, in a perfectly
                 relatable and compelling manner.
               </p>
-              <select>
-                <option>Select a service</option>
-                <option>Design</option>
-                <option>Design</option>
-                <option>Design</option>
-              </select>
+
+              <Dropdown>
+                <Dropdown.Toggle
+                  className="service"
+                  variant="default"
+                  id="dropdown-basic"
+                >
+                  Select a service
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu className="service_menu">
+                  {this.services.map((service, i) => (
+                    <Dropdown.Item key={i} href={"/Form" + service}>
+                      {service}
+                    </Dropdown.Item>
+                  ))}
+                </Dropdown.Menu>
+              </Dropdown>
             </Col>
           </Row>
         </Container>
         <Container>
-
           <Row className="justify-content-md-center a-banner-trusted-brands whitebg">
             <Col md={3} xs={12} className="a-banner-brands-caption blackText">
               <div className="montserrat">These brands have trusted us --</div>

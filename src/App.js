@@ -68,8 +68,12 @@ body{
   opacity: ${(props) => (props.theme.mode === "dark" ? ".5" : "1")};     
 }
 .inputShadow{    
-  background-color: ${(props) => (props.theme.mode === "dark" ? "#f00" : "#fff")};
-  box-shadow: ${(props) => (props.theme.mode === "dark" ? "2px 4px 8px #000;" : "2px 4px 8px #ddd;")};     
+  background-color: ${(props) =>
+    props.theme.mode === "dark" ? "#f00" : "#fff"};
+  box-shadow: ${(props) =>
+    props.theme.mode === "dark"
+      ? "2px 4px 8px #000;"
+      : "2px 4px 8px #ddd;"};     
 }
 `;
 function getInitialTheme() {
@@ -96,31 +100,19 @@ export default function App() {
               }
             />
             <Switch>
-              <Route exact path="/Subscription">
-                <Subscription />
-              </Route>
+              <Route exact path="/Subscription" component={Subscription} />
 
-              <Route exact path="/Confirmation">
-                <Confirmation />
-              </Route>
+              <Route exact path="/Confirmation" component={Confirmation} />
 
-              <Route exact path="/OurWorks">
-                <OurWorks />
-              </Route>
+              <Route exact path="/OurWorks" component={OurWorks} />
 
-              <Route exact path="/TheTeam">
-                <TheTeam />
-              </Route>
-              
-              <Route exact path="/Form">
-                <Form />
-              </Route>
+              <Route exact path="/TheTeam" component={TheTeam} />
+
+              <Route exact path="/Form:service" component={Form} />
 
               {/* <Route component={ErrorPage} /> */}
 
-              <Route exact path="/">
-                <Home />
-              </Route>
+              <Route exact path="/" component={Home} />
             </Switch>
             <Footer />
             <GlobalStyle />

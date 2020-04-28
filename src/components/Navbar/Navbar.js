@@ -98,13 +98,25 @@ class NavBar extends Component {
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover"href="https://web.facebook.com/Aorthar/" target="blank">
+                          <Nav.Link
+                            className="cover"
+                            href="https://web.facebook.com/Aorthar/"
+                            target="blank"
+                          >
                             Facebook
                           </Nav.Link>
-                          <Nav.Link className="cover" href="https://twitter.com/aorthar" target="blank">
+                          <Nav.Link
+                            className="cover"
+                            href="https://twitter.com/aorthar"
+                            target="blank"
+                          >
                             Twitter
                           </Nav.Link>
-                          <Nav.Link className="cover" href="https://www.instagram.com/aorthar/" target="blank">
+                          <Nav.Link
+                            className="cover"
+                            href="https://www.instagram.com/aorthar/"
+                            target="blank"
+                          >
                             Instagram
                           </Nav.Link>
                         </div>
@@ -146,7 +158,11 @@ class NavBar extends Component {
                   <Col sm={8}></Col>
                   <Col sm={4} className="text-align-end">
                     <div className="mb-2">
-                      <Nav.Link className="cover" href="https://medium.com/@aorthar/" target="blank">
+                      <Nav.Link
+                        className="cover"
+                        href="https://medium.com/@aorthar/"
+                        target="blank"
+                      >
                         Blog
                       </Nav.Link>
                       <Nav.Link className="cover" href="/theteam">
