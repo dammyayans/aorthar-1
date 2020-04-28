@@ -11,6 +11,21 @@ import DarkModeIcon from "../../images/darkmodeicon.png";
 import ArrowUp from "../../images/arrow_drop_up.svg";
 import ArrowDown from "../../images/arrow_drop_down.svg";
 import Close from "../../images/close.svg";
+import { Transition } from "react-transition-group";
+
+const duration = 300;
+
+const defaultStyle = {
+  transition: ` visibility 100ms, opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+  visibility: "visible",
+};
+const transitionStyles = {
+  entering: { opacity: 1, visibility: "visible" },
+  entered: { opacity: 1, visibility: "visible" },
+  exiting: { opacity: 0, visibility: "visible" },
+  exited: { opacity: 0, visibility: "hidden" },
+};
 class NavBar extends Component {
   state = {
     exploreToggle: false,
@@ -79,118 +94,137 @@ class NavBar extends Component {
               </div>
             </Container>
           </Navbar>
-          {this.state.exploreToggle && (
-            <Card className="card whitebgNav montserrat smallText">
-              <Container>
-                <Row className="pt-5 pb-5">
-                  <Col md={{ span: 6, offset: 3 }} sm={12}>
-                    <Row>
-                      <Col sm={6}>
-                        <div className="mb-3">
-                          <Nav.Link className="cover" href="#">
-                            Internship
-                          </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            Training
-                          </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            Ambassador
-                          </Nav.Link>
-                        </div>
-                        <div>
-                          <Nav.Link
-                            className="cover"
-                            href="https://web.facebook.com/Aorthar/"
-                            target="blank"
-                          >
-                            Facebook
-                          </Nav.Link>
-                          <Nav.Link
-                            className="cover"
-                            href="https://twitter.com/aorthar"
-                            target="blank"
-                          >
-                            Twitter
-                          </Nav.Link>
-                          <Nav.Link
-                            className="cover"
-                            href="https://www.instagram.com/aorthar/"
-                            target="blank"
-                          >
-                            Instagram
-                          </Nav.Link>
-                        </div>
+          <Transition in={this.state.exploreToggle} timeout={duration}>
+            {(state) => (
+              <div
+                style={{
+                  ...defaultStyle,
+                  ...transitionStyles[state],
+                }}
+              >
+                <Card className="card whitebgNav montserrat smallText">
+                  <Container>
+                    <Row className="pt-5 pb-5">
+                      <Col md={{ span: 6, offset: 3 }} sm={12}>
+                        <Row>
+                          <Col sm={6}>
+                            <div className="mb-3">
+                              <Nav.Link className="cover" href="#">
+                                Internship
+                              </Nav.Link>
+                              <Nav.Link className="cover" href="#">
+                                Training
+                              </Nav.Link>
+                              <Nav.Link className="cover" href="#">
+                                Ambassador
+                              </Nav.Link>
+                            </div>
+                            <div>
+                              <Nav.Link
+                                className="cover"
+                                href="https://web.facebook.com/Aorthar/"
+                                target="blank"
+                              >
+                                Facebook
+                              </Nav.Link>
+                              <Nav.Link
+                                className="cover"
+                                href="https://twitter.com/aorthar"
+                                target="blank"
+                              >
+                                Twitter
+                              </Nav.Link>
+                              <Nav.Link
+                                className="cover"
+                                href="https://www.instagram.com/aorthar/"
+                                target="blank"
+                              >
+                                Instagram
+                              </Nav.Link>
+                            </div>
+                          </Col>
+                          <Col sm={6}>
+                            <div className="mb-3">
+                              <Nav.Link className="cover" href="#">
+                                Long Term Project
+                              </Nav.Link>
+                              <Nav.Link className="cover" href="#">
+                                One time Project
+                              </Nav.Link>
+                              <Nav.Link className="cover" href="/subscription">
+                                Design Subscription
+                              </Nav.Link>
+                            </div>
+                            <div>
+                              <Nav.Link className="cover" href="/ourworks">
+                                Our Works
+                              </Nav.Link>
+                              <Nav.Link className="cover" href="#">
+                                Our Process
+                              </Nav.Link>
+                              <Nav.Link className="cover" href="#">
+                                Testimonials
+                              </Nav.Link>
+                            </div>
+                          </Col>
+                        </Row>
                       </Col>
-                      <Col sm={6}>
-                        <div className="mb-3">
-                          <Nav.Link className="cover" href="#">
-                            Long Term Project
+                    </Row>
+                  </Container>
+                </Card>
+              </div>
+            )}
+          </Transition>
+
+          <Transition in={this.state.menuToggle} timeout={duration}>
+            {(state) => (
+              <div
+                style={{
+                  ...defaultStyle,
+                  ...transitionStyles[state],
+                }}
+              >
+                <Card className="card ">
+                  <Container>
+                    <Row className="whitebgNav montserrat smallText pt-5 pb-5">
+                      <Col sm={8}></Col>
+                      <Col sm={4} className="text-align-end">
+                        <div className="mb-2">
+                          <Nav.Link
+                            className="cover"
+                            href="https://medium.com/@aorthar/"
+                            target="blank"
+                          >
+                            Blog
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            One time Project
+                          <Nav.Link className="cover" href="/theteam">
+                            Meet the Team
                           </Nav.Link>
                           <Nav.Link className="cover" href="/subscription">
-                            Design Subscription
+                            Pricing
+                          </Nav.Link>
+                          <Nav.Link className="cover" href="#">
+                            Terms and Condition
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover" href="/ourworks">
-                            Our Works
-                          </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            Our Process
-                          </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            Testimonials
-                          </Nav.Link>
+                          <h4>Talk to us?</h4>
+                          <p>
+                            <span className="font-weight-bold">Email:</span>{" "}
+                            hello@aorthar.com
+                          </p>
+                          <p>
+                            <span className="font-weight-bold">Phone:</span>{" "}
+                            +234(0) 8144228160
+                          </p>
                         </div>
                       </Col>
                     </Row>
-                  </Col>
-                </Row>
-              </Container>
-            </Card>
-          )}
-          {this.state.menuToggle && (
-            <Card className="card ">
-              <Container>
-                <Row className="whitebgNav montserrat smallText pt-5 pb-5">
-                  <Col sm={8}></Col>
-                  <Col sm={4} className="text-align-end">
-                    <div className="mb-2">
-                      <Nav.Link
-                        className="cover"
-                        href="https://medium.com/@aorthar/"
-                        target="blank"
-                      >
-                        Blog
-                      </Nav.Link>
-                      <Nav.Link className="cover" href="/theteam">
-                        Meet the Team
-                      </Nav.Link>
-                      <Nav.Link className="cover" href="/subscription">
-                        Pricing
-                      </Nav.Link>
-                      <Nav.Link className="cover" href="#">
-                        Terms and Condition
-                      </Nav.Link>
-                    </div>
-                    <div>
-                      <h4>Talk to us?</h4>
-                      <p>
-                        <span className="font-weight-bold">Email:</span>{" "}
-                        hello@aorthar.com
-                      </p>
-                      <p>
-                        <span className="font-weight-bold">Phone:</span> +234(0)
-                        8144228160
-                      </p>
-                    </div>
-                  </Col>
-                </Row>
-              </Container>
-            </Card>
-          )}
+                  </Container>
+                </Card>
+              </div>
+            )}
+          </Transition>
         </div>
       </>
     );
