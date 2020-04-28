@@ -87,7 +87,12 @@ class GetStarted extends Component {
 
                   <Dropdown.Menu className="service_menu">
                     {this.services.map((service, i) => (
-                      <Dropdown.Item key={i} href={"/Form" + service}>
+                      <Dropdown.Item
+                        key={i}
+                        href={
+                          "/Form" + (service === "UI/UX" ? "uiux" : service)
+                        }
+                      >
                         {service}
                       </Dropdown.Item>
                     ))}

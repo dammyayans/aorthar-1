@@ -61,7 +61,7 @@ export default function Form(props) {
                     <option value="Branding and Design">
                       Branding and Design
                     </option>
-                    <option value="UI/UX">UI/UX</option>
+                    <option value="uiux">UI/UX</option>
                     <option value="Content Marketing">Content Marketing</option>
                     <option value="Social Media Management">
                       Social Media Management
