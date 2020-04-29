@@ -108,7 +108,7 @@ class GetStarted extends Component {
               <Col xs={12} md={6} className="">
                 <Row className="justify-content-md-center blackText">
                   <Col md="auto" className="a-get-started-testimonies">
-                    <img src={this.state.randomQuote.image} alt="person" />
+                    <img src={this.state.randomQuote.image} alt="person" className="whitealways"/>
                     <div>
                       <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
                         <p className="white">{this.state.randomQuote.quote}</p>

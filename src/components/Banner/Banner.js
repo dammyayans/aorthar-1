@@ -76,7 +76,7 @@ export default class Banner extends Component {
         <Container>
           <Row className="justify-content-md-center a-banner-trusted-brands whitebg">
             <Col md={3} xs={12} className="a-banner-brands-caption blackText">
-              <div className="montserrat">These brands have trusted us --</div>
+              <div className="montserrat brands-sm">These brands have trusted us --</div>
             </Col>
             <Col md={4}>
               <img

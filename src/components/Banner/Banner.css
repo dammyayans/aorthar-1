@@ -124,16 +124,6 @@ option {
         align-items: center;
     }
 
-    /* .a-banner-brands-caption span{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 30%;
-        margin: 0 auto;
-        color: #343434;
-    } */
     .a-banner-company-img {
         width: 33.3%;
         padding-top: 5%;

@@ -62,6 +62,10 @@
     color: #fff !important;
 }
 
+.whitealways{
+    border: 7px solid #fff !important;
+}
+
 .black{
     color: #343434;
 }
