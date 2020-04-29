@@ -11,21 +11,33 @@ export default class designQuotes extends Component {
   quotes = [
     {
       quote: "The Design Thinking Process is a blend of Heart, Head and Hand.",
-      author: "Evan you",
+      author: "Evan You",
     },
     {
       quote:
-        "It is only when they go wrong that machines remind you how powerful they are.",
-      author: "Jeff Bezos",
+        "Design is intelligence made visible.",
+      author: "Alina Wheeler",
     },
     {
       quote:
-        "If you think patient is a virtual, try surfing the net without high speed internet",
-      author: "Dev ed",
+        "Every great design begins with an even better story.",
+      author: " Lorinda Mamo, designer",
     },
     {
-      quote: "The Design Thinking Process is a blend of Heart, Head and Hand.",
-      author: "Yu Siang Teo",
+      quote: "The function of design is letting design function.",
+      author: "Micha Commeren, designer",
+    },
+    {
+      quote: "Design is a formal response to a strategic question.",
+      author: "Mariona Lopez",
+    },
+    {
+      quote: "You can't use up creativity. The more you use, the more you have.",
+      author: "Maya Angelou",
+    },
+    {
+      quote: "Make it simple, but significant.",
+      author: "Don Draper",
     },
   ];
   randomQuoteGenerator = () =>
@@ -42,7 +54,7 @@ export default class designQuotes extends Component {
     return (
       <Col xs={12} md={12} className="px-0 a-our-packages-quotes whitebg">
         <Col className="justify-content-md-center montserrat">
-          <p>{this.state.quote.quote}</p>
+          <p className="mediumText">{this.state.quote.quote}</p>
           <span className="blackText bold">- {this.state.quote.author}</span>
         </Col>
       </Col>

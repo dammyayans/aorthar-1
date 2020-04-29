@@ -76,6 +76,10 @@ body{
       ? "2px 4px 8px #000;"
       : "2px 4px 8px #ddd;"};     
 }
+.card{
+  background-color: ${(props) =>
+    props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
+}
 `;
 function getInitialTheme() {
   const savedTheme = storage.getItem("theme");

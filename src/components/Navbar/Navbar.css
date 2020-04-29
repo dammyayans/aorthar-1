@@ -82,6 +82,11 @@ nav {
     }
 }
 
+.arrowDown, .upArrow{
+    width: 12px;
+    margin-left: 5px;
+}
+
 /* Menubar options */
 /* .a-navbar-menu-options{
     height: 400px;
