@@ -65,7 +65,7 @@ nav {
     width: 100%;
     z-index: 12;
     top: 90px;
-    animation: card 0.4s linear;
+    /* animation: card 0.4s linear; */
 }
 
 @keyframes card {
