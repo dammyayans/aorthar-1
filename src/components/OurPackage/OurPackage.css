@@ -80,6 +80,11 @@ h2{
     border-radius: 7px;
 }
 
+.quotes{
+    width: 80px;
+    padding-bottom: 20px;
+}
+
 @media screen and (max-width: 600px){
     .a-our-packages-wrapper{
         padding: 20% 0 20%;

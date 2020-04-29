@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./OurPackage.css";
 import "../GlobalStyles/global.css";
 import { Col } from "react-bootstrap";
+import Quotes from '../../images/quote.svg';
 
 export default class designQuotes extends Component {
   state = {
@@ -54,7 +55,8 @@ export default class designQuotes extends Component {
     return (
       <Col xs={12} md={12} className="px-0 a-our-packages-quotes whitebg">
         <Col className="justify-content-md-center montserrat">
-          <p className="mediumText">{this.state.quote.quote}</p>
+          <img src={ Quotes } alt="Quotes" className="quotes"/>
+          <p className="quoteText">{this.state.quote.quote}</p>
           <span className="blackText bold">- {this.state.quote.author}</span>
         </Col>
       </Col>
