@@ -1,30 +1,30 @@
 .a-navbar-wrapper {
-    padding: 2% 0%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 90px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+  padding: 2% 0%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    z-index: 100000;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100000;
+  align-items: center;
 }
 
 .text-align-end {
-    text-align: end;
+  text-align: end;
 }
 
 .a-navbar-logo-container img {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .a-navbar-menubar img,
 .a-navbar-dm img {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 /* .a-navbar-menubar,
@@ -33,58 +33,59 @@ nav {
 } */
 
 .a-navbar-others {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 
 .a-navbar-menubar:hover,
 .a-navbar-dm:hover {
-    color: inherit !important;
+  color: inherit !important;
 }
 
 .card .cover:hover {
-    color: #076847 !important;
-    opacity: 0.8;
+  color: #076847 !important;
+  opacity: 0.8;
 }
 
 .explore {
-    color: #076847 !important;
-    font-weight: 600;
-    transition: all 2s ease;
+  color: #076847 !important;
+  font-weight: 600;
+  transition: all 2s ease;
 }
 
 .text-animate {
-    transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .card {
-    position: fixed;
-    min-height: 150px;
-    width: 100%;
-    z-index: 12;
-    top: 90px;
-    /* animation: card 0.4s linear; */
+  position: fixed;
+  display: block;
+  min-height: 150px;
+  width: 100%;
+  z-index: 12;
+  top: 90px;
 }
 
 @keyframes card {
-    0% {
-        top: -60px;
-    }
+  0% {
+    top: -60px;
+  }
 
-    50% {
-        top: 30px;
-    }
+  50% {
+    top: 30px;
+  }
 
-    100% {
-        top: 90px;
-    }
+  100% {
+    top: 90px;
+  }
 }
 
-.arrowDown, .upArrow{
-    width: 12px;
-    margin-left: 5px;
+.arrowDown,
+.upArrow {
+  width: 12px;
+  margin-left: 5px;
 }
 
 /* Menubar options */
@@ -99,13 +100,12 @@ nav {
 } */
 
 @media screen and (max-width: 768px) {
+  .a-navbar-menubar span,
+  .a-navbar-dm span {
+    display: none;
+  }
 
-    .a-navbar-menubar span,
-    .a-navbar-dm span {
-        display: none;
-    }
-
-    a {
-        padding: 0 !important;
-    }
+  a {
+    padding: 0 !important;
+  }
 }
