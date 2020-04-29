@@ -27,7 +27,7 @@ export default function Form(props) {
                   <input
                     type="text"
                     placeholder="Your Name or Company Name"
-                    className="black"
+                    className="black smallestText"
                   />
                 </Col>
               </Row>
@@ -37,7 +37,7 @@ export default function Form(props) {
                   <input
                     type="email"
                     placeholder="youremail@domain.com"
-                    className="black"
+                    className="black smallestText"
                   />
                 </Col>
               </Row>
@@ -47,14 +47,14 @@ export default function Form(props) {
                   <input
                     type="tel"
                     placeholder="+123 4567 890"
-                    className="black"
+                    className="black smallestText"
                   />
                 </Col>
                 <Col md={6}>
                   <p className="blackText bold">Project Type</p>
                   {/* <input type="email" placeholder="youremail@domain.com" className="black"/> */}
                   <select
-                    className="blackText serviceOptions"
+                    className="blackText serviceOptions smallestText"
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                   >
@@ -77,21 +77,21 @@ export default function Form(props) {
                 <Col md={6}>
                   <p className="blackText bold">Budget</p>
                   <input
-                    type="tel"
-                    placeholder="+123 4567 890"
-                    className="black"
+                    type="number"
+                    placeholder="How much do you plan to spend"
+                    className="black smallestText"
                   />
                 </Col>
                 <Col md={6}>
                   <p className="blackText bold">Timeline</p>
                   <input
                     type="email"
-                    placeholder="youremail@domain.com"
-                    className="black"
+                    placeholder="How long do you want your project to take"
+                    className="black smallestText"
                   />
                 </Col>
               </Row>
-              <Row>
+              <Row className="mt-4">
                 <Col>
                   <input type="file" />
                 </Col>
@@ -100,7 +100,7 @@ export default function Form(props) {
                 <Col>
                   <p className="blackText bold">Project Brief</p>
                   <textarea
-                    className="black"
+                    className="black smallestText"
                     placeholder="what else would you like us to know?"
                   />
 
