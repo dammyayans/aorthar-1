@@ -181,7 +181,7 @@ class NavBar extends Component {
                         Pricing
                       </Nav.Link>
                       <Nav.Link className="cover" href="#">
-                        Terms and Condition
+                        Terms and Conditions
                       </Nav.Link>
                     </div>
                     <div>

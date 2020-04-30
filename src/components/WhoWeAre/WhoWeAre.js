@@ -98,7 +98,7 @@ export default class WhoWeAre extends Component {
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="blank">
+                      <a href="https://www.google.com/search?q=aorthar&oq=aorthar&aqs=chrome..69i57j69i59l2j69i60l5.5559j0j7&sourceid=chrome&ie=UTF-8" target="blank">
                         Google
                       </a>
                     </li>

@@ -73,7 +73,7 @@ export default class Confirmation extends Component {
                                     <div>
                                         <span className="smallText bold blackText b7">Social Media Management</span>
                                         <p className="a-rate-cards-list smallestText b4">Instagram and Twitter</p>
-                                        <p className="a-rate-cards-list smallestText b4">5 engaging posts weekly</p>
+                                        <p className="a-rate-cards-list smallestText b4"><b>5</b> engaging posts weekly</p>
                                         <p className="a-rate-cards-list smallestText b4">Instagram stories inclusive</p>
                                         <p className="a-rate-cards-list smallestText b4 line-through">Facebook stories inclusive</p>
                                         <p className="a-rate-cards-list smallestText b4 line-through">Facebook page engagement</p>
@@ -81,7 +81,7 @@ export default class Confirmation extends Component {
                                     </div>
                                     <div className="pt-3">
                                         <span className="smallText bold blackText b7">Design Subscription</span>
-                                        <p className="a-rate-cards-list smallestText b4">20 orders with moderate review</p>
+                                        <p className="a-rate-cards-list smallestText b4"><b>20</b> orders with moderate review</p>
                                         <p className="a-rate-cards-list smallestText b4">1 order at a time</p>
                                         <p className="a-rate-cards-list smallestText b4">24 - 48 hours update</p>
                                     </div>
@@ -100,7 +100,7 @@ export default class Confirmation extends Component {
                                     <div>
                                         <span className="smallText bold blackText b7">Social Media Management</span>
                                         <p className="a-rate-cards-list smallestText b4">Instagram and Twitter</p>
-                                        <p className="a-rate-cards-list smallestText b4">10 engaging posts weekly</p>
+                                        <p className="a-rate-cards-list smallestText b4"><b>10</b> engaging posts weekly</p>
                                         <p className="a-rate-cards-list smallestText b4">Instagram stories inclusive</p>
                                         <p className="a-rate-cards-list smallestText b4 line-through">Facebook stories inclusive</p>
                                         <p className="a-rate-cards-list smallestText b4 line-through">Facebook page engagement</p>
@@ -108,7 +108,7 @@ export default class Confirmation extends Component {
                                     </div>
                                     <div className="pt-3">
                                         <span className="smallText bold blackText b7">Design Subscription</span>
-                                        <p className="a-rate-cards-list smallestText b4">30 orders with moderate review</p>
+                                        <p className="a-rate-cards-list smallestText b4"><b>30</b> orders with moderate review</p>
                                         <p className="a-rate-cards-list smallestText b4">2 order at a time</p>
                                         <p className="a-rate-cards-list smallestText b4">24 - 48 hours update</p>
                                     </div>
@@ -128,7 +128,7 @@ export default class Confirmation extends Component {
                                     <div>
                                         <span className="smallText bold blackText b7">Social Media Management</span>
                                         <p className="a-rate-cards-list smallestText b4">Instagram, Twitter and Facebook</p>
-                                        <p className="a-rate-cards-list smallestText b4">20 engaging posts weekly</p>
+                                        <p className="a-rate-cards-list smallestText b4"><b>20</b> engaging posts weekly</p>
                                         <p className="a-rate-cards-list smallestText b4">Instagram stories inclusive</p>
                                         <p className="a-rate-cards-list smallestText b4">Facebook stories inclusive</p>
                                         <p className="a-rate-cards-list smallestText b4">Facebook page engagement</p>
@@ -136,7 +136,7 @@ export default class Confirmation extends Component {
                                     </div>
                                     <div className="pt-3">
                                         <span className="smallText bold blackText b7">Design Subscription</span>
-                                        <p className="a-rate-cards-list smallestText b4">40 orders with moderate revisions</p>
+                                        <p className="a-rate-cards-list smallestText b4"><b>40</b> orders with moderate revisions</p>
                                         <p className="a-rate-cards-list smallestText b4">Priority support</p>
                                         <p className="a-rate-cards-list smallestText b4">24 - 48 hours update</p>
                                     </div>
