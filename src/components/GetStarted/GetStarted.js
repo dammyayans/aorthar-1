@@ -4,7 +4,7 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Fade from "react-reveal/Fade";
-import Flip from "react-reveal/Flip";
+import Tada from "react-reveal/Tada";
 
 import "./GetStarted.css";
 import "../GlobalStyles/global.css";
@@ -127,26 +127,34 @@ class GetStarted extends Component {
                 <Fade right>
                   <Row className="justify-content-md-center blackText">
                     <Col md="auto" className="a-get-started-testimonies">
-                      <Flip delay={0} top when={this.state.change}>
+                      <Tada spy={this.state.change} duration={600}>
                         <img
                           src={this.state.randomQuote.image}
                           alt="person"
                           className="whitealways"
                         />
-                      </Flip>
+                      </Tada>
                       <div>
                         <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
-                          <Flip delay={0} top when={this.state.change}>
+                          <Tada
+                            spy={this.state.change}
+                            delay={200}
+                            duration={800}
+                          >
                             <p className="white">
                               {this.state.randomQuote.quote}
                             </p>
-                          </Flip>
-                          <Flip delay={500} top when={this.state.change}>
+                          </Tada>
+                          <Tada
+                            spy={this.state.change}
+                            delay={300}
+                            duration={1000}
+                          >
                             <p className="white bold">
                               <span>- </span>
                               {this.state.randomQuote.author}
                             </p>
-                          </Flip>
+                          </Tada>
                         </div>
                       </div>
                     </Col>

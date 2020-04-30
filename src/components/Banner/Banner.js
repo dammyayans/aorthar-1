@@ -30,9 +30,9 @@ export default class Banner extends Component {
       <Container fluid className="whitebg">
         <Container className="a-banner">
           <Row className="a-banner-wrapper justify-content-md-center">
-            <Col md={4} className="a-banner-heroImg">
+            <Col md={6} sm={12} className="a-banner-heroImg">
               <Bounce duration={1000} left>
-                <Row className="justify-content-md-center heroheroL">
+                <Row className=" d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
                   <img src={p1} alt="Hero Img" className="a-banner-heroImg" />
                 </Row>
                 <Row className="justify-content-md-center heroheroD">

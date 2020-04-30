@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import LightSpeed from "react-reveal/LightSpeed";
+import Fade from "react-reveal/Fade";
 
 import "../GlobalStyles/global.css";
 import "./CaseStudy.css";
@@ -32,9 +33,21 @@ export default class CaseStudy extends Component {
           </Col>
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
-              <Col xs={12} md={4} className="a-case-study-cards"></Col>
-              <Col xs={12} md={4} className="a-case-study-cards"></Col>
-              <Col xs={12} md={4} className="a-case-study-cards"></Col>
+              <Col xs={12} md={4} className="p-2">
+                <Fade top delay={100}>
+                  <div className="a-case-study-cards1"></div>
+                </Fade>
+              </Col>
+              <Col xs={12} md={4} className="p-2">
+                <Fade bottom delay={300}>
+                  <div className="a-case-study-cards2"></div>
+                </Fade>
+              </Col>
+              <Col xs={12} md={4} className="p-2">
+                <Fade top delay={500}>
+                  <div className="a-case-study-cards3"></div>
+                </Fade>
+              </Col>
             </Row>
           </Col>
         </Container>
