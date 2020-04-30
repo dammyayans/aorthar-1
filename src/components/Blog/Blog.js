@@ -24,21 +24,22 @@ export default class Blog extends Component {
                                     <a href="https://medium.com/@aorthar/art-generally-has-been-viewed-as-the-most-thriving-force-evolving-the-universe-with-its-alluring-fa0232fa7dc5" target="blank">
                                         <img src={Independence} alt=""/>
                                         <div className="a-blog-cards-heading smallBoldText green">Graphics Design and Culture</div>
-                                        <p className="smallestText montserrat blackText">An approach to SMEs</p>
+                                        <p className="smallestText montserrat blackText">Cultural approach to Design</p>
                                     </a>
                                 </Col>
                                 <Col xs={12} md={4} className="a-blog-cards">
                                     <a href="https://medium.com/@aorthar/branding-gone-wrong-b7fed5a4f4d1" target="blank">
                                         <img src={Branding} alt=""/>
                                         <div className="a-blog-cards-heading smallBoldText green">Branding Gone Wrong</div>
-                                        <p className="smallestText montserrat blackText">How mistakes cost the lives of some popular brands</p>
+                                        {/* <p className="smallestText montserrat blackText">How mistakes cost the lives of some popular brands</p> */}
+                                        <p className="smallestText montserrat blackText">Mistakes cost the lives of popular brands</p>
                                     </a>
                                 </Col>
                                 <Col xs={12} md={4} className="a-blog-cards">
                                     <a href="https://medium.com/@aorthar/you-think-youre-a-designer-1d5634e7742b?source=---------7------------------" target="blank">
                                         <img src={Smes} alt=""/>
                                         <div className="a-blog-cards-heading smallBoldText green">What Defines a Designer?</div>
-                                        <p className="smallestText montserrat blackText">Aorthar's service to Small Business Owners</p>
+                                        <p className="smallestText montserrat blackText">How not to be a "Whack Designer"</p>
                                     </a>
                                 </Col>
                             </Row>
