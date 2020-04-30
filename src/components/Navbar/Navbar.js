@@ -139,10 +139,10 @@ class NavBar extends Component {
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover" href="/ourworks">
+                          <Nav.Link className="cover" href="#">
                             Our Works
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/ourworks">
                             Our Process
                           </Nav.Link>
                           <Nav.Link className="cover" href="#">
