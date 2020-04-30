@@ -1,36 +1,40 @@
-.a-case-study-wrapper{
+.a-case-study-wrapper {
     padding: 8% 0 8%;
 }
 
-.a-case-study-caption{
+.a-case-study-caption {
     padding-top: 5%;
 }
 
-.a-case-study-cards{
+.a-case-study-cards {
     margin-top: 6%;
     height: 100%;
 }
 
-.a-case-study-cards:first-child,
-.a-case-study-cards:nth-child(2),
-.a-case-study-cards:last-child{
+.a-case-study-cards1,
+.a-case-study-cards2,
+.a-case-study-cards3 {
     background-size: contain;
     background-position: center;
     height: 300px;
     background-repeat: no-repeat;
+    margin: 0;
 }
-.a-case-study-cards:first-child{
+
+.a-case-study-cards1 {
     background-image: url("../../images/Reasone.png");
 }
-.a-case-study-cards:nth-child(2){
+
+.a-case-study-cards3 {
     background-image: url("../../images/Raeanna.png");
 }
-.a-case-study-cards:last-child{
+
+.a-case-study-cards2 {
     background-image: url("../../images/Ofelus.png");
 }
 
-@media screen and (max-width: 600px){
-    .a-case-study-wrapper{
+@media screen and (max-width: 600px) {
+    .a-case-study-wrapper {
         padding: 20% 0 20%;
     }
 }
