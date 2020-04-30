@@ -31,8 +31,7 @@ export default class Blog extends Component {
                                     <a href="https://medium.com/@aorthar/branding-gone-wrong-b7fed5a4f4d1" target="blank">
                                         <img src={Branding} alt=""/>
                                         <div className="a-blog-cards-heading smallBoldText green">Branding Gone Wrong</div>
-                                        {/* <p className="smallestText montserrat blackText">How mistakes cost the lives of some popular brands</p> */}
-                                        <p className="smallestText montserrat blackText">Mistakes cost the lives of popular brands</p>
+                                        <p className="smallestText montserrat blackText">Popular Ads Fail of all time</p>
                                     </a>
                                 </Col>
                                 <Col xs={12} md={4} className="a-blog-cards">

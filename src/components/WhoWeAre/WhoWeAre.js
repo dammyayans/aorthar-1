@@ -8,8 +8,8 @@ import { Container, Col, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 
-import Person1 from "../../images/person1.png";
-import Person2 from "../../images/person2.png";
+import Person4 from "../../images/Person4.png";
+import Person3 from "../../images/Person3.png";
 import Forward from "../../images/forward.png";
 
 export default class WhoWeAre extends Component {
@@ -59,12 +59,12 @@ export default class WhoWeAre extends Component {
               <Row>
                 <Col md={6} className="image">
                   <Fade top>
-                    <img src={Person1} alt="Person1" className="image-single" />
+                    <img src={Person3} alt="Person1" className="image-single" />
                   </Fade>
                 </Col>
                 <Col md={6} className="image">
                   <Fade bottom>
-                    <img src={Person2} alt="Person2" className="image-single" />
+                    <img src={Person4} alt="Person2" className="image-single" />
                   </Fade>
                 </Col>
               </Row>

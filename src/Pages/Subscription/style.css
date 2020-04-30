@@ -60,6 +60,7 @@
 .line-through{
     text-decoration: line-through;
     opacity: .7;
+    color: #E0E0E0;
 }
 
 .imgxyz{

@@ -88,17 +88,17 @@ class NavBar extends Component {
             >
               <Container>
                 <Row className="pt-5 pb-5">
-                  <Col md={{ span: 6, offset: 3 }} sm={12}>
+                  <Col md={{ span: 8, offset: 2 }} sm={12}>
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
                           <Nav.Link className="cover" href="#">
-                            Internship
+                            Career
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            Training
+                          <Nav.Link className="cover" >
+                            Placeholder
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/http://bit.ly/designyarnREG">
                             Design Yarn
                           </Nav.Link>
                         </div>
@@ -129,10 +129,10 @@ class NavBar extends Component {
                       <Col sm={6}>
                         <div className="mb-3">
                           <Nav.Link className="cover" href="#">
-                            Long Term Project
+                            Get Started
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
-                            One time Project
+                          <Nav.Link className="cover" href="https://bit.ly/DnEmoski" target="blank">
+                            Buy our Design Course
                           </Nav.Link>
                           <Nav.Link className="cover" href="/subscription">
                             Design Subscription
@@ -146,7 +146,8 @@ class NavBar extends Component {
                             Our Process
                           </Nav.Link>
                           <Nav.Link className="cover" href="#">
-                            Get Our Merch
+                            {/* Get Our Merch */}
+                            Rep our Brand
                           </Nav.Link>
                         </div>
                       </Col>
