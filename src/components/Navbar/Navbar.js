@@ -99,7 +99,7 @@ class NavBar extends Component {
                             Training
                           </Nav.Link>
                           <Nav.Link className="cover" href="#">
-                            Ambassador
+                            Design Yarn
                           </Nav.Link>
                         </div>
                         <div>
@@ -146,7 +146,7 @@ class NavBar extends Component {
                             Our Process
                           </Nav.Link>
                           <Nav.Link className="cover" href="#">
-                            Testimonials
+                            Get Our Merch
                           </Nav.Link>
                         </div>
                       </Col>
