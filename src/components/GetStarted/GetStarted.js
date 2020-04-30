@@ -3,6 +3,9 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 // import  { Link }  from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
+
 import "./GetStarted.css";
 import "../GlobalStyles/global.css";
 
@@ -26,6 +29,7 @@ class GetStarted extends Component {
 
   state = {
     randomQuote: { quote: "", image: "", author: "" },
+    change: false,
   };
   myQuotes = [
     {
@@ -51,8 +55,11 @@ class GetStarted extends Component {
     this.myQuotes[Math.floor(Math.random() * this.myQuotes.length)];
   componentDidMount() {
     this.interval = setInterval(() => {
-      this.setState({ randomQuote: this.randomQuoteGenerator() });
-    }, 4000);
+      this.setState({
+        randomQuote: this.randomQuoteGenerator(),
+        change: !this.state.change,
+      });
+    }, 5000);
   }
   componentWillUnmount() {
     this.interval && clearInterval(this.interval);
@@ -65,66 +72,86 @@ class GetStarted extends Component {
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
               <Col xs={12} md={6}>
-                <div className="bigText">
-                  <div className="blackText">Ready to start</div>
-                  <div className="blackText">
-                    with <span className="green">us?</span>
+                <Fade top>
+                  <div className="bigText">
+                    <div className="blackText">Ready to start</div>
+                    <div className="blackText">
+                      with <span className="green">us?</span>
+                    </div>
                   </div>
-                </div>
-                <p className="a-get-started-caption blackText smallestText blackText b4 montserrat">
-                  Let's build something together! Enjoy the <br />
-                  luxury of working with us or contact us <br />
-                  below.
-                </p>
-                <Dropdown>
-                  <Dropdown.Toggle
-                    className="service"
-                    variant="default"
-                    id="dropdown-basic"
-                  >
-                    Select a service
-                  </Dropdown.Toggle>
+                </Fade>
+                <Fade left>
+                  <p className="a-get-started-caption blackText smallestText blackText b4 montserrat">
+                    Let's build something together! Enjoy the <br />
+                    luxury of working with us or contact us <br />
+                    below.
+                  </p>
+                  <Dropdown>
+                    <Dropdown.Toggle
+                      className="service"
+                      variant="default"
+                      id="dropdown-basic"
+                    >
+                      Select a service
+                    </Dropdown.Toggle>
 
-                  <Dropdown.Menu className="service_menu">
-                    {this.services.map((service, i) => (
-                      <Dropdown.Item
-                        key={i}
-                        href={
-                          "/Form" + (service === "UI/UX" ? "uiux" : service)
-                        }
-                      >
-                        {service}
-                      </Dropdown.Item>
-                    ))}
-                  </Dropdown.Menu>
-                </Dropdown>
-                <p className="a-get-started-contact blackText montserrat b7">
-                  Send us a mail via{" "}
-                  <a
-                    href="mailto:hello@aorthar.com"
-                    className="green a-hello-aorthar b7"
-                  >
-                    hello@aorthar.com
-                  </a>
-                  <br />
-                  or call: +234(0) 814 422 8160
-                </p>
+                    <Dropdown.Menu className="service_menu">
+                      {this.services.map((service, i) => (
+                        <Dropdown.Item
+                          key={i}
+                          href={
+                            "/Form" + (service === "UI/UX" ? "uiux" : service)
+                          }
+                        >
+                          {service}
+                        </Dropdown.Item>
+                      ))}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Fade>
+                <Fade bottom>
+                  <p className="a-get-started-contact blackText montserrat b7">
+                    Send us a mail via{" "}
+                    <a
+                      href="mailto:hello@aorthar.com"
+                      className="green a-hello-aorthar b7"
+                    >
+                      hello@aorthar.com
+                    </a>
+                    <br />
+                    or call: +234(0) 814 422 8160
+                  </p>
+                </Fade>
               </Col>
               <Col xs={12} md={6} className="">
-                <Row className="justify-content-md-center blackText">
-                  <Col md="auto" className="a-get-started-testimonies">
-                    <img src={this.state.randomQuote.image} alt="person" className="whitealways"/>
-                    <div>
-                      <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
-                        <p className="white">{this.state.randomQuote.quote}</p>
-                        <p className="white bold">
-                          <span>- </span>
-                          {this.state.randomQuote.author}
-                        </p>
+                <Fade right>
+                  <Row className="justify-content-md-center blackText">
+                    <Col md="auto" className="a-get-started-testimonies">
+                      <Flip delay={0} top when={this.state.change}>
+                        <img
+                          src={this.state.randomQuote.image}
+                          alt="person"
+                          className="whitealways"
+                        />
+                      </Flip>
+                      <div>
+                        <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
+                          <Flip delay={0} top when={this.state.change}>
+                            <p className="white">
+                              {this.state.randomQuote.quote}
+                            </p>
+                          </Flip>
+                          <Flip delay={500} top when={this.state.change}>
+                            <p className="white bold">
+                              <span>- </span>
+                              {this.state.randomQuote.author}
+                            </p>
+                          </Flip>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
-                </Row>
+                    </Col>
+                  </Row>
+                </Fade>
               </Col>
             </Row>
           </Col>

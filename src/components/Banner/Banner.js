@@ -31,7 +31,7 @@ export default class Banner extends Component {
         <Container className="a-banner">
           <Row className="a-banner-wrapper justify-content-md-center">
             <Col md={4} className="a-banner-heroImg">
-              <Bounce duration={4000} left>
+              <Bounce duration={1000} left>
                 <Row className="justify-content-md-center heroheroL">
                   <img src={p1} alt="Hero Img" className="a-banner-heroImg" />
                 </Row>
