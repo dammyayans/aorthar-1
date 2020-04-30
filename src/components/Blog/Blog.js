@@ -21,9 +21,9 @@ export default class Blog extends Component {
                         <Col md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1}} className="a-blog-card-holder">
                             <Row>
                                 <Col xs={12} md={4} className="a-blog-cards">
-                                    <a href="https://medium.com" >
+                                    <a href="https://medium.com" target="blank">
                                         <img src={Independence} alt=""/>
-                                        <div className="a-blog-cards-heading smallBoldText green">Nigeria at 59</div>
+                                        <div className="a-blog-cards-heading smallBoldText green">Graphics Design and Culture</div>
                                         <p className="smallestText montserrat blackText">An approach to SMEs</p>
                                     </a>
                                 </Col>
@@ -35,9 +35,9 @@ export default class Blog extends Component {
                                     </a>
                                 </Col>
                                 <Col xs={12} md={4} className="a-blog-cards">
-                                    <a href="https://medium.com" >
+                                    <a href="https://medium.com" target="blank">
                                         <img src={Smes} alt=""/>
-                                        <div className="a-blog-cards-heading smallBoldText green">Branding 20 Young Entrepreneurs</div>
+                                        <div className="a-blog-cards-heading smallBoldText green">What Defines a Designer?</div>
                                         <p className="smallestText montserrat blackText">Aorthar's service to Small Business Owners</p>
                                     </a>
                                 </Col>

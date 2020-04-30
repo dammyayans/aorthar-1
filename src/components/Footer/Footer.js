@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './Footer.css';
 import '../GlobalStyles/global.css';
+import Fade from "react-reveal/Fade";
 
 import ContactSection from './fContatctSection';
 import DescSection from './fDescSection';
@@ -14,7 +15,9 @@ class Footer extends Component {
             <footer>
                 <Container fluid className="a-footer-wrapper smallestText white b4 montserrat">
                     <Container>
-                        <ContactSection />
+                        <Fade left>
+                            <ContactSection />
+                        </Fade>
                         <DescSection />
                     </Container>
                 </Container>
