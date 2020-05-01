@@ -95,10 +95,11 @@ class NavBar extends Component {
                           <Nav.Link className="cover" href="#">
                             Career
                           </Nav.Link>
-                          <Nav.Link className="cover" >
-                            Placeholder
-                          </Nav.Link>
-                          <Nav.Link className="cover" href="/http://bit.ly/designyarnREG">
+                          <Nav.Link className="cover">Placeholder</Nav.Link>
+                          <Nav.Link
+                            className="cover"
+                            href="/http://bit.ly/designyarnREG"
+                          >
                             Design Yarn
                           </Nav.Link>
                         </div>
@@ -131,7 +132,11 @@ class NavBar extends Component {
                           <Nav.Link className="cover" href="#">
                             Get Started
                           </Nav.Link>
-                          <Nav.Link className="cover" href="https://bit.ly/DnEmoski" target="blank">
+                          <Nav.Link
+                            className="cover"
+                            href="https://bit.ly/DnEmoski"
+                            target="blank"
+                          >
                             Buy our Design Course
                           </Nav.Link>
                           <Nav.Link className="cover" href="/subscription">
@@ -145,7 +150,7 @@ class NavBar extends Component {
                           <Nav.Link className="cover" href="/ourworks">
                             Our Process
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/merch">
                             {/* Get Our Merch */}
                             Rep our Brand
                           </Nav.Link>
