@@ -4,7 +4,7 @@ import storage from "local-storage-fallback";
 
 import "./App.css";
 import "./components/Navbar/Navbar.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import { Container } from "react-bootstrap";
 
@@ -20,6 +20,7 @@ import OurWorks from "./Pages/OurWorks";
 import Confirmation from "./Pages/Confirmation";
 import Subscription from "./Pages/Subscription";
 import Form from "./Pages/Form";
+import Merch from "./Pages/Merch";
 import Apply from "./Pages/Apply";
 
 import { ThemeProvider, createGlobalStyle } from "styled-components";
@@ -113,6 +114,8 @@ export default function App() {
               <Route exact path="/OurWorks" component={OurWorks} />
 
               <Route exact path="/TheTeam" component={TheTeam} />
+
+              <Route exact path="/Merch" component={Merch} />
 
               <Route exact path="/Form:service" component={Form} />
 
