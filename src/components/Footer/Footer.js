@@ -15,10 +15,12 @@ class Footer extends Component {
             <footer>
                 <Container fluid className="a-footer-wrapper smallestText white b4 montserrat">
                     <Container>
-                        <Fade left>
+                        <Fade bottom>
                             <ContactSection />
                         </Fade>
-                        <DescSection />
+                        <Fade bottom>
+                            <DescSection />
+                        </Fade>
                     </Container>
                 </Container>
             </footer>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import LightSpeed from "react-reveal/LightSpeed";
 import Fade from "react-reveal/Fade";
 
 import "../GlobalStyles/global.css";
@@ -13,28 +12,28 @@ export default class CaseStudy extends Component {
       <Container fluid className="whitebg">
         <Container className="a-case-study-wrapper a-case-study-wrapper">
           <Col md={{ span: 8, offset: 2 }}>
-            <Row>
+            <Row className="pb-5">
               <Col xs={12} md={6}>
-                <LightSpeed left>
+                <Fade bottom>
                   <h2 className="bigText blackText">Case Study</h2>
-                </LightSpeed>
+                </Fade>
               </Col>
               <Col xs={12} md={6}>
-                <LightSpeed right>
+                <Fade bottom>
                   <div className="a-case-study-caption smallestText blackText b4 montserrat">
                     Have a glance at some selected works we are proud of, as we
                     delivered solutions to branding and design pattern and
                     design problems, with in-depth research, innovation and
                     creativity.
                   </div>
-                </LightSpeed>
+                </Fade>
               </Col>
             </Row>
           </Col>
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
               <Col xs={12} md={4} className="p-2">
-                <Fade top delay={100}>
+                <Fade bottom delay={100}>
                   <div className="a-case-study-cards1"></div>
                 </Fade>
               </Col>
@@ -44,7 +43,7 @@ export default class CaseStudy extends Component {
                 </Fade>
               </Col>
               <Col xs={12} md={4} className="p-2">
-                <Fade top delay={500}>
+                <Fade bottom delay={500}>
                   <div className="a-case-study-cards3"></div>
                 </Fade>
               </Col>

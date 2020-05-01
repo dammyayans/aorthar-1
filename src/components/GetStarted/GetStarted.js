@@ -4,14 +4,14 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Fade from "react-reveal/Fade";
-import Tada from "react-reveal/Tada";
+import Zoom from "react-reveal/Zoom";
 
 import "./GetStarted.css";
 import "../GlobalStyles/global.css";
 
 import Placeholder from "../../images/Opeyemi.png";
 import Placeholder2 from "../../images/Damola.png";
-import Placeholder3 from "../../images/Pelumi.png";
+import Placeholder3 from "../../images/Person4.png";
 
 // import ContactSection from './';
 // import DescSection from './';
@@ -72,7 +72,7 @@ class GetStarted extends Component {
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
               <Col xs={12} md={6}>
-                <Fade top>
+                <Fade bottom>
                   <div className="bigText">
                     <div className="blackText">Ready to start</div>
                     <div className="blackText">
@@ -80,7 +80,7 @@ class GetStarted extends Component {
                     </div>
                   </div>
                 </Fade>
-                <Fade left>
+                <Fade bottom delay={500}>
                   <p className="a-get-started-caption blackText smallestText blackText b4 montserrat">
                     Let's build something together! Enjoy the <br />
                     luxury of working with us or contact us <br />
@@ -109,7 +109,7 @@ class GetStarted extends Component {
                     </Dropdown.Menu>
                   </Dropdown>
                 </Fade>
-                <Fade bottom>
+                <Fade bottom delay={800}>
                   <p className="a-get-started-contact blackText montserrat b7">
                     Send us a mail via{" "}
                     <a
@@ -124,19 +124,19 @@ class GetStarted extends Component {
                 </Fade>
               </Col>
               <Col xs={12} md={6} className="">
-                <Fade right>
+                <Fade bottom>
                   <Row className="justify-content-md-center blackText">
                     <Col md="auto" className="a-get-started-testimonies">
-                      <Tada spy={this.state.change} duration={600}>
+                      <Zoom spy={this.state.change} duration={600}>
                         <img
                           src={this.state.randomQuote.image}
                           alt="person"
                           className="whitealways"
                         />
-                      </Tada>
+                      </Zoom>
                       <div>
                         <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
-                          <Tada
+                          <Zoom
                             spy={this.state.change}
                             delay={200}
                             duration={800}
@@ -144,8 +144,8 @@ class GetStarted extends Component {
                             <p className="white">
                               {this.state.randomQuote.quote}
                             </p>
-                          </Tada>
-                          <Tada
+                          </Zoom>
+                          <Zoom
                             spy={this.state.change}
                             delay={300}
                             duration={1000}
@@ -154,7 +154,7 @@ class GetStarted extends Component {
                               <span>- </span>
                               {this.state.randomQuote.author}
                             </p>
-                          </Tada>
+                          </Zoom>
                         </div>
                       </div>
                     </Col>
