@@ -99,11 +99,11 @@ class NavBar extends Component {
                           <Nav.Link className="cover" href="/apply">
                             Career
                           </Nav.Link>
-                          <Nav.Link className="cover" >
-                            Placeholder
+                          <Nav.Link className="cover" href="https://bit.ly/DnEmoski" target="blank">
+                            Buy our Design Course
                           </Nav.Link>
-                          <Nav.Link className="cover" href="/http://bit.ly/designyarnREG">
-                            Design Yarn
+                          <Nav.Link className="cover" href="https://bit.ly/designyarnREG" target="blank">
+                            Design Yarn1
                           </Nav.Link>
                         </div>
                         <div>
@@ -134,9 +134,9 @@ class NavBar extends Component {
                         <div className="mb-3">
                           <Nav.Link className="cover" href="#">
                             Get Started
-                          </Nav.Link>
-                          <Nav.Link className="cover" href="https://bit.ly/DnEmoski" target="blank">
-                            Buy our Design Course
+                          </Nav.Link>                          
+                          <Nav.Link className="cover" >
+                            Placeholder
                           </Nav.Link>
                           <Nav.Link className="cover" href="/subscription">
                             Design Subscription

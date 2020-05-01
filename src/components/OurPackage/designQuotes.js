@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 import "./OurPackage.css";
 import "../GlobalStyles/global.css";
@@ -12,10 +13,10 @@ export default class designQuotes extends Component {
     change: false,
   };
   quotes = [
-    {
-      quote: "The Design Thinking Process is a blend of Heart, Head and Hand.",
-      author: "Evan You",
-    },
+    // {
+    //   quote: "The Design Thinking Process is a blend of Heart, Head and Hand.",
+    //   author: "Evan You",
+    // },
     {
       quote: "Design is intelligence made visible.",
       author: "Alina Wheeler",
@@ -60,9 +61,9 @@ export default class designQuotes extends Component {
       <Col xs={12} md={12} className="px-0 a-our-packages-quotes whitebg">
         <Col className="justify-content-md-center">
           <img src={Quotes} alt="Quotes" className="quotes" />
-          <Zoom spy={this.state.change} duration={600}>
+          <Fade bottom spy={this.state.change} duration={600}>
             <p className="quoteText">{this.state.quote.quote}</p>
-          </Zoom>
+          </Fade>
           <Zoom spy={this.state.change} duration={600} delay={300}>
             <span className="blackText bold">- {this.state.quote.author}</span>
           </Zoom>

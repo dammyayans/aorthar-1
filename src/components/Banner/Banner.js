@@ -45,7 +45,7 @@ export default class Banner extends Component {
                 </Row>
               </Fade>
             </Col>
-            <Col md={6} className="a-banner-caption">
+            <Col md={6} className="a-banner-caption p">
               <Fade duration={1500} bottom>
                 <h2 className="bigText">
                   <span className="blackText">Craft your</span>
