@@ -5,7 +5,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import './style.css';
 import GetStarted from '../../components/GetStarted/GetStarted';
-import UD1 from '../../images/Naomi.png';
+import content from '../../images/content.png';
+import contentwriting from '../../images/contentwriting.png';
+import contentSocial from '../../images/contentSocial.png';
 
 export default class Confirmation extends Component {
     render() {
@@ -33,17 +35,17 @@ export default class Confirmation extends Component {
                     <Col md={{ span: 10, offset: 1 }}>
                         <Row>
                             <Col xs={12} md={4} className="a-response-card">
-                                <img src={UD1} alt=""/>
+                                <img src={content} alt=""/>
                                 <h3 className="smallBoldText pt-3 blackText">Content Design</h3>
                                 <p className="smallestText blackText b4 montserrat">We design every content you create or content we develop for you into graphics.</p>
                             </Col>
                             <Col xs={12} md={4} className="a-response-card">
-                                <img src={UD1} alt=""/>
+                                <img src={contentwriting} alt=""/>
                                 <h3 className="smallBoldText pt-3 blackText">Content Writing</h3>
                                 <p className="smallestText blackText b4 montserrat">We write for you, your captions, your newsletters, your blogs and articles.</p>
                             </Col>
                             <Col xs={12} md={4} className="a-response-card">
-                                <img src={UD1} alt=""/>
+                                <img src={contentSocial} alt=""/>
                                 <h3 className="smallBoldText pt-3 blackText">Social Media Management</h3>
                                 <p className="smallestText blackText b4 montserrat">We manage social media pages and interact with your audience on your behalf.</p>
                             </Col>

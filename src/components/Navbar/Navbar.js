@@ -92,7 +92,7 @@ class NavBar extends Component {
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/apply">
                             Career
                           </Nav.Link>
                           <Nav.Link className="cover" >
