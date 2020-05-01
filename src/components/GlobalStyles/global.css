@@ -59,11 +59,27 @@
 }
 
 .green{
-    color: #076847;
+    color: #076847 !important;
+}
+
+.greenbg{
+    background-color: #076847;
 }
 
 .white{
     color: #fff !important;
+}
+
+.applyInput{
+    color: ##fff !important;
+}
+
+input{
+    background-color: #fff !importnat;
+}
+
+.applyButton{
+    background-color: #fff !important;
 }
 
 .whitealways{
@@ -77,17 +93,18 @@
 
 .whitebg, .whitebgNav{
     background-color: #fff;
-    /*switch to #000; */
+}
+
+.whiteText{
+    color: #FFF !important;
 }
 
 .greybg{
     background-color: #F3F3F3;
-    /* switch to #111 */
 }
 
 .blackText{
     color: #343434;
-    /* switch to #eee */
 }
 
 .toggleButton{

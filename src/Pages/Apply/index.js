@@ -8,10 +8,10 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Form(props) {
   const [service, setService] = useState(props.match.params.service);
   return (
-    <Container fluid className="whitebg formwrapper pb-5">
+    <Container fluid className="formwrapper pb-5 greenbg whiteText">
       <Helmet>
         <meta charset="utf-8" />
-        <title>Aorthar |  Tell us about your project</title>
+        <title>Aorthar |  Join the Team </title>
       </Helmet>
       <Container>
         <Row>
@@ -19,26 +19,26 @@ export default function Form(props) {
             md={{ span: 8, offset: 1 }}
             className="a-team-card-holder pushtop"
           >
-            <div className="bigText blackText">Tell us about your project</div>
-            <p className="smallestText blackText b4 montserrat mt-2">
+            <div className="bigText">Tell us about your project</div>
+            <p className="smallestText b4 montserrat mt-2">
               Complete this form and we'll reach out ot you
             </p>
           </Col>
           <Col md={{ span: 6, offset: 1 }} className="a-team-card-holder">
-            <form action="" className="mt-5 pb-5 montserrat">
+            <form action="" className="mt-5 pb-5 montserrat whiteText">
               <Row>
                 <Col>
-                  <p className="blackText bold">Contact Name</p>
+                  <p className="bold">Contact Name</p>
                   <input
                     type="text"
                     placeholder="Your Name or Company Name"
-                    className="black smallestText"
+                    className="black smallestText applyInput"
                   />
                 </Col>
               </Row>
               <Row className="mt-4">
                 <Col>
-                  <p className="blackText bold">Email Address</p>
+                  <p className="bold">Email Address</p>
                   <input
                     type="email"
                     placeholder="youremail@domain.com"
@@ -48,7 +48,7 @@ export default function Form(props) {
               </Row>
               <Row className="mt-4">
                 <Col md={6}>
-                  <p className="blackText bold">Phone Number</p>
+                  <p className="bold">Phone Number</p>
                   <input
                     type="tel"
                     placeholder="+123 4567 890"
@@ -56,10 +56,10 @@ export default function Form(props) {
                   />
                 </Col>
                 <Col md={6}>
-                  <p className="blackText bold">Project Type</p>
+                  <p className="bold">Project Type</p>
                   {/* <input type="email" placeholder="youremail@domain.com" className="black"/> */}
                   <select
-                    className="blackText serviceOptions smallestText"
+                    className="serviceOptions smallestText"
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                   >
@@ -80,7 +80,7 @@ export default function Form(props) {
               </Row>
               <Row className="mt-4">
                 <Col md={6}>
-                  <p className="blackText bold">Budget</p>
+                  <p className="bold">Budget</p>
                   <input
                     type="number"
                     placeholder="How much do you plan to spend"
@@ -88,11 +88,11 @@ export default function Form(props) {
                   />
                 </Col>
                 <Col md={6}>
-                  <p className="blackText bold">Timeline</p>
+                  <p className="bold">Timeline</p>
                   <input
                     type="email"
                     placeholder="How long do you want your project to take"
-                    className="black smallestText"
+                    className="smallestText"
                   />
                 </Col>
               </Row>
@@ -103,29 +103,16 @@ export default function Form(props) {
               </Row>
               <Row className="mt-3">
                 <Col>
-                  <p className="blackText bold">Project Brief</p>
+                  <p className="bold">Project Brief</p>
                   <textarea
-                    className="black smallestText"
+                    className="smallestText"
                     placeholder="what else would you like us to know?"
                   />
-
-                  <button type="submit" className="submitButton mt-3 black">
+                  <button type="submit" className="submitButton mt-3 applyButton green">
                     Submit
                   </button>
                 </Col>
               </Row>
-
-              {/* <Row>
-                                <Col  md={{ span: 4, offset: 1 }}>Left</Col>
-                                <Col  md={{ span: 4, offset: 1 }}>Right</Col>
-                            </Row>
-                            <div className="form-group">
-                                <p>Contact Name</p>
-                            </div>
-                            <div className="form-group">
-                                <p>Email Address</p>
-                                <input type="email" placeholder="youremail@domain.com"/>
-                            </div> */}
             </form>
           </Col>
         </Row>

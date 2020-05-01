@@ -21,6 +21,7 @@ import Confirmation from "./Pages/Confirmation";
 import Subscription from "./Pages/Subscription";
 import Form from "./Pages/Form";
 import Merch from "./Pages/Merch";
+import Apply from "./Pages/Apply";
 
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 // import Confirmation from './Pages/sub';
@@ -117,6 +118,8 @@ export default function App() {
               <Route exact path="/Merch" component={Merch} />
 
               <Route exact path="/Form:service" component={Form} />
+
+              <Route exact path="/Apply" component={Apply} />
 
               {/* <Route component={ErrorPage} /> */}
 

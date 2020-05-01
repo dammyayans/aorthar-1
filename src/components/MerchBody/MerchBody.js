@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import LightSpeed from "react-reveal/LightSpeed";
 import states from "./states.json";
+import shirt from "../../images/AOrthar_Big_icon_green-removebg-preview.png";
 
 import "./style.css";
 const MerchBody = () => {
@@ -49,8 +50,11 @@ const MerchBody = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={4}></Col>
-            <Col md={8} className="a-team-card-holder">
+            <Col md={5} className="d-flex shirt justify-content-center">
+              <img src={shirt} alt="aorthar shirt" />
+              <p className="blackText bold">The Big Heart</p>
+            </Col>
+            <Col md={7} className="a-team-card-holder">
               <form action="" className="mt-5 pb-5 montserrat">
                 <Row>
                   <Col>

@@ -42,16 +42,19 @@ class NavBar extends Component {
               <Navbar.Brand className="a-navbar-logo-container" href="/">
                 <img src={Logo} alt="" />
               </Navbar.Brand>
-              <Nav className="mr-auto">
-                <Nav.Link onClick={this.setExploreToggle} className="explore">
-                  Explore
-                  {this.state.exploreToggle ? (
-                    <img src={ArrowUp} alt="ArrowUp" />
-                  ) : (
-                    <img src={ArrowDown} alt="ArrowDown" />
-                  )}
-                </Nav.Link>
+                <Nav className="mr-auto">
+                <Fade top>
+                  <Nav.Link onClick={this.setExploreToggle} className="explore">
+                    Explore
+                    {this.state.exploreToggle ? (
+                      <img src={ArrowUp} alt="ArrowUp" />
+                    ) : (
+                      <img src={ArrowDown} alt="ArrowDown" />
+                    )}
+                  </Nav.Link>
+                </Fade>
               </Nav>
+              <Fade top>
               <div className="a-navbar-others">
                 <Nav.Link className="a-navbar-dm blackText">
                   <img
@@ -63,22 +66,23 @@ class NavBar extends Component {
                       this.props.onClick();
                     }}
                   />
-                  <span>
-                    {this.state.modeToggle ? "Dark Mode" : "Light Mode"}
-                  </span>
-                </Nav.Link>
+                    <span>
+                        {this.state.modeToggle ? "Dark Mode" : "Light Mode"}
+                    </span>
+                  </Nav.Link>
                 <Nav.Link
                   className="a-navbar-menubar blackText text-animate"
                   onClick={this.setMenuToggle}
-                >
+                  >
                   {this.state.menuToggle ? (
                     <img src={Close} alt="Close" />
-                  ) : (
-                    <img src={MenuBar} alt="MenuBar" />
-                  )}
+                    ) : (
+                      <img src={MenuBar} alt="MenuBar" />
+                      )}
                   <span>{this.state.menuToggle ? "Close" : "Menu"}</span>
                 </Nav.Link>
               </div>
+              </Fade>
             </Container>
           </Navbar>
           <Fade duration={500} top when={this.state.exploreToggle}>
@@ -92,7 +96,7 @@ class NavBar extends Component {
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/apply">
                             Career
                           </Nav.Link>
                           <Nav.Link className="cover">Placeholder</Nav.Link>

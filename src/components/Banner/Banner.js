@@ -1,20 +1,16 @@
 import React, { Component } from "react";
 
-// import  { Link }  from 'react-router-dom';
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 
 import "../GlobalStyles/global.css";
 import "./Banner.css";
 
-// import HeroImg from "../../images/heroImg.png";
-import HeroImgD from "../../images/heroImgD.png";
+import HeroImgL from "../../images/Damola.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
-import p1 from "../../images/person2.png";
 
-// import Fade from 'react-reveal/Fade';
-import Bounce from "react-reveal/Bounce";
+import Fade from "react-reveal/Fade";
 
 export default class Banner extends Component {
   services = [
@@ -31,21 +27,25 @@ export default class Banner extends Component {
         <Container className="a-banner">
           <Row className="a-banner-wrapper justify-content-md-center">
             <Col md={6} sm={12} className="a-banner-heroImg">
-              <Bounce duration={1000} left>
+              <Fade duration={1000} bottom>
                 <Row className=" d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
-                  <img src={p1} alt="Hero Img" className="a-banner-heroImg" />
+                  <img
+                    src={HeroImgL}
+                    alt="Hero Img"
+                    className="a-banner-heroImg"
+                  />
                 </Row>
                 <Row className="justify-content-md-center heroheroD">
                   <img
-                    src={HeroImgD}
+                    src={HeroImgL}
                     alt="Hero Img"
                     className="a-banner-heroImgD"
                   />
                 </Row>
-              </Bounce>
+              </Fade>
             </Col>
             <Col md={6} className="a-banner-caption">
-              <Bounce duration={4000} right>
+              <Fade duration={1500} bottom>
                 <h2 className="bigText">
                   <span className="blackText">Craft your</span>
                   <span className="green"> Identity</span>
@@ -78,7 +78,7 @@ export default class Banner extends Component {
                     ))}
                   </Dropdown.Menu>
                 </Dropdown>
-              </Bounce>
+              </Fade>
             </Col>
           </Row>
         </Container>
