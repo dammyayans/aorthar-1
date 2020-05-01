@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import DesignSubscription from "./dSubscription";
 import NewsletterSubscription from "./nSubscription";
 import DesignQuotes from "./designQuotes";
-import LightSpeed from "react-reveal/LightSpeed";
+import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 
 export default class OurPackages extends Component {
@@ -17,14 +17,14 @@ export default class OurPackages extends Component {
             <Row>
               <Col xs={12} md={7} className="px-0">
                 <Col>
-                  <LightSpeed duration={700} left>
+                  <Zoom duration={700} clear>
                     <DesignSubscription />
-                  </LightSpeed>
+                  </Zoom>
                 </Col>
                 <Col>
-                  <LightSpeed duration={700} left delay={500}>
+                  <Zoom duration={700} clear delay={500}>
                     <NewsletterSubscription />
-                  </LightSpeed>
+                  </Zoom>
                 </Col>
               </Col>
               <Col xs={12} md={5}>

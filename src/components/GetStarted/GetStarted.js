@@ -135,7 +135,7 @@ class GetStarted extends Component {
                         />
                       </Zoom>
                       <div>
-                        <div className="a-get-started-words blackText mediumText blackText b4 montserrat">
+                        <div className="a-get-started-words blackText smallText blackText b4">
                           <Zoom
                             spy={this.state.change}
                             delay={200}

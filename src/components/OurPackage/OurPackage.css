@@ -85,12 +85,13 @@ h2{
     padding-bottom: 20px;
 }
 
+.quoteText{
+    font-family: 'DM Serif Display', serif !important;
+}
+
 @media screen and (max-width: 600px){
     .a-our-packages-wrapper{
         padding: 20% 0 20%;
-    }
-    .a-our-packages-heading p{
-        color: #343434;
     }
     .a-our-packages-form{
         width: 100%;
@@ -105,13 +106,11 @@ h2{
         padding: 20% 0 20%;
         background-color: #fff;
         margin-top: 10%;
-    }
-    
-    .a-our-packages-quotes p{
+    }    
+    /* .a-our-packages-quotes p{
         color: #076847;
         font-style: italic;
-    }
-    
+    } */
     .a-our-packages-quotes span{
         padding-left: 0%;
         font-weight: bold;
