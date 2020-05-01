@@ -96,14 +96,21 @@ class NavBar extends Component {
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" href="/apply">
+                          <Nav.Link className="cover" 
+                          href="/apply"
+                          >
                             Career
                           </Nav.Link>
-                          <Nav.Link className="cover" href="https://bit.ly/DnEmoski" target="blank">
+                          <Nav.Link className="cover" 
+                          href="https://bit.ly/DnEmoski" 
+                          target="blank"
+                          >
                             Buy our Design Course
                           </Nav.Link>
-                          <Nav.Link className="cover" href="https://bit.ly/designyarnREG" target="blank">
-                            Design Yarn1
+                          <Nav.Link className="cover" 
+                          href="https://bit.ly/designyarnREG"
+                          >
+                            Design Yarn
                           </Nav.Link>
                         </div>
                         <div>
