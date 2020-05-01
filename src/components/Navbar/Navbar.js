@@ -42,7 +42,7 @@ class NavBar extends Component {
               <Navbar.Brand className="a-navbar-logo-container" href="/">
                 <img src={Logo} alt="" />
               </Navbar.Brand>
-              <Nav className="mr-auto">
+                <Nav className="mr-auto">
                 <Fade top>
                   <Nav.Link onClick={this.setExploreToggle} className="explore">
                     Explore
@@ -55,33 +55,33 @@ class NavBar extends Component {
                 </Fade>
               </Nav>
               <Fade top>
-                <div className="a-navbar-others">
-                  <Nav.Link className="a-navbar-dm blackText">
-                    <img
-                      src={DarkModeIcon}
-                      alt="MenuBar"
-                      className="toggleMode"
-                      onClick={() => {
-                        this.setState({ modeToggle: !this.state.modeToggle });
-                        this.props.onClick();
-                      }}
-                    />
+              <div className="a-navbar-others">
+                <Nav.Link className="a-navbar-dm blackText">
+                  <img
+                    src={DarkModeIcon}
+                    alt="MenuBar"
+                    className="toggleMode"
+                    onClick={() => {
+                      this.setState({ modeToggle: !this.state.modeToggle });
+                      this.props.onClick();
+                    }}
+                  />
                     <span>
-                      {this.state.modeToggle ? "Dark Mode" : "Light Mode"}
+                        {this.state.modeToggle ? "Dark Mode" : "Light Mode"}
                     </span>
                   </Nav.Link>
-                  <Nav.Link
-                    className="a-navbar-menubar blackText text-animate"
-                    onClick={this.setMenuToggle}
+                <Nav.Link
+                  className="a-navbar-menubar blackText text-animate"
+                  onClick={this.setMenuToggle}
                   >
-                    {this.state.menuToggle ? (
-                      <img src={Close} alt="Close" />
+                  {this.state.menuToggle ? (
+                    <img src={Close} alt="Close" />
                     ) : (
                       <img src={MenuBar} alt="MenuBar" />
-                    )}
-                    <span>{this.state.menuToggle ? "Close" : "Menu"}</span>
-                  </Nav.Link>
-                </div>
+                      )}
+                  <span>{this.state.menuToggle ? "Close" : "Menu"}</span>
+                </Nav.Link>
+              </div>
               </Fade>
             </Container>
           </Navbar>
@@ -96,20 +96,19 @@ class NavBar extends Component {
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" href="/apply">
+                          <Nav.Link className="cover" 
+                          href="/apply"
+                          >
                             Career
                           </Nav.Link>
-                          <Nav.Link
-                            className="cover"
-                            href="https://bit.ly/DnEmoski"
-                            target="_blank"
+                          <Nav.Link className="cover" 
+                          href="https://bit.ly/DnEmoski" 
+                          target="blank"
                           >
                             Buy our Design Course
                           </Nav.Link>
-                          <Nav.Link
-                            className="cover"
-                            href="https://bit.ly/designyarnREG"
-                            target="_blank"
+                          <Nav.Link className="cover" 
+                          href="https://bit.ly/designyarnREG"
                           >
                             Design Yarn
                           </Nav.Link>
@@ -142,8 +141,10 @@ class NavBar extends Component {
                         <div className="mb-3">
                           <Nav.Link className="cover" href="#">
                             Get Started
+                          </Nav.Link>                          
+                          <Nav.Link className="cover" >
+                            Placeholder
                           </Nav.Link>
-                          <Nav.Link className="cover">Placeholder</Nav.Link>
                           <Nav.Link className="cover" href="/subscription">
                             Design Subscription
                           </Nav.Link>
@@ -155,7 +156,7 @@ class NavBar extends Component {
                           <Nav.Link className="cover" href="/ourworks">
                             Our Process
                           </Nav.Link>
-                          <Nav.Link className="cover" href="/merch">
+                          <Nav.Link className="cover" href="#">
                             {/* Get Our Merch */}
                             Rep our Brand
                           </Nav.Link>

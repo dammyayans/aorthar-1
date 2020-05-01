@@ -29,18 +29,19 @@ export default class Banner extends Component {
             <Col md={4} sm={12} className="a-banner-heroImg">
               <Fade duration={1000} bottom>
                 <Row className=" d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
+                  {/* <img src={p1} alt="Hero Img" className="a-banner-heroImg" /> */}
                   <img
                     src={HeroImgL}
                     alt="Hero Img"
-                    className="a-banner-heroImg"
+                    // className="a-banner-heroImgL"
                   />
                 </Row>
                 <Row className="justify-content-md-center heroheroD">
-                  <img
-                    src={HeroImgL}
+                  {/* <img
+                    src={HeroImgD}
                     alt="Hero Img"
-                    className="a-banner-heroImgD"
-                  />
+                    // className="a-banner-heroImgD"
+                  /> */}
                 </Row>
               </Fade>
             </Col>
