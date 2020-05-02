@@ -87,12 +87,18 @@ option {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
-
+    
     .a-banner-wrapper {
         margin-top: 15%;
         margin: 0 auto;
     }
-
+    .a-banner-pattern {
+        background-image: url('../../images/pattern.png');
+        /* background-image: url('../../images/phonepattern.png'); */
+        background-repeat: repeat-x;
+        height: 80px;
+        margin-top: 30px;
+    }
     .heroheroL,
     .heroheroD{
         margin: 0 auto;
