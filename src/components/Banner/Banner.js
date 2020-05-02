@@ -5,7 +5,8 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "../GlobalStyles/global.css";
 import "./Banner.css";
 
-import HeroImgL from "../../images/Damola.png";
+import HeroImg from "../../images/heroImg.png";
+import HeroImgD from "../../images/heroImgD.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
@@ -31,10 +32,15 @@ export default class Banner extends Component {
                 <Row className=" d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
                   {/* <img src={p1} alt="Hero Img" className="a-banner-heroImg" /> */}
                   <img
-                    src={HeroImgL}
+                    src={HeroImg}
                     alt="Hero Img"
-                    // className="a-banner-heroImgL"
+                    className="a-banner-heroImgL"
                   />
+                  {/* <img
+                    src={HeroImgD}
+                    alt="Hero Img"
+                    className="a-banner-heroImgL"
+                  /> */}
                 </Row>
                 <Row className="justify-content-md-center heroheroD">
                   {/* <img

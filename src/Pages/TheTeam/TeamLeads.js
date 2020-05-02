@@ -5,7 +5,7 @@ import './style.css';
 import { Container, Row, Col} from 'react-bootstrap';
 
 import Damola from '../../images/Damola.png';
-import Pelumi from '../../images/Pelumi.png';
+import Pelumi from '../../images/pelumi.png';
 import Naomi from '../../images/Naomi.png';   
 import Opeyemi from '../../images/Opeyemi.png';
 // import Jolly from '../../images/Jolly.png';
