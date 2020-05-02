@@ -26,7 +26,7 @@ export default class Banner extends Component {
       <Container fluid className="whitebg">
         <Container className="a-banner">
           <Row className="a-banner-wrapper justify-content-md-center">
-            <Col md={6} sm={12} className="a-banner-heroImg">
+            <Col md={4} sm={12} className="a-banner-heroImg">
               <Fade duration={1000} bottom>
                 <Row className=" d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
                   <img
@@ -44,7 +44,7 @@ export default class Banner extends Component {
                 </Row>
               </Fade>
             </Col>
-            <Col md={6} className="a-banner-caption">
+            <Col md={6} className="a-banner-caption p">
               <Fade duration={1500} bottom>
                 <h2 className="bigText">
                   <span className="blackText">Craft your</span>

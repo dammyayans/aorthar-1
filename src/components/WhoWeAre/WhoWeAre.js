@@ -20,7 +20,7 @@ export default class WhoWeAre extends Component {
           <Col md={{ span: 8, offset: 2 }} sm={{ span: 10, offset: 1 }}>
             <Row>
               <Col xs={12} md={6} sm={12}>
-                <Fade left>
+                <Fade bottom>
                   <h2 className="bigText">
                     <span className="blackText">Who </span>
                     <span className="green">we </span>
@@ -29,7 +29,7 @@ export default class WhoWeAre extends Component {
                 </Fade>
               </Col>
               <Col xs={12} md={6} sm={12}>
-                <Fade right>
+                <Fade bottom>
                   <div className="a-wwa-caption smallestText blackText b4 montserrat">
                     We are a team of great minds to serve our consumers with
                     excellent delivery service to achieve the function of usable
@@ -58,12 +58,12 @@ export default class WhoWeAre extends Component {
             <Col md={8}>
               <Row>
                 <Col md={6} className="image">
-                  <Fade top>
+                  <Fade bottom>
                     <img src={Person3} alt="Person1" className="image-single" />
                   </Fade>
                 </Col>
                 <Col md={6} className="image">
-                  <Fade bottom>
+                  <Fade bottom delay={200}>
                     <img src={Person4} alt="Person2" className="image-single" />
                   </Fade>
                 </Col>

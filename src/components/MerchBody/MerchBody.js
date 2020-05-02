@@ -53,6 +53,11 @@ const MerchBody = () => {
             <Col md={5} className="d-flex shirt justify-content-center">
               <img src={shirt} alt="aorthar shirt" />
               <p className="blackText bold">The Big Heart</p>
+              <div className="color-container">
+                <div className="color"></div>
+                <div className="color"></div>
+                <div className="color"></div>
+              </div>
             </Col>
             <Col md={7} className="a-team-card-holder">
               <form action="" className="mt-5 pb-5 montserrat">

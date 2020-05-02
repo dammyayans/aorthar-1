@@ -71,11 +71,8 @@
 }
 
 .applyInput{
-    color: ##fff !important;
-}
-
-input{
-    background-color: #fff !importnat;
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
 }
 
 .applyButton{
@@ -87,7 +84,7 @@ input{
 }
 
 .black{
-    color: #343434;
+    color: #343434; 
 }
 
 
@@ -119,6 +116,10 @@ a, input, textarea, button {
     outline: none;
     text-decoration: none !important;
     font-family: inherit;
+}
+
+input{
+    padding: 4px 8px;
 }
 
 a:hover{

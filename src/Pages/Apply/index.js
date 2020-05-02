@@ -42,7 +42,7 @@ export default function Form(props) {
                   <input
                     type="email"
                     placeholder="youremail@domain.com"
-                    className="black smallestText"
+                    className="black smallestText applyInput"
                   />
                 </Col>
               </Row>
@@ -52,14 +52,14 @@ export default function Form(props) {
                   <input
                     type="tel"
                     placeholder="+123 4567 890"
-                    className="black smallestText"
+                    className="black smallestText applyInput"
                   />
                 </Col>
                 <Col md={6}>
                   <p className="bold">Project Type</p>
                   {/* <input type="email" placeholder="youremail@domain.com" className="black"/> */}
                   <select
-                    className="serviceOptions smallestText"
+                    className="serviceOptions smallestText applyInput"
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                   >
@@ -84,7 +84,7 @@ export default function Form(props) {
                   <input
                     type="number"
                     placeholder="How much do you plan to spend"
-                    className="black smallestText"
+                    className="black smallestText applyInput"
                   />
                 </Col>
                 <Col md={6}>
@@ -92,7 +92,7 @@ export default function Form(props) {
                   <input
                     type="email"
                     placeholder="How long do you want your project to take"
-                    className="smallestText"
+                    className="smallestText applyInput"
                   />
                 </Col>
               </Row>

@@ -19,9 +19,8 @@ export default class DesignSubscription extends Component {
           We can handle all the media designs your brand would need at anytime
           by subscribing to our subscription service.
         </p>
-
         <Nav.Link
-          href="/subscription"
+          to="/subscription"
           className="a-wwa-readmore green b7 smallestText montserrat"
         >
           Read more <img src={Forward} alt="forward" />
