@@ -27,11 +27,6 @@ nav {
   padding-right: 10px;
 }
 
-/* .a-navbar-menubar,
-.a-navbar-dm {
-  color: #343434;
-} */
-
 .a-navbar-others {
   display: flex;
   justify-content: center;
@@ -65,7 +60,7 @@ nav {
   min-height: 150px;
   width: 100%;
   z-index: 12;
-  top: 90px;
+  top: 88px;
 }
 
 @keyframes card {
@@ -88,6 +83,10 @@ nav {
   margin-left: 5px;
 }
 
+.smallLogo{
+  display: none;
+}
+
 /* Menubar options */
 /* .a-navbar-menu-options{
     height: 400px;
@@ -108,4 +107,22 @@ nav {
   a {
     padding: 0 !important;
   }
+  .bigLogo{
+    display: none;
+  }
+  .smallLogo{
+    display: block;
+  }
+  .whitebgNav {
+    padding: 0 20px;
+  }
+  .menubar{
+    padding: 0 !important;
+  }
+  .explore{
+    font-size: .8rem !important;
+  }
+  /* .cover{
+    padding: 5px 0 5px !important;
+  } */
 }

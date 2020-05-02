@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./Navbar.css";
 import "../GlobalStyles/global.css";
 import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 
 import Logo from "../../images/logo.png";
+import sLogo from "../../images/slogo.png";
 import MenuBar from "../../images/menuicon.png";
 import DarkModeIcon from "../../images/darkmodeicon.png";
 import ArrowUp from "../../images/arrow_drop_up.svg";
@@ -40,7 +40,8 @@ class NavBar extends Component {
           <Navbar className="a-navbar-wrapper sticky-top whitebgNav montserrat">
             <Container>
               <Navbar.Brand className="a-navbar-logo-container" href="/">
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="" className="bigLogo"/>
+                <img src={sLogo} alt="" className="smallLogo"/>
               </Navbar.Brand>
                 <Nav className="mr-auto">
                 <Fade top>
@@ -77,7 +78,7 @@ class NavBar extends Component {
                   {this.state.menuToggle ? (
                     <img src={Close} alt="Close" />
                     ) : (
-                      <img src={MenuBar} alt="MenuBar" />
+                      <img src={MenuBar} alt="MenuBar"className="menubar" />
                       )}
                   <span>{this.state.menuToggle ? "Close" : "Menu"}</span>
                 </Nav.Link>
@@ -200,7 +201,7 @@ class NavBar extends Component {
                       <h4>Talk to us?</h4>
                       <p>
                         <span className="font-weight-bold">Email:</span>{" "}
-                        hello@aorthar.com
+                        <a href="mailto:hello@aorthar.com" className="green">hello@aorthar.com</a>
                       </p>
                       <p>
                         <span className="font-weight-bold">Phone:</span> +234(0)

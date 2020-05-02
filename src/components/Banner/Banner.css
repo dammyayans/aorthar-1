@@ -93,6 +93,11 @@ option {
         margin: 0 auto;
     }
 
+    .heroheroL,
+    .heroheroD{
+        margin: 0 auto;
+    }
+
     .a-banner {
         padding-top: 30%;
     }

@@ -114,18 +114,6 @@ export default function Form(props) {
                   </button>
                 </Col>
               </Row>
-
-              {/* <Row>
-                                <Col  md={{ span: 4, offset: 1 }}>Left</Col>
-                                <Col  md={{ span: 4, offset: 1 }}>Right</Col>
-                            </Row>
-                            <div className="form-group">
-                                <p>Contact Name</p>
-                            </div>
-                            <div className="form-group">
-                                <p>Email Address</p>
-                                <input type="email" placeholder="youremail@domain.com"/>
-                            </div> */}
             </form>
           </Col>
         </Row>

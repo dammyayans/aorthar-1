@@ -1,0 +1,11 @@
+.dyRegister{
+    padding: 12px 40px;
+    background-color: #076847;
+    border: 0;
+    color: #FFF;
+    border-radius: 7px;
+}
+
+.dyRegister:hover{
+    color: #FFF;
+}
