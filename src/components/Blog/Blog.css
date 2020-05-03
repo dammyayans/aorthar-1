@@ -14,6 +14,13 @@
 .a-blog-cards p{
     padding: 0% 4% 0%;
 }
+.a-blog-cards img{
+    width: 100%;
+}
+
+.a-blog-cards:hover img{
+    scale: 1.2;
+}
 
 @media screen and (max-width: 600px){
     .a-blog-wrapper{
@@ -25,6 +32,7 @@
         justify-content: center;
     }
     .a-blog-cards{
+        padding: 0;
         padding-bottom: 10%;
     }
 }

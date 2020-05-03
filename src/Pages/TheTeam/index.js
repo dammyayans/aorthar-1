@@ -1,19 +1,15 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
-import TheTeamBanner from "./TheTeamBanner";
-import TeamLeads from "./TeamLeads";
-import GetStarted from "../../components/GetStarted/GetStarted";
+import TheTeamBanner from './TheTeamBanner';
+import TeamLeads from './TeamLeads';
+import GetStarted from '../../components/GetStarted/GetStarted';
 export default function index() {
-  return (
-    <div className="whitebg">
-      <Helmet>
-        <meta charset="utf-8" />
-        <title>Aorthar | Meet The Team</title>
-      </Helmet>
-      <TheTeamBanner />
-      <TeamLeads />
-      <GetStarted />
-    </div>
-  );
+    return ( 
+        <Container fluid className="whitebg">
+            <TheTeamBanner />
+            <TeamLeads />
+            <GetStarted />
+        </Container>
+    )
 }

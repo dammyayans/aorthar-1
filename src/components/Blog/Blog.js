@@ -5,9 +5,9 @@ import './Blog.css';
 import '../GlobalStyles/global.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Independence from '../../images/independence.png';
-import Smes from '../../images/smes.png';
-import Branding from '../../images/branding.png';
+import Independence from '../../images/bg20.png';
+import Smes from '../../images/by20.png';
+import Branding from '../../images/n59.png';
 
 export default class Blog extends Component {
     render() {
@@ -15,7 +15,7 @@ export default class Blog extends Component {
             <Container fluid className="whitebg">
                 <Container>
                     <Row className="a-blog-wrapper">
-                        <Col md={{ span: 8, offset: 2 }} className="a-blog-heading">
+                        <Col md={{ span: 10, offset: 1 }} className="a-blog-heading">
                             <h2 className="bigText blackText">From the Blog</h2>    
                         </Col>
                         <Col md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1}} className="a-blog-card-holder">

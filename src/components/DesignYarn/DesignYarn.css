@@ -1,0 +1,21 @@
+.dyRegister{
+    padding: 12px 40px !important;
+    background-color: #076847;
+    border: 0;
+    color: #FFF;
+    border-radius: 7px;
+}
+
+.dyRegister:hover{
+    color: #FFF;
+}
+
+.dyBanner{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .dyBanner{
+        margin-top: 50px;
+    }
+}

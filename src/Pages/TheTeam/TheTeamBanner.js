@@ -1,13 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import "./style.css";
 
-import TeamBanner from "../../images/theteam.png";
+import './style.css';
+
+import { Container } from 'react-bootstrap';
+import TeamBanner from '../../images/theteam.png'
 
 export default function TheTeamBanner() {
-  return (
-    <div className="a-the-team-banner">
-      <img src={TeamBanner} alt="" />
-    </div>
-  );
+    return ( 
+        <Container fluid>
+           <div class="a-the-team-banner">
+               <img src={TeamBanner} alt=""/>
+           </div>
+        </Container>
+    )
 }

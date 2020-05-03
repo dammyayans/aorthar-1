@@ -8,6 +8,7 @@ import CaseStudy from "../../components/CaseStudy/CaseStudy";
 import GetStarted from "../../components/GetStarted/GetStarted";
 import OurPackage from "../../components/OurPackage/OurPackage";
 import Blog from "../../components/Blog/Blog";
+import DesignYarn from "../../components/DesignYarn/DesignYarn";
 
 export default function index() {
   return (
@@ -23,6 +24,7 @@ export default function index() {
       <GetStarted />
       <OurPackage />
       <Blog />
+      <DesignYarn />
       {/* <MenuOptions /> */}
       {/* <ExploreOptions /> */}
     </div>

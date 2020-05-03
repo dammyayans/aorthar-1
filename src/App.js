@@ -20,12 +20,10 @@ import OurWorks from "./Pages/OurWorks";
 import Confirmation from "./Pages/Confirmation";
 import Subscription from "./Pages/Subscription";
 import Form from "./Pages/Form";
-import Merch from "./Pages/Merch";
 import Apply from "./Pages/Apply";
+import Merch from "./Pages/Merch";
 
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-// import Confirmation from './Pages/sub';
-// import Response from './Pages/Response';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -81,6 +79,12 @@ body{
 .card{
   background-color: ${(props) =>
     props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
+}
+.a-banner-heroImgL{
+  display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")}
+}
+.a-banner-heroImgD{
+  display: ${(props) => (props.theme.mode === "dark" ? "block" : "none")}
 }
 `;
 function getInitialTheme() {

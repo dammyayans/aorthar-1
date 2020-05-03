@@ -5,12 +5,14 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "../GlobalStyles/global.css";
 import "./Banner.css";
 
-import HeroImgL from "../../images/Damola.png";
+import HeroImg from "../../images/heroImg.png";
+import HeroImgD from "../../images/heroImgD.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
 
 import Fade from "react-reveal/Fade";
+import ReactTypingEffect from 'react-typing-effect';
 
 export default class Banner extends Component {
   services = [
@@ -28,16 +30,17 @@ export default class Banner extends Component {
           <Row className="a-banner-wrapper justify-content-md-center">
             <Col md={4} sm={12} className="a-banner-heroImg">
               <Fade duration={1000} bottom>
-                <Row className=" d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
+                <Row className="d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroL">
+                  {/* <img src={p1} alt="Hero Img" className="a-banner-heroImg" /> */}
                   <img
-                    src={HeroImgL}
+                    src={HeroImg}
                     alt="Hero Img"
-                    className="a-banner-heroImg"
+                    className="a-banner-heroImgL"
                   />
                 </Row>
-                <Row className="justify-content-md-center heroheroD">
+                <Row className="d-flex mr-md-2 justify-content-md-end justify-content-sm-center heroheroD">
                   <img
-                    src={HeroImgL}
+                    src={HeroImgD}
                     alt="Hero Img"
                     className="a-banner-heroImgD"
                   />
@@ -47,8 +50,13 @@ export default class Banner extends Component {
             <Col md={6} className="a-banner-caption p">
               <Fade duration={1500} bottom>
                 <h2 className="bigText">
-                  <span className="blackText">Craft your</span>
-                  <span className="green"> Identity</span>
+                  <span className="blackText">Craft your </span>
+                  {/* <span className="green"> Identity</span> */}
+                  <span className="green">
+                    <ReactTypingEffect
+                      text = "Identity"
+                    />
+                  </span>
                 </h2>
                 <p className="smallestText blackText b4 montserrat pb-3">
                   We will help you deliver a unique outlook, communicate values
