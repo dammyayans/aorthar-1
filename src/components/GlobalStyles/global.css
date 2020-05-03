@@ -129,6 +129,9 @@ input{
 a:hover{
     text-decoration: none !important;
 }
+.a-banner-heroImgL{
+    margin: 0 auto;
+}
 
 
 @media screen and (max-width: 600px){

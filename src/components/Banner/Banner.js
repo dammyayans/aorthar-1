@@ -11,7 +11,7 @@ import HeroImgD from "../../images/heroImgD.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
-import Career from "../../images/tandc.png"
+import PlayIcon from "../../images/playIcon.png"
 
 import Fade from "react-reveal/Fade";
 import ReactTypingEffect from 'react-typing-effect';
@@ -72,7 +72,7 @@ export default class Banner extends Component {
                   <a href="/" className="gStarted extraSmallText green b7">Get Started</a>
 
                   <span class="pulse">
-                    <img src={Career} alt="" className="playButton"/>
+                    <img src={PlayIcon} alt="" className="playButton"/>
                   </span>                  
                 </div>
 
