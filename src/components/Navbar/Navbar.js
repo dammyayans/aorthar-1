@@ -204,8 +204,7 @@ class NavBar extends Component {
                         <a href="mailto:hello@aorthar.com" className="green">hello@aorthar.com</a>
                       </p>
                       <p>
-                        <span className="font-weight-bold">Phone:</span> +234(0)
-                        8144228160
+                        <span className="font-weight-bold">WhatsApp:</span> +234(0)8144228160
                       </p>
                     </div>
                   </Col>

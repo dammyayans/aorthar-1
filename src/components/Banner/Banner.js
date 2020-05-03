@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col, Dropdown } from "react-bootstrap";
+// import { Container, Row, Col, Dropdown } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import "../GlobalStyles/global.css";
 import "./Banner.css";
@@ -10,6 +11,7 @@ import HeroImgD from "../../images/heroImgD.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
+import Career from "../../images/tandc.png"
 
 import Fade from "react-reveal/Fade";
 import ReactTypingEffect from 'react-typing-effect';
@@ -63,8 +65,18 @@ export default class Banner extends Component {
                   that will pierce the heart of your targets, in a perfectly
                   relatable and compelling manner.
                 </p>
+                <div>
+                  {/* <span>
+                    Get Started
+                  </span> */}
+                  <a href="/" className="gStarted extraSmallText green b7">Get Started</a>
 
-                <Dropdown>
+                  <span class="pulse">
+                    <img src={Career} alt="" className="playButton"/>
+                  </span>                  
+                </div>
+
+                {/* <Dropdown>
                   <Dropdown.Toggle
                     className="service"
                     variant="default"
@@ -85,7 +97,7 @@ export default class Banner extends Component {
                       </Dropdown.Item>
                     ))}
                   </Dropdown.Menu>
-                </Dropdown>
+                </Dropdown> */}
               </Fade>
             </Col>
           </Row>

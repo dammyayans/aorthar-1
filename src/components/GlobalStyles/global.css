@@ -104,6 +104,10 @@
     color: #343434;
 }
 
+.mp0{
+    padding: 0 !important;
+}
+
 .toggleButton{
     z-index: 2000;
     position: fixed;

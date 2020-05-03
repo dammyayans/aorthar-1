@@ -12,7 +12,7 @@ export default class CaseStudy extends Component {
       <Container fluid className="whitebg">
         <Container className="a-case-study-wrapper a-case-study-wrapper">
           <Col md={{ span: 8, offset: 2 }}>
-            <Row className="pb-5">
+            <Row className="pb-5 mp-0">
               <Col xs={12} md={6}>
                 <Fade bottom>
                   <h2 className="bigText blackText">Case Study</h2>

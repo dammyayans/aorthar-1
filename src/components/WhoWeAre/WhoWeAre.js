@@ -70,7 +70,7 @@ export default class WhoWeAre extends Component {
               </Row>
             </Col>
             <Col md={2} sm={8} className="a-wwa-sideline">
-              <Flip top delay={800}>
+              <Flip top delay={600}>
                 <div>
                   <p className="smallText b7 blackText montserrat">
                     Find us on

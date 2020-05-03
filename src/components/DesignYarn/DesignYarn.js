@@ -30,7 +30,9 @@ export default class DesignYarn extends Component {
               </Col>
               <Col xs={12} md={6}>
                 <Fade bottom delay={200}>
-                  <img src={DY} alt="" className="dyBanner" />
+                  <a href="https://bit.ly/designyarnREG">
+                    <img src={DY} alt="" className="dyBanner" />
+                  </a>
                 </Fade>
               </Col>
             </Row>
