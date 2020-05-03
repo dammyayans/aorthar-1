@@ -5,7 +5,6 @@ import Fade from "react-reveal/Fade";
 import "./OurPackage.css";
 import "../GlobalStyles/global.css";
 import { Col } from "react-bootstrap";
-import Quotes from "../../images/quote.svg";
 
 export default class designQuotes extends Component {
   state = {
@@ -60,7 +59,6 @@ export default class designQuotes extends Component {
     return (
       <Col xs={12} md={12} className="px-0 a-our-packages-quotes whitebg">
         <Col className="justify-content-md-center">
-          <img src={Quotes} alt="Quotes" className="quotes" />
           <Fade bottom spy={this.state.change} duration={600}>
             <p className="quoteText">{this.state.quote.quote}</p>
           </Fade>

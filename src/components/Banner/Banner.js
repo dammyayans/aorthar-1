@@ -103,31 +103,32 @@ export default class Banner extends Component {
           </Row>
         </Container>
         <Container>
-          <Row className="justify-content-md-center a-banner-trusted-brands whitebg">
-            <Col md={3} xs={12} className="a-banner-brands-caption blackText">
-              <div className="montserrat brands-sm">
-                These brands have trusted us --
-              </div>
-            </Col>
-            <Col md={4}>
-              <img
-                src={Company1}
-                alt="Company1"
-                className="a-banner-company-img"
-              />
-              <img
-                src={Company2}
-                alt="Company2"
-                className="a-banner-company-img"
-              />
-              <img
-                src={Company3}
-                alt="Company3"
-                className="a-banner-company-img"
-              />
-            </Col>
-          </Row>
+          
         </Container>
+        <Row className="justify-content-md-center a-banner-trusted-brands greybg">
+          <Col md={3} xs={12} className="a-banner-brands-caption blackText">
+            <div className="montserrat brands-sm">
+              These brands have trusted us --
+            </div>
+          </Col>
+          <Col md={4}>
+            <img
+              src={Company1}
+              alt="Company1"
+              className="a-banner-company-img"
+            />
+            <img
+              src={Company2}
+              alt="Company2"
+              className="a-banner-company-img"
+            />
+            <img
+              src={Company3}
+              alt="Company3"
+              className="a-banner-company-img"
+            />
+          </Col>
+        </Row>
         <Row className="a-banner-pattern"></Row>
       </Container>
     );

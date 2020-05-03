@@ -7,6 +7,7 @@ import OurServices from "../../components/OurServices/OurServices";
 import CaseStudy from "../../components/CaseStudy/CaseStudy";
 import GetStarted from "../../components/GetStarted/GetStarted";
 import OurPackage from "../../components/OurPackage/OurPackage";
+import OP from "../../components/OP/OurPackage";
 import Blog from "../../components/Blog/Blog";
 import DesignYarn from "../../components/DesignYarn/DesignYarn";
 
@@ -23,6 +24,7 @@ export default function index() {
       <CaseStudy />
       <GetStarted />
       <OurPackage />
+      <OP/>
       <Blog />
       <DesignYarn />
       {/* <MenuOptions /> */}
