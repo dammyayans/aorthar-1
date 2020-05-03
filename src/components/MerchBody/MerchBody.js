@@ -9,7 +9,8 @@ import "./style.css";
 const MerchBody = () => {
   const [location, setLocation] = useState("");
   const [delivery, setDelivery] = useState(true);
-  const [price, setprice] = useState(3000);
+  // const [price, setprice] = useState(3000);
+  const [price] = useState(3000);
   const [total, setTotal] = useState(0);
   useEffect(() => {
     let dfee = 1000;
