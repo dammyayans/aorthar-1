@@ -4,7 +4,7 @@ import storage from "local-storage-fallback";
 
 import "./App.css";
 import "./components/Navbar/Navbar.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import { Container } from "react-bootstrap";
 
@@ -21,6 +21,7 @@ import Confirmation from "./Pages/Confirmation";
 import Subscription from "./Pages/Subscription";
 import Form from "./Pages/Form";
 import Apply from "./Pages/Apply";
+import Merch from "./Pages/Merch";
 
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 
@@ -80,10 +81,10 @@ body{
     props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
 }
 .a-banner-heroImgL{
-  display: ${(props) => props.theme.mode === "dark" ? "none" : "block" }
+  display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")}
 }
 .a-banner-heroImgD{
-  display: ${(props) => props.theme.mode === "dark" ? "block" : "none" }
+  display: ${(props) => (props.theme.mode === "dark" ? "block" : "none")}
 }
 `;
 function getInitialTheme() {
@@ -110,17 +111,19 @@ export default function App() {
               }
             />
             <Switch>
-              <Route exact path="/Subscription" component={Subscription} />
+              <Route path="/Subscription" component={Subscription} />
 
-              <Route exact path="/Confirmation" component={Confirmation} />
+              <Route path="/Confirmation" component={Confirmation} />
 
-              <Route exact path="/OurWorks" component={OurWorks} />
+              <Route path="/OurWorks" component={OurWorks} />
 
-              <Route exact path="/TheTeam" component={TheTeam} />
+              <Route path="/TheTeam" component={TheTeam} />
 
-              <Route exact path="/Form:service" component={Form} />
+              <Route path="/Merch" component={Merch} />
 
-              <Route exact path="/Apply" component={Apply} />
+              <Route path="/Form:service" component={Form} />
+
+              <Route path="/Apply" component={Apply} />
 
               {/* <Route component={ErrorPage} /> */}
 
