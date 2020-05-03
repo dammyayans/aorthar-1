@@ -50,7 +50,7 @@ class GetStarted extends Component {
         // "hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle",
         "I’ve known Damola for only a short time What makes me like him and really connect with him is the simplicity with which he does his designs. Simple and yet classy. I would recommend him anytime anyday",
       image: Placeholder3,
-      author: "Mike Tyson",
+      author: "Oni Benjamin",
     },
   ];
   randomQuoteGenerator = () =>
