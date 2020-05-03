@@ -40,10 +40,10 @@ class NavBar extends Component {
           <Navbar className="a-navbar-wrapper sticky-top whitebgNav montserrat">
             <Container>
               <Navbar.Brand className="a-navbar-logo-container" href="/">
-                <img src={Logo} alt="" className="bigLogo"/>
-                <img src={sLogo} alt="" className="smallLogo"/>
+                <img src={Logo} alt="" className="bigLogo" />
+                <img src={sLogo} alt="" className="smallLogo" />
               </Navbar.Brand>
-                <Nav className="mr-auto">
+              <Nav className="mr-auto">
                 <Fade top>
                   <Nav.Link onClick={this.setExploreToggle} className="explore">
                     Explore
@@ -56,33 +56,33 @@ class NavBar extends Component {
                 </Fade>
               </Nav>
               <Fade top>
-              <div className="a-navbar-others">
-                <Nav.Link className="a-navbar-dm blackText">
-                  <img
-                    src={DarkModeIcon}
-                    alt="MenuBar"
-                    className="toggleMode"
-                    onClick={() => {
-                      this.setState({ modeToggle: !this.state.modeToggle });
-                      this.props.onClick();
-                    }}
-                  />
+                <div className="a-navbar-others">
+                  <Nav.Link className="a-navbar-dm blackText">
+                    <img
+                      src={DarkModeIcon}
+                      alt="MenuBar"
+                      className="toggleMode"
+                      onClick={() => {
+                        this.setState({ modeToggle: !this.state.modeToggle });
+                        this.props.onClick();
+                      }}
+                    />
                     <span>
-                        {this.state.modeToggle ? "Dark Mode" : "Light Mode"}
+                      {this.state.modeToggle ? "Dark Mode" : "Light Mode"}
                     </span>
                   </Nav.Link>
-                <Nav.Link
-                  className="a-navbar-menubar blackText text-animate"
-                  onClick={this.setMenuToggle}
+                  <Nav.Link
+                    className="a-navbar-menubar blackText text-animate"
+                    onClick={this.setMenuToggle}
                   >
-                  {this.state.menuToggle ? (
-                    <img src={Close} alt="Close" />
+                    {this.state.menuToggle ? (
+                      <img src={Close} alt="Close" />
                     ) : (
-                      <img src={MenuBar} alt="MenuBar"className="menubar" />
-                      )}
-                  <span>{this.state.menuToggle ? "Close" : "Menu"}</span>
-                </Nav.Link>
-              </div>
+                      <img src={MenuBar} alt="MenuBar" className="menubar" />
+                    )}
+                    <span>{this.state.menuToggle ? "Close" : "Menu"}</span>
+                  </Nav.Link>
+                </div>
               </Fade>
             </Container>
           </Navbar>
@@ -97,19 +97,19 @@ class NavBar extends Component {
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" 
-                          href="/apply"
-                          >
+                          <Nav.Link className="cover" href="/apply">
                             Career
                           </Nav.Link>
-                          <Nav.Link className="cover" 
-                          href="https://bit.ly/DnEmoski" 
-                          target="blank"
+                          <Nav.Link
+                            className="cover"
+                            href="https://bit.ly/DnEmoski"
+                            target="blank"
                           >
                             Buy our Design Course
                           </Nav.Link>
-                          <Nav.Link className="cover" 
-                          href="https://bit.ly/designyarnREG"
+                          <Nav.Link
+                            className="cover"
+                            href="https://bit.ly/designyarnREG"
                           >
                             Design Yarn
                           </Nav.Link>
@@ -142,10 +142,8 @@ class NavBar extends Component {
                         <div className="mb-3">
                           <Nav.Link className="cover" href="#">
                             Get Started
-                          </Nav.Link>                          
-                          <Nav.Link className="cover" >
-                            Placeholder
                           </Nav.Link>
+                          <Nav.Link className="cover">Placeholder</Nav.Link>
                           <Nav.Link className="cover" href="/subscription">
                             Design Subscription
                           </Nav.Link>
@@ -157,7 +155,7 @@ class NavBar extends Component {
                           <Nav.Link className="cover" href="/ourworks">
                             Our Process
                           </Nav.Link>
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/merch">
                             {/* Get Our Merch */}
                             Rep our Brand
                           </Nav.Link>
@@ -201,7 +199,9 @@ class NavBar extends Component {
                       <h4>Talk to us?</h4>
                       <p>
                         <span className="font-weight-bold">Email:</span>{" "}
-                        <a href="mailto:hello@aorthar.com" className="green">hello@aorthar.com</a>
+                        <a href="mailto:hello@aorthar.com" className="green">
+                          hello@aorthar.com
+                        </a>
                       </p>
                       <p>
                         <span className="font-weight-bold">WhatsApp:</span> +234(0)8144228160
