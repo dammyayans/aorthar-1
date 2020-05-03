@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -15,17 +15,25 @@ import Erica from "../../images/Erica.png";
 import ArrowDown from "../../images/arrow_drop_down.svg";
 
 export default function TeamLeads() {
-  const associates = [
-    { name: "Uwa Benjamin", title: "Front End Dev", img: Damola, index: 1 },
-    { name: "Deji Dev", title: "Front End Dev", img: Damola, index: 2 },
-    { name: "Blessing Okebe", title: "Front End Dev", img: Damola, index: 3 },
-    { name: "Ibukun Neema", title: "Front End Dev", img: Pelumi, index: 4 },
-    { name: "Gideon", title: "Front End Dev", img: Pelumi, index: 5 },
-    { name: "Alabi Emmanuel", title: "Front End Dev", img: Pelumi, index: 6 },
-    { name: "Fola", title: "Front End Dev", img: Naomi, index: 7 },
-    { name: "Nancy", title: "Front End Dev", img: Naomi, index: 8 },
-    { name: "Mubarak", title: "Front End Dev", img: Naomi, index: 8 },
-  ];
+  const [associates, setAssociates] = useState([
+    { name: "Uwa Benjamin", title: "Front End Dev", img: Pelumi },
+    { name: "Deji Dev", title: "Back End Dev", img: Erica },
+    { name: "Blessing Okebe", title: "Front End Des", img: Damola },
+    { name: "Ibukun Neema", title: "Content Dev", img: Naomi },
+    { name: "Gideon", title: "Full Stack Dev", img: Pelumi },
+    { name: "Alabi Emmanuel", title: "Content Dev", img: Erica },
+    { name: "Fola", title: "Back End Dev", img: Damola },
+    { name: "Nancy", title: "Full Stack Dev", img: Erica },
+    { name: "Mubarak", title: "Front End Dev", img: Naomi },
+  ]);
+  const changeIndex = (associate) => {
+    let indexOfNew = associates.indexOf(associate);
+    let newArray = [...associates];
+    let temp = newArray[indexOfNew];
+    newArray[indexOfNew] = newArray[0];
+    newArray[0] = temp;
+    setAssociates(newArray);
+  };
   return (
     <div className="a-team-leads">
       <Container>
@@ -103,13 +111,10 @@ export default function TeamLeads() {
             <Row>
               <Col xs={12} md={4}>
                 <h2 className="bigText blackText">Associates</h2>
-                {associates
-                  .filter((associate) => associate.index === 1)
-                  .map((associate, i) => (
-                    <div md={6} key={i} className="a-blog-cards mt-5">
-                      <img src={associate.img} alt="" className="img pb-1" />
-                    </div>
-                  ))}
+
+                <div md={6} className="a-blog-cards mt-5">
+                  <img src={associates[0].img} alt="" className="img pb-1" />
+                </div>
               </Col>
               <Col xs={12} md={8}>
                 <div className="smallestText blackText b4 montserrat">
@@ -119,33 +124,30 @@ export default function TeamLeads() {
                   Idea Innovators and Brnad Steategist.
                 </div>
                 <Row className="mt-5">
-                  {associates
-                    .filter((associate) => associate.index === 1)
-                    .map((associate, i) => (
-                      <Col md={6} key={i} className="mr-3">
-                        <div className="d-flex justify-content-space">
-                          <p className=" blackText bold">{associate.name}</p>
-                          <span></span>
-                        </div>
-                        <span className="smallestText blackText b4">
-                          {associate.title}
-                        </span>
-                      </Col>
-                    ))}
-                  {associates
-                    .filter((associate) => associate.index !== 1)
-                    .map((associate, i) => (
-                      <Col
-                        md={6}
-                        key={i}
-                        className="d-flex justify-content-space"
+                  <Col md={6} className="mr-3 mb-3">
+                    <div className="d-flex justify-content-space">
+                      <p className=" blackText bold mb-0">
+                        {associates[0].name}
+                      </p>
+                      <span></span>
+                    </div>
+                    <span className="smallestText blackText b4">
+                      {associates[0].title}
+                    </span>
+                  </Col>
+                  {associates.slice(1, 9).map((associate, i) => (
+                    <Col md={6} key={i}>
+                      <div
+                        className="d-flex cursor-pointer justify-content-space"
+                        onClick={() => changeIndex(associate)}
                       >
                         <p className=" blackText bold">{associate.name}</p>
                         <span>
                           <img src={ArrowDown} alt="associate" />
                         </span>
-                      </Col>
-                    ))}
+                      </div>
+                    </Col>
+                  ))}
                 </Row>
               </Col>
             </Row>
