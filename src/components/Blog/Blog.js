@@ -38,7 +38,7 @@ export default class Blog extends Component {
                                     <a href="https://medium.com/@aorthar/you-think-youre-a-designer-1d5634e7742b?source=---------7------------------" target="blank">
                                         <img src={Smes} alt=""/>
                                         <div className="a-blog-cards-heading smallBoldText green">What Defines a Designer?</div>
-                                        <p className="smallestText montserrat blackText">How not to be a "Whack Designer"</p>
+                                        <p className="smallestText montserrat blackText">How not to be a "Wack Designer"</p>
                                     </a>
                                 </Col>
                             </Row>

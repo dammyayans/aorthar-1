@@ -57,7 +57,7 @@ export default class designQuotes extends Component {
   }
   render() {
     return (
-      <Col xs={12} md={12} className="px-0 a-our-packages-quotes whitebg">
+      <Col xs={12} md={12} className="px-0 a-our-packages-quotes">
         <Col className="justify-content-md-center">
           <Fade bottom spy={this.state.change} duration={600}>
             <p className="quoteText">{this.state.quote.quote}</p>

@@ -40,13 +40,15 @@ class GetStarted extends Component {
     },
     {
       quote:
-        "If you are above twenty-one(21) in life and you've not started speaking in tongues, ha! my brother, your life is a joke . blah blah blah blah blah blah blah blah",
+      "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with", 
+      // "If you are above twenty-one(21) in life and you've not started speaking in tongues, ha! my brother, your life is a joke . blah blah blah blah blah blah blah blah",
       image: Placeholder2,
-      author: "Pastor Unknown",
+      author: "Kunle Kiitan",
     },
     {
       quote:
-        "hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle",
+        // "hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle",
+        "I’ve known Damola for only a short time What makes me like him and really connect with him is the simplicity with which he does his designs. Simple and yet classy. I would recommend him anytime anyday",
       image: Placeholder3,
       author: "Mike Tyson",
     },
