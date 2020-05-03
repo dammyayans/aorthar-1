@@ -2,21 +2,21 @@
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .mediumText{
     font-size: 1.5rem;
     line-height: 1.4;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .quoteText{
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .montserrat{

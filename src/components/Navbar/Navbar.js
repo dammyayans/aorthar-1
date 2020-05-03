@@ -204,7 +204,13 @@ class NavBar extends Component {
                         </a>
                       </p>
                       <p>
-                        <span className="font-weight-bold">WhatsApp:</span> +234(0)8144228160
+                        {/* <span className="font-weight-bold">WhatsApp:</span> +234(0)8144228160*/}
+                        {/* <span> */}
+                        <a href="whatsapp://send/?phone=23480144228160&amp;text=Hello%20Aorthar!" target="blank" className="">
+                          <span className="font-weight-bold">WhatsApp:</span>{" "}
+                          <span className="green">080144228160</span>
+                        </a>
+                        {/* </span> */}
                       </p>
                     </div>
                   </Col>
