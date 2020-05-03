@@ -111,19 +111,19 @@ export default function App() {
               }
             />
             <Switch>
-              <Route exact path="/Subscription" component={Subscription} />
+              <Route path="/Subscription" component={Subscription} />
 
-              <Route exact path="/Confirmation" component={Confirmation} />
+              <Route path="/Confirmation" component={Confirmation} />
 
-              <Route exact path="/OurWorks" component={OurWorks} />
+              <Route path="/OurWorks" component={OurWorks} />
 
-              <Route exact path="/TheTeam" component={TheTeam} />
+              <Route path="/TheTeam" component={TheTeam} />
 
-              <Route exact path="/Merch" component={Merch} />
+              <Route path="/Merch" component={Merch} />
 
-              <Route exact path="/Form:service" component={Form} />
+              <Route path="/Form:service" component={Form} />
 
-              <Route exact path="/Apply" component={Apply} />
+              <Route path="/Apply" component={Apply} />
 
               {/* <Route component={ErrorPage} /> */}
 
