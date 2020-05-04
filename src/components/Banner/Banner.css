@@ -36,6 +36,8 @@ img.a-banner-company-img {
 .a-banner-trusted-brands {
     padding: 2% 0%;
     font-weight: bold;
+    position: relative;
+    z-index: 1;
 }
 
 .a-banner-brands-caption {
@@ -92,6 +94,32 @@ option {
     border: 1px solid #076847;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.greenText {
+    color: #076847 !important;
+
+}
+
+.dropli {
+    width: 100%;
+    box-sizing: content-box;
+    padding: 8px 0;
+}
+
+.dropli:hover {
+    opacity: 0.8;
+}
+
+.dropmenu {
+    padding: 16px;
+    box-sizing: content-box;
+    z-index: 2 !important;
+}
+
+.dropdownContainer {
+    position: relative;
+    z-index: 3;
 }
 
 /* .playButton{
