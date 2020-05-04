@@ -73,12 +73,12 @@ const Footer = lazy(
       setTimeout(() => resolve(import("./components/Footer/Footer")), 4200)
     )
 );
-// const Courses = lazy(
-//   () =>
-//     new Promise((resolve, reject) =>
-//       setTimeout(() => resolve(import("./Pages/Courses/Courses")), 4200)
-//     )
-// );
+const Courses = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Courses/Courses")), 4000)
+    )
+);
 const loading = (
   <div
     style={{
@@ -154,12 +154,11 @@ const MerchSusp = () => (
   </Suspense>
 );
 
-// const Courses = () => (
-//   <Suspense fallback={loading}>
-//     <Courses />
-//   </Suspense>
-// );
-
+const CoursesSusp = () => (
+  <Suspense fallback={loading}>
+    <Courses />
+  </Suspense>
+);
 
 const GlobalStyle = createGlobalStyle`
 
@@ -217,10 +216,12 @@ body{
     props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
 }
 .a-banner-heroImgL{
-  display: ${(props) => (props.theme.mode === "dark" ? "none !important" : "block !important")}
+  display: ${(props) =>
+    props.theme.mode === "dark" ? "none !important" : "block !important"}
 }
 .a-banner-heroImgD{
-  display: ${(props) => (props.theme.mode === "dark" ? "block !important" : "none !important")}
+  display: ${(props) =>
+    props.theme.mode === "dark" ? "block !important" : "none !important"}
 }
 `;
 function getInitialTheme() {
@@ -263,8 +264,8 @@ export default function App() {
 
               {/* <Route component={ErrorPage} /> */}
 
-              {/* <Route exact path="/Courses" component={Courses} /> */}
-              
+              <Route path="/Courses" component={CoursesSusp} />
+
               <Route exact path="/" component={HomeSusp} />
             </Switch>
             <Suspense fallback={""}>

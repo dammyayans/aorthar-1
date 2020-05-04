@@ -22,7 +22,7 @@ const SliderContainer = styled.div`
   position: relative;
   overflow: hidden;
   height: 50px;
-  width: 120px;
+  width: 100%;
 `;
 const CarouselUI = ({ children }) => (
   <SliderContainer>{children}</SliderContainer>
@@ -90,7 +90,7 @@ export default class Banner extends Component {
               <Fade duration={1500} bottom>
                 <h2 className="bigText">
                   <span className="blackText">Craft your </span>
-                  <br className="break"/>
+                  <br className="break" />
                   {/* <span className="green"> Identity</span> */}
                   <span className="green">
                     <ReactTypingEffect
@@ -150,27 +150,81 @@ export default class Banner extends Component {
             </div>
           </Col>
           <Col md={4}>
-            <Carousel defaultWait={3000}>
-              <Slide left duration={2000}>
-                <img
-                  src={Company1}
-                  alt="Company1"
-                  className="a-banner-company-img"
-                />
+            <Carousel defaultWait={4000}>
+              <Slide left duration={3000}>
+                <div>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company1}
+                      alt="Company1"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company1}
+                      alt="Company1"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company2}
+                      alt="Company2"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                </div>
               </Slide>
-              <Slide left duration={2000}>
-                <img
-                  src={Company2}
-                  alt="Company2"
-                  className="a-banner-company-img"
-                />
+              <Slide left duration={3000}>
+                <div>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company1}
+                      alt="Company1"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company2}
+                      alt="Company2"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company3}
+                      alt="Company3"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                </div>
               </Slide>
-              <Slide left duration={2000}>
-                <img
-                  src={Company3}
-                  alt="Company3"
-                  className="a-banner-company-img"
-                />
+              <Slide left duration={3000}>
+                <div>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company1}
+                      alt="Company1"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company2}
+                      alt="Company2"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company3}
+                      alt="Company3"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                </div>
               </Slide>
             </Carousel>
           </Col>
