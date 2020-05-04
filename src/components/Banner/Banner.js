@@ -55,7 +55,7 @@ export default class Banner extends Component {
                   <span className="blackText">Craft your </span>
                   {/* <span className="green"> Identity</span> */}
                   <span className="green">
-                    <ReactTypingEffect text = {["Identity", "Baddass"]} />
+                    <ReactTypingEffect text = {["Identity", "Message", "Brand"]} speed = {150} eraseDelay = {700} typingDelay = {300} />
                   </span>
                 </h2>
                 <p className="smallestText blackText b4 montserrat pb-3">
