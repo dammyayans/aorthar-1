@@ -204,10 +204,10 @@ body{
     props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
 }
 .a-banner-heroImgL{
-  display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")}
+  display: ${(props) => (props.theme.mode === "dark" ? "none !important" : "block !important")}
 }
 .a-banner-heroImgD{
-  display: ${(props) => (props.theme.mode === "dark" ? "block" : "none")}
+  display: ${(props) => (props.theme.mode === "dark" ? "block !important" : "none !important")}
 }
 `;
 function getInitialTheme() {

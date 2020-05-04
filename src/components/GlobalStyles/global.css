@@ -133,6 +133,9 @@ a:hover{
     margin: 0 auto;
 }
 
+.break{
+    display: none;
+}
 
 @media screen and (max-width: 600px){
     .bigGreenText{
@@ -147,4 +150,7 @@ a:hover{
         font-weight: 900;
         font-family: 'Montserrat', sans-serif;
     } 
+    .break{
+        display: block;
+    }
 }

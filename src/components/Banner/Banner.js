@@ -90,7 +90,7 @@ export default class Banner extends Component {
               <Fade duration={1500} bottom>
                 <h2 className="bigText">
                   <span className="blackText">Craft your </span>
-                  <br />
+                  <br className="break"/>
                   {/* <span className="green"> Identity</span> */}
                   <span className="green">
                     <ReactTypingEffect
