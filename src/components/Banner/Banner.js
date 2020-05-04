@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
-// import { Container, Row, Col, Dropdown } from "react-bootstrap";
-import { Container, Row, Col } from "react-bootstrap";
-
+import { Container, Row, Col, Modal } from "react-bootstrap";
 import "../GlobalStyles/global.css";
 import "./Banner.css";
 
@@ -12,11 +10,28 @@ import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
 import PlayIcon from "../../images/playIcon.png";
+import video from "../../images/Aorthar Playback.mp4";
 
+import makeCarousel from "react-reveal/makeCarousel";
+import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
+import styled from "styled-components";
 import ReactTypingEffect from "react-typing-effect";
 
+const SliderContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 120px;
+`;
+const CarouselUI = ({ children }) => (
+  <SliderContainer>{children}</SliderContainer>
+);
+const Carousel = makeCarousel(CarouselUI);
 export default class Banner extends Component {
+  state = {
+    play: false,
+  };
   services = [
     "Branding and Design",
     "UI/UX",
@@ -25,9 +40,31 @@ export default class Banner extends Component {
     "Motion Graphics",
     "Software Development",
   ];
+  handleClose = () => this.setState({ play: false });
+  handleShow = () => this.setState({ play: true });
   render() {
     return (
       <Container fluid className="whitebg">
+        <Modal
+          dialogClassName="modal-90w"
+          aria-labelledby="example-custom-modal-styling-title"
+          size="lg"
+          show={this.state.play}
+          onHide={this.handleClose}
+          centered
+        >
+          <Modal.Header closeButton className="greybg">
+            <Modal.Title>Aorthar</Modal.Title>
+          </Modal.Header>
+          <Modal.Body className="greybg">
+            <video
+              src={video}
+              autoPlay
+              controls
+              style={{ height: "100%", width: "100%" }}
+            />
+          </Modal.Body>
+        </Modal>
         <Container className="a-banner">
           <Row className="a-banner-wrapper justify-content-md-center">
             <Col md={4} sm={12} className="a-banner-heroImg">
@@ -74,7 +111,7 @@ export default class Banner extends Component {
                     Get Started
                   </a>
 
-                  <span class="pulse">
+                  <span className="pulse" onClick={this.handleShow}>
                     <img src={PlayIcon} alt="" className="playButton" />
                   </span>
                 </div>
@@ -113,21 +150,29 @@ export default class Banner extends Component {
             </div>
           </Col>
           <Col md={4}>
-            <img
-              src={Company1}
-              alt="Company1"
-              className="a-banner-company-img"
-            />
-            <img
-              src={Company2}
-              alt="Company2"
-              className="a-banner-company-img"
-            />
-            <img
-              src={Company3}
-              alt="Company3"
-              className="a-banner-company-img"
-            />
+            <Carousel defaultWait={3000}>
+              <Slide left duration={2000}>
+                <img
+                  src={Company1}
+                  alt="Company1"
+                  className="a-banner-company-img"
+                />
+              </Slide>
+              <Slide left duration={2000}>
+                <img
+                  src={Company2}
+                  alt="Company2"
+                  className="a-banner-company-img"
+                />
+              </Slide>
+              <Slide left duration={2000}>
+                <img
+                  src={Company3}
+                  alt="Company3"
+                  className="a-banner-company-img"
+                />
+              </Slide>
+            </Carousel>
           </Col>
         </Row>
         <Row className="a-banner-pattern"></Row>
