@@ -55,7 +55,7 @@ export default class Banner extends Component {
                   <span className="blackText">Craft your </span>
                   {/* <span className="green"> Identity</span> */}
                   <span className="green">
-                    <ReactTypingEffect text={["Identity", "Baddass"]} />
+                    <ReactTypingEffect text = {["Identity", "Message", "Brand"]} speed = {150} eraseDelay = {700} typingDelay = {300} />
                   </span>
                 </h2>
                 <p className="smallestText blackText b4 montserrat pb-3">
@@ -64,9 +64,6 @@ export default class Banner extends Component {
                   relatable and compelling manner.
                 </p>
                 <div>
-                  {/* <span>
-                    Get Started
-                  </span> */}
                   <a href="/" className="gStarted extraSmallText green b7">
                     Get Started
                   </a>
@@ -104,8 +101,8 @@ export default class Banner extends Component {
         </Container>
         <Container></Container>
         <Row className="justify-content-md-center a-banner-trusted-brands greybg">
-          <Col md={3} xs={12} className="a-banner-brands-caption blackText brands-sm">
-            <div className="montserrat ">
+          <Col md={3} xs={12} className="a-banner-brands-caption blackText">
+            <div className="montserrat brands-sm">
               These brands have trusted us --
             </div>
           </Col>
