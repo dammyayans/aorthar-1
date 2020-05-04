@@ -24,12 +24,42 @@ const TheTeam = lazy(
       setTimeout(() => resolve(import("./Pages/TheTeam")), 3000)
     )
 );
-const OurWorks = lazy(() => import("./Pages/OurWorks"));
-const Confirmation = lazy(() => import("./Pages/Confirmation"));
-const Subscription = lazy(() => import("./Pages/Subscription"));
-const Form = lazy(() => import("./Pages/Form"));
-const Apply = lazy(() => import("./Pages/Apply"));
-const Merch = lazy(() => import("./Pages/Merch"));
+const OurWorks = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/OurWorks")), 3000)
+    )
+);
+const Confirmation = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Confirmation")), 3000)
+    )
+);
+const Subscription = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Subscription")), 3000)
+    )
+);
+const Form = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Form")), 3000)
+    )
+);
+const Apply = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Apply")), 3000)
+    )
+);
+const Merch = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Merch")), 3000)
+    )
+);
 
 const loading = (
   <div
@@ -66,32 +96,32 @@ const TheTeamSusp = () => (
     <TheTeam />
   </Suspense>
 );
-const OurWorksSusp = (
+const OurWorksSusp = () => (
   <Suspense fallback={loading}>
     <OurWorks />
   </Suspense>
 );
-const ConfirmationSusp = (
+const ConfirmationSusp = () => (
   <Suspense fallback={loading}>
     <Confirmation />
   </Suspense>
 );
-const SubscriptionSusp = (
+const SubscriptionSusp = () => (
   <Suspense fallback={loading}>
     <Subscription />
   </Suspense>
 );
-const FormSusp = (
+const FormSusp = () => (
   <Suspense fallback={loading}>
     <Form />
   </Suspense>
 );
-const ApplySusp = (
+const ApplySusp = () => (
   <Suspense fallback={loading}>
     <Apply />
   </Suspense>
 );
-const MerchSusp = (
+const MerchSusp = () => (
   <Suspense fallback={loading}>
     <Merch />
   </Suspense>
