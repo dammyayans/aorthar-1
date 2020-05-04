@@ -16,7 +16,7 @@ export default class Blog extends Component {
                 <Container>
                     <Row className="a-blog-wrapper">
                         <Col md={{ span: 10, offset: 1 }} className="a-blog-heading">
-                            <h2 className="bigText blackText montserrat">From the Blog</h2>    
+                            <p className="bigText blackText montserrat">From the Blog</p>    
                         </Col>
                         <Col md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1}} className="a-blog-card-holder">
                             <Row>
