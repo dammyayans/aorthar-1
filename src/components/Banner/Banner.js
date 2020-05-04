@@ -53,9 +53,15 @@ export default class Banner extends Component {
               <Fade duration={1500} bottom>
                 <h2 className="bigText">
                   <span className="blackText">Craft your </span>
+                  <br />
                   {/* <span className="green"> Identity</span> */}
                   <span className="green">
-                    <ReactTypingEffect text = {["Identity", "Message", "Brand"]} speed = {150} eraseDelay = {700} typingDelay = {300} />
+                    <ReactTypingEffect
+                      text={["Identity", "Message", "Brand"]}
+                      speed={150}
+                      eraseDelay={700}
+                      typingDelay={300}
+                    />
                   </span>
                 </h2>
                 <p className="smallestText blackText b4 montserrat pb-3">
