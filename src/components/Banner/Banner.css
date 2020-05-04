@@ -11,16 +11,13 @@
 .a-banner-heroImg,
 .a-banner-heroImgD {
     height: 200%;
-    /* margin: 0 auto; */
-}
-
-.a-banner-heroImgD{
-    display: none;
     margin: 0 auto;
 }
 
+
+
 .heroheroL,
-.heroheroD{
+.heroheroD {
     margin: 0 auto !important;
 }
 
@@ -90,7 +87,7 @@ option {
     height: 150px;
 }
 
-.gStarted{
+.gStarted {
     padding: 10px !important;
     border: 1px solid #076847;
     border-radius: 4px;
@@ -110,19 +107,22 @@ option {
     animation: pulse 2s infinite;
     margin-left: 20px;
 }
+
 .pulse:hover {
     animation: none;
 }
-  
+
 @keyframes pulse {
     0% {
         -moz-box-shadow: 0 0 0 0 rgba(10, 138, 95, 0.8);
         box-shadow: 0 0 0 0 rgba(10, 138, 95, 0.8);
     }
+
     70% {
-        -moz-box-shadow: 0 0 0 30px rgba(204,169,44, 0);
-        box-shadow: 0 0 0 30px rgba(204,169,44, 0);
+        -moz-box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
     }
+
     100% {
         -moz-box-shadow: 0 0 0 0 rgba(44, 204, 116 0.5);
         box-shadow: 0 0 0 0 rgba(44, 204, 116, 0.5);
@@ -131,19 +131,21 @@ option {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 600px) {
-    
+
     .a-banner-wrapper {
         margin-top: 15%;
         margin: 0 auto;
     }
+
     .a-banner-pattern {
         background-image: url('../../images/pattern.png');
         background-repeat: repeat-x;
         height: 95px;
         /* margin-top: 30px; */
     }
+
     .heroheroL,
-    .heroheroD{
+    .heroheroD {
         margin: 0 auto;
     }
 
@@ -166,7 +168,7 @@ option {
         width: 100%;
     }
 
-    .p{
+    .p {
         padding-top: 20px;
     }
 
@@ -187,9 +189,10 @@ option {
         padding-top: 5%;
     }
 
-    .a-banner-brands-caption div{
+    .a-banner-brands-caption div {
         padding-left: 8%;
     }
+
     .a-banner-trusted-brands {
         padding: 40px 0 40px;
     }
