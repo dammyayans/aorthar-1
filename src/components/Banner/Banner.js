@@ -11,10 +11,10 @@ import HeroImgD from "../../images/heroImgD.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
-import PlayIcon from "../../images/playIcon.png"
+import PlayIcon from "../../images/playIcon.png";
 
 import Fade from "react-reveal/Fade";
-import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from "react-typing-effect";
 
 export default class Banner extends Component {
   services = [
@@ -55,13 +55,7 @@ export default class Banner extends Component {
                   <span className="blackText">Craft your </span>
                   {/* <span className="green"> Identity</span> */}
                   <span className="green">
-                    <ReactTypingEffect
-                      // text = "Identity"
-                      text = {[  "Identity", "Message", "Brand" ]}
-                      speed = {200}
-                      typingDelay = {100}
-                      eraseDelay = {500}
-                    />
+                    <ReactTypingEffect text = {["Identity", "Baddass"]} />
                   </span>
                 </h2>
                 <p className="smallestText blackText b4 montserrat pb-3">
@@ -70,11 +64,13 @@ export default class Banner extends Component {
                   relatable and compelling manner.
                 </p>
                 <div>
-                  <a href="/" className="gStarted extraSmallText green b7">Get Started</a>
+                  <a href="/" className="gStarted extraSmallText green b7">
+                    Get Started
+                  </a>
 
                   <span class="pulse">
-                    <img src={PlayIcon} alt="" className="playButton"/>
-                  </span>                  
+                    <img src={PlayIcon} alt="" className="playButton" />
+                  </span>
                 </div>
 
                 {/* <Dropdown>
@@ -103,9 +99,7 @@ export default class Banner extends Component {
             </Col>
           </Row>
         </Container>
-        <Container>
-          
-        </Container>
+        <Container></Container>
         <Row className="justify-content-md-center a-banner-trusted-brands greybg">
           <Col md={3} xs={12} className="a-banner-brands-caption blackText">
             <div className="montserrat brands-sm">
