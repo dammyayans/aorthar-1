@@ -16,6 +16,7 @@ import NavBar from "./components/Navbar/Navbar";
 
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import loader from "./images/Loader.mp4";
+import Default from "./Pages/404";
 
 const Home = lazy(
   () =>
@@ -73,12 +74,12 @@ const Footer = lazy(
       setTimeout(() => resolve(import("./components/Footer/Footer")), 4200)
     )
 );
-// const Courses = lazy(
-//   () =>
-//     new Promise((resolve, reject) =>
-//       setTimeout(() => resolve(import("./Pages/Courses/Courses")), 4200)
-//     )
-// );
+const Courses = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Courses/Courses")), 4000)
+    )
+);
 const loading = (
   <div
     style={{
@@ -154,12 +155,11 @@ const MerchSusp = () => (
   </Suspense>
 );
 
-// const Courses = () => (
-//   <Suspense fallback={loading}>
-//     <Courses />
-//   </Suspense>
-// );
-
+const CoursesSusp = () => (
+  <Suspense fallback={loading}>
+    <Courses />
+  </Suspense>
+);
 
 const GlobalStyle = createGlobalStyle`
 
@@ -217,10 +217,12 @@ body{
     props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
 }
 .a-banner-heroImgL{
-  display: ${(props) => (props.theme.mode === "dark" ? "none !important" : "block !important")}
+  display: ${(props) =>
+    props.theme.mode === "dark" ? "none !important" : "block !important"}
 }
 .a-banner-heroImgD{
-  display: ${(props) => (props.theme.mode === "dark" ? "block !important" : "none !important")}
+  display: ${(props) =>
+    props.theme.mode === "dark" ? "block !important" : "none !important"}
 }
 `;
 function getInitialTheme() {
@@ -247,6 +249,8 @@ export default function App() {
               }
             />
             <Switch>
+              <Route exact path="/" component={HomeSusp} />
+
               <Route path="/Subscription" component={SubscriptionSusp} />
 
               <Route path="/Confirmation" component={ConfirmationSusp} />
@@ -261,11 +265,9 @@ export default function App() {
 
               <Route path="/Apply" component={ApplySusp} />
 
-              {/* <Route component={ErrorPage} /> */}
+              <Route component={Default} />
 
-              {/* <Route exact path="/Courses" component={Courses} /> */}
-              
-              <Route exact path="/" component={HomeSusp} />
+              <Route path="/Courses" component={CoursesSusp} />
             </Switch>
             <Suspense fallback={""}>
               <Footer />
