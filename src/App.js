@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import storage from "local-storage-fallback";
 
@@ -15,15 +15,87 @@ import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 import Home from "./Pages/Home";
-import TheTeam from "./Pages/TheTeam";
-import OurWorks from "./Pages/OurWorks";
-import Confirmation from "./Pages/Confirmation";
-import Subscription from "./Pages/Subscription";
-import Form from "./Pages/Form";
-import Apply from "./Pages/Apply";
-import Merch from "./Pages/Merch";
-
 import { ThemeProvider, createGlobalStyle } from "styled-components";
+import loader from "./images/Loader.mp4";
+
+const TheTeam = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/TheTeam")), 3000)
+    )
+);
+const OurWorks = lazy(() => import("./Pages/OurWorks"));
+const Confirmation = lazy(() => import("./Pages/Confirmation"));
+const Subscription = lazy(() => import("./Pages/Subscription"));
+const Form = lazy(() => import("./Pages/Form"));
+const Apply = lazy(() => import("./Pages/Apply"));
+const Merch = lazy(() => import("./Pages/Merch"));
+
+const loading = (
+  <div
+    style={{
+      minHeight: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      position: "relative",
+      backgroundColor: "#fff",
+    }}
+  >
+    <video
+      src={loader}
+      autoPlay
+      muted
+      loop
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+      }}
+    />
+  </div>
+);
+
+const TheTeamSusp = () => (
+  <Suspense fallback={loading}>
+    <TheTeam />
+  </Suspense>
+);
+const OurWorksSusp = (
+  <Suspense fallback={loading}>
+    <OurWorks />
+  </Suspense>
+);
+const ConfirmationSusp = (
+  <Suspense fallback={loading}>
+    <Confirmation />
+  </Suspense>
+);
+const SubscriptionSusp = (
+  <Suspense fallback={loading}>
+    <Subscription />
+  </Suspense>
+);
+const FormSusp = (
+  <Suspense fallback={loading}>
+    <Form />
+  </Suspense>
+);
+const ApplySusp = (
+  <Suspense fallback={loading}>
+    <Apply />
+  </Suspense>
+);
+const MerchSusp = (
+  <Suspense fallback={loading}>
+    <Merch />
+  </Suspense>
+);
 
 const GlobalStyle = createGlobalStyle`
 
@@ -111,19 +183,19 @@ export default function App() {
               }
             />
             <Switch>
-              <Route path="/Subscription" component={Subscription} />
+              <Route path="/Subscription" component={SubscriptionSusp} />
 
-              <Route path="/Confirmation" component={Confirmation} />
+              <Route path="/Confirmation" component={ConfirmationSusp} />
 
-              <Route path="/OurWorks" component={OurWorks} />
+              <Route path="/OurWorks" component={OurWorksSusp} />
 
-              <Route path="/TheTeam" component={TheTeam} />
+              <Route path="/TheTeam" component={TheTeamSusp} />
 
-              <Route path="/Merch" component={Merch} />
+              <Route path="/Merch" component={MerchSusp} />
 
-              <Route path="/Form:service" component={Form} />
+              <Route path="/Form:service" component={FormSusp} />
 
-              <Route path="/Apply" component={Apply} />
+              <Route path="/Apply" component={ApplySusp} />
 
               {/* <Route component={ErrorPage} /> */}
 
