@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
-// import  { Link }  from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Fade from "react-reveal/Fade";
@@ -40,7 +40,7 @@ class GetStarted extends Component {
     },
     {
       quote:
-      "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with", 
+        "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with",
       // "If you are above twenty-one(21) in life and you've not started speaking in tongues, ha! my brother, your life is a joke . blah blah blah blah blah blah blah blah",
       image: Placeholder2,
       author: "Kunle Kiitan",
@@ -89,30 +89,32 @@ class GetStarted extends Component {
                     luxury of working with us or contact us <br />
                     below.
                   </p>
-                  <Dropdown>
-                    <Dropdown.Toggle
-                      className="service"
-                      variant="default"
-                      id="dropdown-basic"
-                    >
-                      Select a service
-                    </Dropdown.Toggle>
+                  <div className="dropdownContainer">
+                    <Dropdown>
+                      <Dropdown.Toggle
+                        className="service"
+                        variant="default"
+                        id="dropdown-basic"
+                      >
+                        Select a service
+                      </Dropdown.Toggle>
 
-                    <Dropdown.Menu className="service_menu">
-                      {this.services.map((service, i) => (
-                        <Dropdown.Item
-                          key={i}
-                          href={
-                            "/Form" + (service === "UI/UX" ? "uiux" : service)
-                          }
-                        >
-                          {service}
-                        </Dropdown.Item>
-                      ))}
-                    </Dropdown.Menu>
-                  </Dropdown>
+                      <Dropdown.Menu className=" service_menu greybg dropmenu">
+                        {this.services.map((service, i) => (
+                          <Link
+                            key={i}
+                            href={
+                              "/Form" + (service === "UI/UX" ? "uiux" : service)
+                            }
+                          >
+                            <li className="dropli">{service}</li>
+                          </Link>
+                        ))}
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
                 </Fade>
-                <Fade bottom delay={800}>
+                <Fade bottom delay={800} className="sendmail">
                   <p className="a-get-started-contact blackText montserrat b7">
                     Send us a mail via{" "}
                     <a

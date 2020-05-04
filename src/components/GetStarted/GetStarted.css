@@ -35,6 +35,25 @@
     padding: 5% 0 5%;
 }
 
+.dropli {
+    width: 100%;
+    box-sizing: content-box;
+    padding: 8px 0;
+}
+
+.dropli:hover {
+    opacity: 0.8;
+}
+
+.dropdownContainer {
+    position: relative;
+    z-index: 3;
+}
+
+.sendmail {
+    position: relative;
+    z-index: 1;
+}
 
 @media screen and (max-width: 600px) {
     .a-get-started-wrapper {

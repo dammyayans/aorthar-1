@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 import "./style.css";
 import "../../components/GlobalStyles/global.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-export default function Form(props) {
+export default function Form({ props }) {
   const [service, setService] = useState(props.match.params.service);
   return (
     <Container fluid className="whitebg formwrapper pb-5">

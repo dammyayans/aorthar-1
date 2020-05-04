@@ -139,9 +139,9 @@ const SubscriptionSusp = () => (
     <Subscription />
   </Suspense>
 );
-const FormSusp = () => (
+const FormSusp = (props) => (
   <Suspense fallback={loading}>
-    <Form />
+    <Form props={props} />
   </Suspense>
 );
 const ApplySusp = () => (

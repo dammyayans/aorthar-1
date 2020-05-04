@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import { Container, Row, Col, Modal } from "react-bootstrap";
+import { Container, Row, Col, Modal, Dropdown } from "react-bootstrap";
 import "../GlobalStyles/global.css";
 import "./Banner.css";
 
@@ -29,10 +30,40 @@ const CarouselUI = ({ children }) => (
   <SliderContainer>{children}</SliderContainer>
 );
 const Carousel = makeCarousel(CarouselUI);
+const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+  <a
+    href="/#"
+    ref={ref}
+    className="gStarted extraSmallText green b7"
+    onClick={(e) => {
+      e.preventDefault();
+      onClick(e);
+    }}
+  >
+    {children}
+    &#x25bc;
+  </a>
+));
 export default class Banner extends Component {
   state = {
     play: false,
   };
+
+  CustomMenu = React.forwardRef(
+    ({ children, style, className, "aria-labelledby": labeledBy }, ref) => {
+      return (
+        <div
+          ref={ref}
+          style={style}
+          className={className}
+          aria-labelledby={labeledBy}
+        >
+          <ul className="list-unstyled">{children}</ul>
+        </div>
+      );
+    }
+  );
+
   services = [
     "Branding and Design",
     "UI/UX",
@@ -107,43 +138,44 @@ export default class Banner extends Component {
                   that will pierce the heart of your targets, in a perfectly
                   relatable and compelling manner.
                 </p>
-                <div>
-                  <a href="/" className="gStarted extraSmallText green b7">
-                    Get Started
-                  </a>
-
+                <div className="d-flex align-items-center dropdownContainer">
+                  <Fade>
+                    <Dropdown>
+                      <Dropdown.Toggle
+                        as={CustomToggle}
+                        id="dropdown-custom-components"
+                      >
+                        Get Started
+                      </Dropdown.Toggle>
+                      <div>
+                        <Dropdown.Menu
+                          as={this.CustomMenu}
+                          className="greybg dropmenu"
+                        >
+                          {this.services.map((service, i) => (
+                            <Link
+                              key={i}
+                              className="greenText"
+                              to={
+                                "/Form" +
+                                (service === "UI/UX" ? "uiux" : service)
+                              }
+                            >
+                              <li className="dropli">{service}</li>
+                            </Link>
+                          ))}
+                        </Dropdown.Menu>
+                      </div>
+                    </Dropdown>
+                  </Fade>
                   <span className="pulse" onClick={this.handleShow}>
                     <img src={PlayIcon} alt="" className="playButton" />
                   </span>
                 </div>
-
-                {/* <Dropdown>
-                  <Dropdown.Toggle
-                    className="service"
-                    variant="default"
-                    id="dropdown-basic"
-                  >
-                    Select a service
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu className="service_menu">
-                    {this.services.map((service, i) => (
-                      <Dropdown.Item
-                        key={i}
-                        href={
-                          "/Form" + (service === "UI/UX" ? "uiux" : service)
-                        }
-                      >
-                        {service}
-                      </Dropdown.Item>
-                    ))}
-                  </Dropdown.Menu>
-                </Dropdown> */}
               </Fade>
             </Col>
           </Row>
         </Container>
-        <Container></Container>
         <Row className="justify-content-md-center a-banner-trusted-brands greybg">
           <Col
             md={3}
@@ -155,7 +187,7 @@ export default class Banner extends Component {
               These brands have trusted us --
             </div>
           </Col>
-          <Col md={4} sm={5} xs={10} className="mt-2">
+          <Col md={4} sm={5} xs={12} className="mt-2">
             <Carousel defaultWait={5000}>
               <Slide left duration={3000}>
                 <div>
