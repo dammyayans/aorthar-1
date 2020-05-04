@@ -11,7 +11,7 @@ export default function Form(props) {
     <Container fluid className="whitebg formwrapper pb-5">
       <Helmet>
         <meta charset="utf-8" />
-        <title>Aorthar |  Tell us about your project</title>
+        <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
       </Helmet>
       <Container>
         <Row>

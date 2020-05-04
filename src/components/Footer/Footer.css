@@ -26,6 +26,10 @@
      }
 
      .sm-pt{
-         padding: 5px 0 5px;
+         padding: 8px 0 8px;
+     }
+
+     .sm-pp{
+         margin-top: 25px;
      }
  }

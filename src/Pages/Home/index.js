@@ -15,7 +15,7 @@ export default function index() {
     <div>
       <Helmet>
         <meta charset="utf-8" />
-        <title>Aorthar | Home</title>
+        <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
       </Helmet>
       <Banner />
       <WhoWeAre />

@@ -30,25 +30,33 @@ class fDescSection extends Component {
                     </div>
                 </div>  
                 <div className="d-flex justify-content-between footer-base-section">
-                    <span>
+                    <span className="order-2 sm-pp">
                         &copy; 2019 - 2020 Aorthar Design Agency - RC 2986050
                     </span>
-                    <span className="footer-base-links extraSmallText">
+                    <span className="footer-base-links extraSmallText order-1">
                         <a href="/">
                             <img src={TandC} alt="Feedback"  className="sm-pt"/> 
-                            Terms & Conditions
+                            <span>
+                                Terms & Conditions
+                            </span>
                         </a>
                         <a href="/">
                             <img src={Feedback} alt="Feedback"  className="sm-pt"/> 
-                            Write us a Feedback
+                            <span>
+                                Write us a Feedback
+                            </span>
                         </a>
                         <a href="/">
                             <img src={Download} alt="Rate Card"  className="sm-pt"/> 
-                            Download our Rate Card
+                            <span>
+                                Download our Rate Card
+                            </span>
                         </a>
                         <a href="/">
                             <img src={Career} alt="Rate Card"  className="sm-pt"/> 
-                            Career & Internship
+                            <span>
+                                Career & Internship
+                            </span>
                         </a>
                     </span>
                 </div>              

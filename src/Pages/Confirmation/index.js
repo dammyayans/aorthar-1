@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Helmet } from "react-helmet";
 
 import './style.css';
 import '../../components/GlobalStyles/global.css'
@@ -11,6 +11,10 @@ import Forward from '../../images/forward.png';
 export default function index() {
     return (
         <Container fluid className="whitebg">
+             <Helmet>
+                <meta charset="utf-8" />
+                <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
+            </Helmet>
             <Container className="montserrat">
                 <Row>
                     <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }} className="push3">

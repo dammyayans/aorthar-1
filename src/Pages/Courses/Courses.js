@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 
 // import  { Link }  from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -12,6 +13,10 @@ export default class Courses extends Component {
     render() {
         return (
             <Container fluid className="whitebg">
+                <Helmet>
+                    <meta charset="utf-8" />
+                    <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
+                </Helmet>
                 <Container className="a-response-wrapper">
                     <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
                         <Row>

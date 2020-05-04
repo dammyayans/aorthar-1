@@ -22,9 +22,8 @@ export default class WhoWeAre extends Component {
               <Col xs={12} md={6} sm={12}>
                 <Fade bottom>
                   <h2 className="bigText">
-                    <span className="blackText">Who </span>
-                    <span className="green">we </span>
-                    <span className="blackText">are</span>
+                    <span className="blackText">Our </span> <br className="break" />
+                    <span className="green">Story</span>
                   </h2>
                 </Fade>
               </Col>

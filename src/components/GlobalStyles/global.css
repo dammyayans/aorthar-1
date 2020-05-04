@@ -137,6 +137,10 @@ a:hover{
     display: none;
 }
 
+.cover{
+    padding: 5px 0 0 !important;
+}
+
 @media screen and (max-width: 600px){
     .bigGreenText{
         color: #076847;
