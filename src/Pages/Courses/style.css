@@ -1,0 +1,93 @@
+.a-response-wrapper{
+    padding: 15% 0 5%;
+    color: #343434;
+}
+
+.a-response-card{
+    padding-top: 3%;
+}
+
+.a-how-it-works{
+    padding: 8% 0 4%;
+}
+
+.a-response-card-heading{
+    padding-bottom: 1% !important;
+}
+
+
+.a-response-rate-cards-item{
+    border: 1px solid #343434;
+    padding: 8%;
+}
+
+.a-response-rate-cards:nth-child(2){
+    position: relative;
+}
+
+.recommended{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 4%;
+    padding: 2%;
+    background-color: #076847;
+}
+
+
+/* .a-rate-cards-title{
+    font-weight: bold;
+    font-size: 140%;
+    line-height: 150%;
+    padding: 0% 0 8%;
+    color: #343434;
+} */
+
+.a-rate-cards-list{
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    /* font-size: 95%; */
+    line-height: 170%;
+}
+
+.amount{
+    font-weight: bold;
+    /* font-size: 150%; */
+    color: #076847;
+}
+
+.line-through{
+    text-decoration: line-through;
+    opacity: .7;
+    color: #E0E0E0;
+}
+
+.imgxyz{
+    background-image: url('../../images/Reasone.png');
+}
+
+@media screen and (max-width: 600px){
+    .a-response-wrapper {
+        padding: 35% 0 5%;
+        color: #343434;
+    }
+    .a-wwa-who {
+        color: #343434;
+        padding-bottom: 5%;
+    }
+    
+    h2 {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 0 !important;
+    }
+
+    .a-response-card{
+        padding-top: 10%;
+    }
+
+    .a-response-rate-cards{
+        margin-top: 15%;
+    }
+}

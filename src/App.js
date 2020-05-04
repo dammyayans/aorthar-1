@@ -73,6 +73,12 @@ const Footer = lazy(
       setTimeout(() => resolve(import("./components/Footer/Footer")), 4200)
     )
 );
+// const Courses = lazy(
+//   () =>
+//     new Promise((resolve, reject) =>
+//       setTimeout(() => resolve(import("./Pages/Courses/Courses")), 4200)
+//     )
+// );
 const loading = (
   <div
     style={{
@@ -147,6 +153,13 @@ const MerchSusp = () => (
     <Merch />
   </Suspense>
 );
+
+// const Courses = () => (
+//   <Suspense fallback={loading}>
+//     <Courses />
+//   </Suspense>
+// );
+
 
 const GlobalStyle = createGlobalStyle`
 
@@ -250,6 +263,8 @@ export default function App() {
 
               {/* <Route component={ErrorPage} /> */}
 
+              {/* <Route exact path="/Courses" component={Courses} /> */}
+              
               <Route exact path="/" component={HomeSusp} />
             </Switch>
             <Suspense fallback={""}>
