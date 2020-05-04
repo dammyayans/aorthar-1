@@ -16,6 +16,7 @@ import NavBar from "./components/Navbar/Navbar";
 
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import loader from "./images/Loader.mp4";
+import Default from "./Pages/404";
 
 const Home = lazy(
   () =>
@@ -248,6 +249,8 @@ export default function App() {
               }
             />
             <Switch>
+              <Route exact path="/" component={HomeSusp} />
+
               <Route path="/Subscription" component={SubscriptionSusp} />
 
               <Route path="/Confirmation" component={ConfirmationSusp} />
@@ -262,11 +265,9 @@ export default function App() {
 
               <Route path="/Apply" component={ApplySusp} />
 
-              {/* <Route component={ErrorPage} /> */}
+              <Route component={Default} />
 
               <Route path="/Courses" component={CoursesSusp} />
-
-              <Route exact path="/" component={HomeSusp} />
             </Switch>
             <Suspense fallback={""}>
               <Footer />

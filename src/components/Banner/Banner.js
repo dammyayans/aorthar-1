@@ -21,7 +21,8 @@ import ReactTypingEffect from "react-typing-effect";
 const SliderContainer = styled.div`
   position: relative;
   overflow: hidden;
-  height: 50px;
+  min-height: 50px;
+  height: 5rem;
   width: 100%;
 `;
 const CarouselUI = ({ children }) => (
@@ -144,13 +145,18 @@ export default class Banner extends Component {
         </Container>
         <Container></Container>
         <Row className="justify-content-md-center a-banner-trusted-brands greybg">
-          <Col md={3} xs={12} className="a-banner-brands-caption blackText">
+          <Col
+            md={3}
+            xs={12}
+            sm={5}
+            className="a-banner-brands-caption blackText"
+          >
             <div className="montserrat brands-sm">
               These brands have trusted us --
             </div>
           </Col>
-          <Col md={4}>
-            <Carousel defaultWait={4000}>
+          <Col md={4} sm={5} xs={10} className="mt-2">
+            <Carousel defaultWait={5000}>
               <Slide left duration={3000}>
                 <div>
                   <Slide left duration={1000}>
@@ -160,6 +166,17 @@ export default class Banner extends Component {
                       className="a-banner-company-img"
                     />
                   </Slide>
+                  <Slide left duration={1000}>
+                    <img
+                      src={Company1}
+                      alt="Company1"
+                      className="a-banner-company-img"
+                    />
+                  </Slide>
+                </div>
+              </Slide>
+              <Slide left duration={3000}>
+                <div>
                   <Slide left duration={1000}>
                     <img
                       src={Company1}
@@ -185,38 +202,7 @@ export default class Banner extends Component {
                       className="a-banner-company-img"
                     />
                   </Slide>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company2}
-                      alt="Company2"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company3}
-                      alt="Company3"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-                </div>
-              </Slide>
-              <Slide left duration={3000}>
-                <div>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company1}
-                      alt="Company1"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company2}
-                      alt="Company2"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
+
                   <Slide left duration={1000}>
                     <img
                       src={Company3}
