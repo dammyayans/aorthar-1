@@ -15,7 +15,7 @@ export default class OurServices extends Component {
             <Col md="auto">
               <Slide top>
                 <h2 className="bigText">
-                  <span className="blackText">Our </span>
+                  <span className="blackText">Our </span> <br className="break"/>
                   <span className="green">Services</span>
                 </h2>
               </Slide>

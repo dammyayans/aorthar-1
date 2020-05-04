@@ -41,14 +41,14 @@
         padding: 20% 0 20%;
     }
 
-    .a-get-started-caption {
+    /* .a-get-started-caption {
         color: #343434;
-    }
+    } */
 
     .a-get-started-contact {
         padding-top: 5%;
         font-weight: bold;
-        color: #343434;
+        /* color: #343434; */
     }
 
     .a-get-started-contact span {

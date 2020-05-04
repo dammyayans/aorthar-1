@@ -76,7 +76,8 @@ class GetStarted extends Component {
               <Col xs={12} md={6}>
                 <Fade bottom>
                   <div className="bigText">
-                    <div className="blackText">Ready to start</div>
+                    <div className="blackText">Ready</div>
+                    <div className="blackText">to start</div>
                     <div className="blackText">
                       with <span className="green">us?</span>
                     </div>

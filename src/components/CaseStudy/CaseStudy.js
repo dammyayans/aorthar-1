@@ -15,7 +15,7 @@ export default class CaseStudy extends Component {
             <Row className="pb-5 mp-0">
               <Col xs={12} md={6}>
                 <Fade bottom>
-                  <h2 className="bigText blackText">Case Study</h2>
+                  <h2 className="bigText blackText">Case <br className="break" />Study</h2>
                 </Fade>
               </Col>
               <Col xs={12} md={6}>

@@ -10,7 +10,7 @@ h4{
 /* Meqia Query */
 @media screen and (max-width: 600px){
     .a-our-services-wrapper{
-        padding: 20% 0 20%;
+        padding: 20% 5% 20%;
     }
     h4 {
         font-weight: bold;
