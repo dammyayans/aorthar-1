@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 import "./style.css";
 import "../../components/GlobalStyles/global.css";
@@ -11,7 +11,7 @@ export default function Form(props) {
     <Container fluid className="formwrapper pb-5 greenbg whiteText">
       <Helmet>
         <meta charset="utf-8" />
-        <title>Aorthar |  Join the Team </title>
+        <title>Aorthar | Join the Team </title>
       </Helmet>
       <Container>
         <Row>
@@ -108,7 +108,10 @@ export default function Form(props) {
                     className="smallestText"
                     placeholder="what else would you like us to know?"
                   />
-                  <button type="submit" className="submitButton mt-3 applyButton green">
+                  <button
+                    type="submit"
+                    className="submitButton mt-3 applyButton green"
+                  >
                     Submit
                   </button>
                 </Col>

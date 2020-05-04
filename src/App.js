@@ -12,55 +12,67 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import MenuBar from "./images/menuicon.png";
 // import DarkModeIcon from "./images/darkmodeicon.png";
 import NavBar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 
-import Home from "./Pages/Home";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import loader from "./images/Loader.mp4";
+
+const Home = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Home")), 4000)
+    )
+);
 
 const TheTeam = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/TheTeam")), 3000)
+      setTimeout(() => resolve(import("./Pages/TheTeam")), 4000)
     )
 );
 const OurWorks = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/OurWorks")), 3000)
+      setTimeout(() => resolve(import("./Pages/OurWorks")), 4000)
     )
 );
 const Confirmation = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Confirmation")), 3000)
+      setTimeout(() => resolve(import("./Pages/Confirmation")), 4000)
     )
 );
 const Subscription = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Subscription")), 3000)
+      setTimeout(() => resolve(import("./Pages/Subscription")), 4000)
     )
 );
 const Form = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Form")), 3000)
+      setTimeout(() => resolve(import("./Pages/Form")), 4000)
     )
 );
 const Apply = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Apply")), 3000)
+      setTimeout(() => resolve(import("./Pages/Apply")), 4000)
     )
 );
 const Merch = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Merch")), 3000)
+      setTimeout(() => resolve(import("./Pages/Merch")), 4000)
     )
 );
 
+const Footer = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./components/Footer/Footer")), 4200)
+    )
+);
 const loading = (
   <div
     style={{
@@ -70,6 +82,8 @@ const loading = (
       alignItems: "center",
       position: "relative",
       backgroundColor: "#fff",
+      zIndex: "535362",
+      marginTop: "-28px",
     }}
   >
     <video
@@ -83,12 +97,19 @@ const loading = (
         left: 0,
         right: 0,
         bottom: 0,
-        width: "100%",
-        height: "100%",
+        width: "45%",
+        height: "45%",
         overflow: "hidden",
+        margin: "auto",
       }}
     />
   </div>
+);
+
+const HomeSusp = () => (
+  <Suspense fallback={loading}>
+    <Home />
+  </Suspense>
 );
 
 const TheTeamSusp = () => (
@@ -229,9 +250,11 @@ export default function App() {
 
               {/* <Route component={ErrorPage} /> */}
 
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={HomeSusp} />
             </Switch>
-            <Footer />
+            <Suspense fallback={""}>
+              <Footer />
+            </Suspense>
             <GlobalStyle />
           </div>
         </>
