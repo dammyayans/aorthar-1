@@ -11,11 +11,18 @@
 .a-banner-heroImg,
 .a-banner-heroImgD {
     height: 200%;
+    /* margin: 0 auto; */
 }
 
-/* .a-banner-heroImgD{
-    display: none !important;
-} */
+.a-banner-heroImgD{
+    display: none;
+    margin: 0 auto;
+}
+
+.heroheroL,
+.heroheroD{
+    margin: 0 auto !important;
+}
 
 .a-banner-caption {
     padding-top: 4%;
