@@ -102,7 +102,7 @@ class GetStarted extends Component {
                         {this.services.map((service, i) => (
                           <Link
                             key={i}
-                            href={
+                            to={
                               "/Form" + (service === "UI/UX" ? "uiux" : service)
                             }
                           >
