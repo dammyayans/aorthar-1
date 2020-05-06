@@ -1,28 +1,10 @@
 .merch-banner {
-    background-position: top center;
-    background-size: cover;
-    height: 560px;
+    height: 65vh;
     width: 100%;
-    margin-top: 56px;
-    display: flex;
-    align-items: flex-end;
+    padding: 0;
     padding-bottom: 24px;
     position: relative;
 }
-
-.merch-banner:first-child {
-    background-image: url('../../images/Mask\ Group\ 31.png');
-}
-
-.merch-banner:nth-child(2) {
-    background-image: url('../../images/fait\ beauty2.png');
-}
-
-.merch-banner:last-child {
-    background-image: url('../../images/Pelumi.png');
-}
-
-
 
 .green {
     color: #076847;
@@ -60,6 +42,7 @@
     align-items: center;
     padding-right: 16px;
     flex-direction: column;
+    margin-bottom: 24px;
 }
 
 .shirt img {
@@ -72,9 +55,10 @@
     background-color: #076847;
     color: #fff;
     opacity: .8;
-    padding: 6px 10px;
+    padding: 6px;
     font-weight: 500;
     outline: none;
+    font-size: 12px;
 }
 
 .cartButton:hover {
@@ -92,6 +76,7 @@
     box-shadow: 0px 2px 5px rgb(122, 122, 122);
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 .color:first-child {
@@ -104,4 +89,38 @@
 
 .color:last-child {
     background-color: #fff;
+}
+
+@media only screen and (max-width:950px) {
+    .merch-banner {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .merch-banner {
+        height: 40vh;
+    }
+
+    .inner-merch-banner {
+        flex-direction: column;
+    }
+
+    .inner-merch-banner p {
+        text-align: center;
+    }
+
+    .cartButton {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .merch-banner {
+        height: 35vh;
+    }
+
+    .inner-merch-banner p {
+        font-size: 15px;
+    }
 }
