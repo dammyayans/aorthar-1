@@ -102,7 +102,7 @@ class NavBar extends Component {
                           </Nav.Link>
                           <Nav.Link
                             className="cover"
-                            href="https://bit.ly/DnEmoski"
+                            href="/courses"
                             target="blank"
                           >
                             Buy our Design Course
@@ -149,14 +149,13 @@ class NavBar extends Component {
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover" href="/ourworks">
                             Our Works
                           </Nav.Link>
                           <Nav.Link className="cover" href="/ourworks">
                             Our Process
                           </Nav.Link>
                           <Nav.Link className="cover" href="/merch">
-                            {/* Get Our Merch */}
                             Rep our Brand
                           </Nav.Link>
                         </div>

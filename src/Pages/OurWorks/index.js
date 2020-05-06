@@ -7,6 +7,9 @@ import '../../components/GlobalStyles/global.css';
 import Arrow from '../../images/forward.png';
 import { Container, Row, Col} from 'react-bootstrap';
 import GetStarted from '../../components/GetStarted/GetStarted';
+import Project1 from '../../images/spotlight.png';
+import Project2 from '../../images/spotlight2.png';
+import Project3 from '../../images/spotlight3.png';
 
 
 export default function index() {
@@ -34,14 +37,17 @@ export default function index() {
                         </Col>
                     </Row> 
                     <Row>
-                        <div className="a-previous-works1">
-                            {/* qknlsslknlgnklnlnln */}
+                        <a href="/" target="_blank" rel="noopener noreferrer">
+                            <div className="a-previous-works1">
+                                <img src={Project1} alt="" className="imm"/>
+                                {/* <span>test</span> */}
+                            </div>
+                        </a>
+                        <div className="a-previous-works2">
+                            <img src={Project2} alt="" className="imm"/> 
                         </div>
-                        <div className="a-previous-works">
-                        
-                        </div>
-                        <div className="a-previous-works">
-
+                        <div className="a-previous-works3">
+                            <img src={Project3} alt="" className="imm"/> 
                         </div>
                     </Row>
                 </Col>

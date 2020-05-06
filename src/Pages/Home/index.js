@@ -25,8 +25,6 @@ export default function index() {
       <OurPackage />
       <Blog />
       <DesignYarn />
-      {/* <MenuOptions /> */}
-      {/* <ExploreOptions /> */}
     </div>
   );
 }

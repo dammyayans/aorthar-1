@@ -8,7 +8,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 
-import Person4 from "../../images/Person4.png";
+import Person4 from "../../images/pelumis.png";
 import Person3 from "../../images/Person3.png";
 import Forward from "../../images/forward.png";
 

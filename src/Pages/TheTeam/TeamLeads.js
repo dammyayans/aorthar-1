@@ -77,7 +77,7 @@ export default function TeamLeads() {
               <Col xs={12} md={4} className="">
                 <img src={Opeyemi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
-                  Adewale Adedamola
+                  Opeyemi Sanni
                 </div>
                 <span className="smallestText blackText b4">
                   Content Development, CIO
@@ -86,7 +86,7 @@ export default function TeamLeads() {
               <Col xs={12} md={4} className="">
                 <img src={Pelumi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
-                  Eniodunmo Pelumi
+                  Jolly Austin
                 </div>
                 <span className="smallestText blackText b4">
                   Design and Creatives
@@ -123,15 +123,15 @@ export default function TeamLeads() {
                   Illustrators, UI/UX, Product Design, Copywriting, Trainers,
                   Idea Innovators and Brnad Steategist.
                 </div>
-                <Row className="mt-5">
+                <Row className="mt-5 montserrat">
                   <Col md={6} className="mr-3 mb-3">
-                    <div className="d-flex justify-content-space">
+                    <div className="d-flex justify-content-space montserrat">
                       <p className=" blackText bold mb-0">
                         {associates[0].name}
                       </p>
                       <span></span>
                     </div>
-                    <span className="smallestText blackText b4">
+                    <span className="smallestText blackText b4 montserrat">
                       {associates[0].title}
                     </span>
                   </Col>

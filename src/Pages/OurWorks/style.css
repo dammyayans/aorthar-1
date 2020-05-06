@@ -31,6 +31,16 @@
     width: 45px;
 }
 
+.a-previous-works1,
+.a-previous-works2,
+.a-previous-works3{
+    padding-top: 50px;   
+}
+
+.imm{
+    width: 100%;
+}   
+
 /* .a-our-work-process-heading{
     
 } */

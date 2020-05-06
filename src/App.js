@@ -49,6 +49,12 @@ const Subscription = lazy(
       setTimeout(() => resolve(import("./Pages/Subscription")), 4000)
     )
 );
+const Courses = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Courses")), 4000)
+    )
+);
 const Form = lazy(
   () =>
     new Promise((resolve, reject) =>
@@ -72,12 +78,6 @@ const Footer = lazy(
   () =>
     new Promise((resolve, reject) =>
       setTimeout(() => resolve(import("./components/Footer/Footer")), 4200)
-    )
-);
-const Courses = lazy(
-  () =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Courses/Courses")), 4000)
     )
 );
 const loading = (
@@ -139,6 +139,11 @@ const SubscriptionSusp = () => (
     <Subscription />
   </Suspense>
 );
+const CoursesSusp = () => (
+  <Suspense fallback={loading}>
+    <Courses />
+  </Suspense>
+);
 const FormSusp = (props) => (
   <Suspense fallback={loading}>
     <Form props={props} />
@@ -155,11 +160,6 @@ const MerchSusp = () => (
   </Suspense>
 );
 
-const CoursesSusp = () => (
-  <Suspense fallback={loading}>
-    <Courses />
-  </Suspense>
-);
 
 const GlobalStyle = createGlobalStyle`
 
@@ -252,6 +252,8 @@ export default function App() {
               <Route exact path="/" component={HomeSusp} />
 
               <Route path="/Subscription" component={SubscriptionSusp} />
+              
+              <Route path="/Courses" component={CoursesSusp} />
 
               <Route path="/Confirmation" component={ConfirmationSusp} />
 
@@ -267,7 +269,6 @@ export default function App() {
 
               <Route component={Default} />
 
-              <Route path="/Courses" component={CoursesSusp} />
             </Switch>
             <Suspense fallback={""}>
               <Footer />
