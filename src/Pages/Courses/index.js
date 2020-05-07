@@ -59,8 +59,9 @@ export default class Courses extends Component {
                                     <div className="pt-3">
                                         <a 
                                             href="https://bit.ly/DnEmoski" 
-                                           target="_blank" 
-                                           className="startnowarrow green montserrat b7"
+                                            target="_blank" 
+                                            className="startnowarrow green montserrat b7"
+                                            rel="noopener noreferrer"
                                         >
                                             Start Now! <img src={fwd} alt=""className="fwdarr"/>
                                         </a>
@@ -90,6 +91,7 @@ export default class Courses extends Component {
                                             href="https://daba.school/user/signup.php" 
                                             target="_blank" 
                                             className="startnowarrow green montserrat b7"
+                                            rel="noopener noreferrer"
                                         >
                                             Start Now! <img src={fwd} alt=""className="fwdarr"/>
                                         </a>
@@ -119,6 +121,7 @@ export default class Courses extends Component {
                                             href="https://paystack.com/pay/office4ladiesrecap" 
                                             target="_blank" 
                                             className="startnowarrow green montserrat b7"
+                                            rel="noopener noreferrer"
                                         >
                                             Start Now! <img src={fwd} alt=""className="fwdarr"/>
                                         </a>
@@ -150,6 +153,7 @@ export default class Courses extends Component {
                                             href="https://bit.ly/Portfolio4Men" 
                                             target="_blank" 
                                             className="startnowarrow green montserrat b7"
+                                            rel="noopener noreferrer"
                                         >
                                             Start Now! <img src={fwd} alt=""className="fwdarr"/>
                                         </a>
