@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-
-// import  { Link }  from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import './style.css';
-// import content from '../../images/content.png';
-// import contentwriting from '../../images/contentwriting.png';
-// import contentSocial from '../../images/contentSocial.png';
 
-import P1 from '../../images/DE.png';
+import P1 from '../../images/DnE.png';
+import P4 from '../../images/p4men.png';
+import P3 from '../../images/Office4ladies.png';
+import P2 from '../../images/daba.png';
+import fwd from '../../images/forward.png';
 
 export default class Courses extends Component {
     render() {
         return (
             <Container fluid className="whitebg">
+                <Helmet>
+                    <meta charset="utf-8" />
+                    <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
+                </Helmet>
                 <Container className="a-response-wrapper">
                     <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
                         <Row>
@@ -22,15 +26,15 @@ export default class Courses extends Component {
                             </Col>
                             <Col xs={12} md={5} sm={12}>
                                 <div className="a-wwa-caption smallestText blackText">
-                                We host top instructors from design industry to teach students 
-                                how to become professionals. Here are some available courses.
-                                You can get started today.
+                                    We host top instructors from design industry to teach students 
+                                    how to become professionals. Here are some available courses.
+                                    You can get started today.
                                 </div>
                             </Col>
                         </Row> 
                     </Col>
 
-                    <Col md={12} className="align-center">
+                    <Col md={{ span: 10, offset: 1 }} className="align-center pt-5 pb-5">
                         <Row>
                             <Col md={6} sm={12} className="px-0">
                                 <Row>
@@ -39,86 +43,117 @@ export default class Courses extends Component {
                                     </Col>
                                     <Col md={6} sm={12}>
                                         <p className="green smallBoldText">
-                                            Graphics Design <br />
-                                            Mastery Course
+                                            Graphics Design Mastery Course
                                         </p>
-                                        <div>
-                                            <span className="line-through">n20,000</span>
-                                            <span>10,000</span>
+                                        <div className="white smallestText pb-4">
+                                            <span className="line-through p-2 greenbg">₦20,000</span>
+                                            <span className="p-2 greenbg ml-2">₦10,000</span>
                                         </div>
                                         <span className="smallestText blackText">
-                                            -- With 7 modules and over 20 videos of hands on practical
-                                            training where I take you throughevery single step of the
-                                            process. Everything from how to start as a beginner to 
-                                            becoming a pro, getting clients and sales to building 
-                                            a great design brand and portfolio.
+                                            With 7 modules and over 20 videos of hands-on 
+                                            crucial process in Design.
+                                            Everything from how to start as a beginner, 
+                                            becoming a pro, getting clients and more.
                                         </span>
                                     </Col>
+                                    <div className="pt-3">
+                                        <a 
+                                            href="https://bit.ly/DnEmoski" 
+                                           target="_blank" 
+                                           className="startnowarrow green montserrat b7"
+                                        >
+                                            Start Now! <img src={fwd} alt=""className="fwdarr"/>
+                                        </a>
+                                    </div>
                                 </Row>
                             </Col>
                             <Col md={6} sm={12}>
                                 <Row>
                                    <Col md={6} sm={12}>
-                                        <img src={P1} alt="" className="phldr"/>
+                                        <img src={P2} alt="" className="phldr"/>
                                     </Col>
                                     <Col md={6} sm={12}>
                                         <p className="green smallBoldText">
-                                            UI/UX Mastery <br />
-                                            Course
+                                            UI/UX Mastery Course
                                         </p>
-                                        <div>
-                                            <span className="line-through">n20,000</span>
-                                            <span>10,000</span>
+                                        <div className="white smallestText pb-4">
+                                            <span className="line-through p-2 greenbg">₦30,000</span>
+                                            <span className="p-2 greenbg ml-2">₦15,000</span>
                                         </div>
                                         <span className="smallestText blackText">
-                                            -- Explore user interface and user experience design that will teach 
-                                            you the basics of UI/UX design and hoe to use Adobe XD and Figma.
+                                            Explore user interface and user experience design that will teach 
+                                            you the basics of UI/UX design and how to use Adobe XD and Figma.
                                         </span>
                                     </Col>
+                                    <div className="pt-3">
+                                        <a 
+                                            href="https://daba.school/user/signup.php" 
+                                            target="_blank" 
+                                            className="startnowarrow green montserrat b7"
+                                        >
+                                            Start Now! <img src={fwd} alt=""className="fwdarr"/>
+                                        </a>
+                                    </div>
                                 </Row>
                             </Col>
-                            <Col md={6} sm={12}>
+                            <Col md={6} sm={12} className="pt-md-5">
                                 <Row>
                                    <Col md={6} sm={12}>
-                                        <img src={P1} alt="" className="phldr"/>
+                                        <img src={P3} alt="" className="phldr"/>
                                     </Col>
                                     <Col md={6} sm={12}>
-                                        <p className="green smallBoldText">
-                                            Microsoft Office for<br />
-                                            "Women"
+                                        <p className="green smallBoldText pt-1">
+                                            Microsoft Office for "Women"
                                         </p>
-                                        <div>
-                                            <span className="line-through">free</span>
-                                            <span>1,000</span>
+                                        <div className="white smallestText pb-4">
+                                            <span className="line-through p-2 greenbg">FREE</span>
+                                            <span className="p-2 greenbg ml-2">₦1,000</span>
                                         </div>
                                         <span className="smallestText blackText">
                                             Explore user interface and user experience design that will teach 
                                             you the basics of UI/UX design and hoe to use Adobe XD and Figma.
                                         </span>
                                     </Col>
+                                    <div className="pt-3">
+                                        <a 
+                                            href="https://paystack.com/pay/office4ladiesrecap" 
+                                            target="_blank" 
+                                            className="startnowarrow green montserrat b7"
+                                        >
+                                            Start Now! <img src={fwd} alt=""className="fwdarr"/>
+                                        </a>
+                                    </div>
                                 </Row>
                             </Col>
-                            <Col md={6} sm={12}>
+                            <Col md={6} sm={12} className="pt-md-5">
                                 <Row>
                                    <Col md={6} sm={12}>
-                                        <img src={P1} alt="" className="phldr"/>
+                                        <img src={P4} alt="" className="phldr"/>
                                     </Col>
                                     <Col md={6} sm={12}>
                                         <p className="green smallBoldText">
-                                            Portfolio for <br />
-                                            "Men"
+                                            Portfolio for "Men"
                                         </p>
-                                        <div>
-                                            <span>FREE</span>
-                                            <span>PENDING</span>
+                                        <div className="white smallestText pb-4">
+                                            <span className="line-through p-2 greenbg">FREE</span>
+                                            <span className="p-2 greenbg ml-2">PENDING</span>
                                         </div>
-                                        <span className="smallestText blackText">
-                                            --After the outcry of Men towards our to women... We decided 
-                                            to take the menon How to build a portfolio site without any 
+                                        <span className="extraSmallText blackText">
+                                            --After the out cry of Men towards our to women... We decided 
+                                            to take the men on how to build a portfolio site without any 
                                             code using Disha, Google site and Paystack. Register now before 
                                             its too late!
                                         </span>
                                     </Col>
+                                    <div className="pt-3">
+                                        <a 
+                                            href="https://bit.ly/Portfolio4Men" 
+                                            target="_blank" 
+                                            className="startnowarrow green montserrat b7"
+                                        >
+                                            Start Now! <img src={fwd} alt=""className="fwdarr"/>
+                                        </a>
+                                    </div>
                                 </Row>
                             </Col>
                         </Row>

@@ -34,14 +34,17 @@
     background-color: #076847;
 }
 
+.phldr{
+    width: 100%;
+}
 
-/* .a-rate-cards-title{
-    font-weight: bold;
-    font-size: 140%;
-    line-height: 150%;
-    padding: 0% 0 8%;
-    color: #343434;
-} */
+.startnowarrow{
+    margin-left: 50px;
+}
+
+.fwdarr{
+    height: 30px;
+}
 
 .a-rate-cards-list{
     list-style-type: none;

@@ -103,13 +103,13 @@ class NavBar extends Component {
                           <Nav.Link
                             className="cover"
                             href="/courses"
-                            target="blank"
                           >
                             Buy our Design Course
                           </Nav.Link>
                           <Nav.Link
                             className="cover"
                             href="https://bit.ly/designyarnREG"
+                            target="blank"
                           >
                             Design Yarn
                           </Nav.Link>
