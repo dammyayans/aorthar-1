@@ -8,6 +8,7 @@ import MerchBanner from "./MerchBanner";
 import greeniegreen from "../../images/green.png";
 import greeniewhite from "../../images/white.png";
 import greenieblack from "../../images/black.png";
+import ArrowDown from "../../images/arrow_drop_down.svg";
 
 import hoodieblack from "../../images/hoodie1.png";
 import hoodiewhite from "../../images/hoodie3.png";
@@ -17,6 +18,11 @@ import "./style.css";
 const MerchBody = () => {
   const [location, setLocation] = useState("");
   const [delivery, setDelivery] = useState(true);
+  const [shirtNumber, setShirtNumber] = useState({
+    hoodie: 0,
+    greenie: 1,
+    blackie: 0,
+  });
   const [color, setColor] = useState({
     hoodie: "green",
     greenie: "green",
@@ -81,9 +87,27 @@ const MerchBody = () => {
         hoodie={inCart.hoodie}
         blackie={inCart.blackie}
         greenie={inCart.greenie}
-        setBlackie={() => setInCart({ ...inCart, blackie: !inCart.blackie })}
-        setHoodie={() => setInCart({ ...inCart, hoodie: !inCart.hoodie })}
-        setGreenie={() => setInCart({ ...inCart, greenie: !inCart.greenie })}
+        setBlackie={() => {
+          setInCart({ ...inCart, blackie: !inCart.blackie });
+          setShirtNumber({
+            ...shirtNumber,
+            blackie: 1,
+          });
+        }}
+        setHoodie={() => {
+          setInCart({ ...inCart, hoodie: !inCart.hoodie });
+          setShirtNumber({
+            ...shirtNumber,
+            hoodie: 1,
+          });
+        }}
+        setGreenie={() => {
+          setInCart({ ...inCart, greenie: !inCart.greenie });
+          setShirtNumber({
+            ...shirtNumber,
+            greenie: 1,
+          });
+        }}
       />
 
       <Container className="a-case-study-wrapper">
@@ -118,7 +142,40 @@ const MerchBody = () => {
                 {inCart.hoodie ? (
                   <div className="d-flex shirt justify-content-center">
                     {findHoodieColor()}
-                    <p className="blackText bold">The Big Heart</p>
+                    <div className="d-flex">
+                      <p className="blackText bold">The Big Heart</p>
+
+                      <span className="counter">
+                        <img
+                          src={ArrowDown}
+                          alt="ArrowDown"
+                          style={{
+                            transform: "rotate(90deg)",
+                            fontSize: 24,
+                            visibility:
+                              shirtNumber.hoodie === 1 ? "hidden" : "visible",
+                          }}
+                          onClick={() => {
+                            setShirtNumber({
+                              ...shirtNumber,
+                              hoodie: shirtNumber.hoodie - 1,
+                            });
+                          }}
+                        />
+                        {shirtNumber.hoodie}
+                        <img
+                          src={ArrowDown}
+                          alt="ArrowDown"
+                          style={{ transform: "rotate(-90deg)", fontSize: 24 }}
+                          onClick={() =>
+                            setShirtNumber({
+                              ...shirtNumber,
+                              hoodie: shirtNumber.hoodie + 1,
+                            })
+                          }
+                        />
+                      </span>
+                    </div>
                     <div className="color-container">
                       <div
                         className="color"
@@ -139,7 +196,40 @@ const MerchBody = () => {
                 {inCart.greenie ? (
                   <div className="d-flex shirt justify-content-center">
                     {findGreenieColor()}
-                    <p className="blackText bold">The Big Heart</p>
+                    <div className="d-flex">
+                      <p className="blackText bold">The Big Heart</p>
+
+                      <span className="counter">
+                        <img
+                          src={ArrowDown}
+                          alt="ArrowDown"
+                          style={{
+                            transform: "rotate(90deg)",
+                            fontSize: 24,
+                            visibility:
+                              shirtNumber.greenie === 1 ? "hidden" : "visible",
+                          }}
+                          onClick={() => {
+                            setShirtNumber({
+                              ...shirtNumber,
+                              greenie: shirtNumber.greenie - 1,
+                            });
+                          }}
+                        />
+                        {shirtNumber.greenie}
+                        <img
+                          src={ArrowDown}
+                          alt="ArrowDown"
+                          style={{ transform: "rotate(-90deg)", fontSize: 24 }}
+                          onClick={() =>
+                            setShirtNumber({
+                              ...shirtNumber,
+                              greenie: shirtNumber.greenie + 1,
+                            })
+                          }
+                        />
+                      </span>
+                    </div>
                     <div className="color-container">
                       <div
                         className="color"
@@ -160,7 +250,40 @@ const MerchBody = () => {
                 {inCart.blackie ? (
                   <div className="d-flex shirt justify-content-center">
                     {findBlackieColor()}
-                    <p className="blackText bold">The Big Heart</p>
+                    <div className="d-flex">
+                      <p className="blackText bold">The Big Heart</p>
+
+                      <span className="counter">
+                        <img
+                          src={ArrowDown}
+                          alt="ArrowDown"
+                          style={{
+                            transform: "rotate(90deg)",
+                            fontSize: 24,
+                            visibility:
+                              shirtNumber.blackie === 1 ? "hidden" : "visible",
+                          }}
+                          onClick={() => {
+                            setShirtNumber({
+                              ...shirtNumber,
+                              blackie: shirtNumber.blackie - 1,
+                            });
+                          }}
+                        />
+                        {shirtNumber.blackie}
+                        <img
+                          src={ArrowDown}
+                          alt="ArrowDown"
+                          style={{ transform: "rotate(-90deg)", fontSize: 24 }}
+                          onClick={() =>
+                            setShirtNumber({
+                              ...shirtNumber,
+                              blackie: shirtNumber.blackie + 1,
+                            })
+                          }
+                        />
+                      </span>
+                    </div>
                     <div className="color-container">
                       <div
                         className="color"

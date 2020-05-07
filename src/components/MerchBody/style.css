@@ -91,6 +91,48 @@
     background-color: #fff;
 }
 
+input {
+    background: transparent;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #343434;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.serviceOptions {
+    width: 100%;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid #343434;
+    background: transparent;
+    padding: 0;
+}
+
+.serviceOptions {
+    padding: 6px;
+    border-bottom: 1px solid #343434;
+}
+
+.serviceOptions:active {
+    border: 0;
+}
+
+.submitButton {
+    padding: 10px 40px;
+    background-color: #076847;
+    border: 0;
+    color: #fff;
+}
+
+.counter {
+    font-size: 15px;
+}
+
+.counter img {
+    cursor: pointer;
+}
+
 @media only screen and (max-width:950px) {
     .merch-banner {
         height: 50vh;
