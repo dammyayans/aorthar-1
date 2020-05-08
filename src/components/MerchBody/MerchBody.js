@@ -23,6 +23,11 @@ const MerchBody = () => {
     greenie: 1,
     blackie: 0,
   });
+  const [shirtPrice, setShirtPrice] = useState({
+    hoodie: 0,
+    greenie: 3000,
+    blackie: 0,
+  });
   const [color, setColor] = useState({
     hoodie: "green",
     greenie: "green",
@@ -33,17 +38,28 @@ const MerchBody = () => {
     greenie: true,
     blackie: false,
   });
-  const [price] = useState(3000);
   const [total, setTotal] = useState(0);
   useEffect(() => {
     let dfee = 1000;
     if (location === "Lagos" || delivery === false) {
       dfee = 0;
-      setTotal(dfee + price);
+      setTotal(
+        dfee + shirtPrice.blackie + shirtPrice.greenie + shirtPrice.hoodie
+      );
     } else {
-      setTotal(dfee + price);
+      setTotal(
+        dfee + shirtPrice.blackie + shirtPrice.greenie + shirtPrice.hoodie
+      );
     }
-  }, [total, location, price, delivery]);
+  }, [
+    location,
+    delivery,
+    shirtPrice.blackie,
+    shirtPrice.greenie,
+    shirtPrice.hoodie,
+    inCart,
+    total,
+  ]);
   const wantDelivery = (e) => {
     e.preventDefault();
     setDelivery(!delivery);
@@ -93,6 +109,9 @@ const MerchBody = () => {
             ...shirtNumber,
             blackie: 1,
           });
+          !inCart.blackie
+            ? setShirtPrice({ ...shirtPrice, blackie: 3000 })
+            : setShirtPrice({ ...shirtPrice, blackie: 0 });
         }}
         setHoodie={() => {
           setInCart({ ...inCart, hoodie: !inCart.hoodie });
@@ -100,6 +119,9 @@ const MerchBody = () => {
             ...shirtNumber,
             hoodie: 1,
           });
+          !inCart.hoodie
+            ? setShirtPrice({ ...shirtPrice, hoodie: 3000 })
+            : setShirtPrice({ ...shirtPrice, hoodie: 0 });
         }}
         setGreenie={() => {
           setInCart({ ...inCart, greenie: !inCart.greenie });
@@ -107,6 +129,9 @@ const MerchBody = () => {
             ...shirtNumber,
             greenie: 1,
           });
+          !inCart.greenie
+            ? setShirtPrice({ ...shirtPrice, greenie: 3000 })
+            : setShirtPrice({ ...shirtPrice, greenie: 0 });
         }}
       />
 
@@ -160,6 +185,10 @@ const MerchBody = () => {
                               ...shirtNumber,
                               hoodie: shirtNumber.hoodie - 1,
                             });
+                            setShirtPrice({
+                              ...shirtPrice,
+                              hoodie: shirtPrice.hoodie - 3000,
+                            });
                           }}
                         />
                         {shirtNumber.hoodie}
@@ -167,12 +196,16 @@ const MerchBody = () => {
                           src={ArrowDown}
                           alt="ArrowDown"
                           style={{ transform: "rotate(-90deg)", fontSize: 24 }}
-                          onClick={() =>
+                          onClick={() => {
                             setShirtNumber({
                               ...shirtNumber,
                               hoodie: shirtNumber.hoodie + 1,
-                            })
-                          }
+                            });
+                            setShirtPrice({
+                              ...shirtPrice,
+                              hoodie: shirtPrice.hoodie + 3000,
+                            });
+                          }}
                         />
                       </span>
                     </div>
@@ -214,6 +247,10 @@ const MerchBody = () => {
                               ...shirtNumber,
                               greenie: shirtNumber.greenie - 1,
                             });
+                            setShirtPrice({
+                              ...shirtPrice,
+                              greenie: shirtPrice.greenie - 3000,
+                            });
                           }}
                         />
                         {shirtNumber.greenie}
@@ -221,12 +258,16 @@ const MerchBody = () => {
                           src={ArrowDown}
                           alt="ArrowDown"
                           style={{ transform: "rotate(-90deg)", fontSize: 24 }}
-                          onClick={() =>
+                          onClick={() => {
                             setShirtNumber({
                               ...shirtNumber,
                               greenie: shirtNumber.greenie + 1,
-                            })
-                          }
+                            });
+                            setShirtPrice({
+                              ...shirtPrice,
+                              greenie: shirtPrice.greenie + 3000,
+                            });
+                          }}
                         />
                       </span>
                     </div>
@@ -268,6 +309,10 @@ const MerchBody = () => {
                               ...shirtNumber,
                               blackie: shirtNumber.blackie - 1,
                             });
+                            setShirtPrice({
+                              ...shirtPrice,
+                              blackie: shirtPrice.blackie - 3000,
+                            });
                           }}
                         />
                         {shirtNumber.blackie}
@@ -275,12 +320,16 @@ const MerchBody = () => {
                           src={ArrowDown}
                           alt="ArrowDown"
                           style={{ transform: "rotate(-90deg)", fontSize: 24 }}
-                          onClick={() =>
+                          onClick={() => {
                             setShirtNumber({
                               ...shirtNumber,
                               blackie: shirtNumber.blackie + 1,
-                            })
-                          }
+                            });
+                            setShirtPrice({
+                              ...shirtPrice,
+                              blackie: shirtPrice.blackie + 3000,
+                            });
+                          }}
                         />
                       </span>
                     </div>
@@ -369,10 +418,34 @@ const MerchBody = () => {
                   </Row>
                   <Row className="mt-4">
                     <Col md={6}>
-                      <div className="d-flex justify-content-space">
-                        <p className="blackText bold">Shirt</p>
-                        <p className="blackText bold">N3000</p>
-                      </div>
+                      {inCart.hoodie ? (
+                        <div className="d-flex justify-content-space">
+                          <p className="blackText bold">
+                            Hoodie({shirtNumber.hoodie})
+                          </p>
+                          <p className="blackText bold">N{shirtPrice.hoodie}</p>
+                        </div>
+                      ) : null}
+                      {inCart.greenie ? (
+                        <div className="d-flex justify-content-space">
+                          <p className="blackText bold">
+                            Shirt({shirtNumber.greenie})
+                          </p>
+                          <p className="blackText bold">
+                            N{shirtPrice.greenie}
+                          </p>
+                        </div>
+                      ) : null}
+                      {inCart.blackie ? (
+                        <div className="d-flex justify-content-space">
+                          <p className="blackText bold">
+                            Shirt({shirtNumber.blackie})
+                          </p>
+                          <p className="blackText bold">
+                            N{shirtPrice.blackie}
+                          </p>
+                        </div>
+                      ) : null}
                       <div className="d-flex justify-content-space">
                         <p className="blackText bold">Delivery</p>
                         <p className="blackText bold">
@@ -386,7 +459,11 @@ const MerchBody = () => {
                       </button>
                     </Col>
                     <Col md={6} className="d-flex justify-content-center">
-                      <h2 className=" green bold">N{total}</h2>
+                      <h2 className=" green bold">
+                        {total === 1000
+                          ? "Please Select a Product above"
+                          : `N${total}`}
+                      </h2>
                     </Col>
                   </Row>
                 </form>
