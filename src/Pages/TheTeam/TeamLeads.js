@@ -7,24 +7,21 @@ import Damola from "../../images/Damola.png";
 import Pelumi from "../../images/Pelumi.png";
 import Naomi from "../../images/Naomi.png";
 import Opeyemi from "../../images/Opeyemi.png";
-// import Jolly from '../../images/Jolly.png';
 import Erica from "../../images/Erica.png";
-// import G1 from "../../images/gallery1.png";
-// import G2 from '../../images/gallery2.png'
-// import G3 from '../../images/gallery3.png'
 import ArrowDown from "../../images/arrow_drop_down.svg";
 
 export default function TeamLeads() {
   const [associates, setAssociates] = useState([
-    { name: "Uwa Benjamin", title: "Front End Dev", img: Pelumi },
+    { name: "Uwa Benjamin", title: "Under Review", img: Pelumi },
     { name: "Deji Dev", title: "Back End Dev", img: Erica },
     { name: "Blessing Okebe", title: "Front End Des", img: Damola },
     { name: "Ibukun Neema", title: "Content Dev", img: Naomi },
-    { name: "Gideon", title: "Full Stack Dev", img: Pelumi },
-    { name: "Alabi Emmanuel", title: "Content Dev", img: Erica },
-    { name: "Fola", title: "Back End Dev", img: Damola },
     { name: "Nancy", title: "Full Stack Dev", img: Erica },
     { name: "Mubarak", title: "Front End Dev", img: Naomi },
+    { name: "Gideon", title: "Under Review", img: Naomi },
+    { name: "Fola", title: "Under Review", img: Naomi },
+    { name: "Alabi Emmanuel", title: "Content Dev", img: Erica },
+    { name: "Olayemi", title: "Content Dev", img: Erica },
   ]);
   const changeIndex = (associate) => {
     let indexOfNew = associates.indexOf(associate);

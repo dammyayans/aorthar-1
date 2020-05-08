@@ -55,6 +55,24 @@ const Courses = lazy(
       setTimeout(() => resolve(import("./Pages/Courses")), 4000)
     )
 );
+const Case = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Case")), 4000)
+    )
+);
+const Case2 = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Case2")), 4000)
+    )
+);
+const Case3 = lazy(
+  () =>
+    new Promise((resolve, reject) =>
+      setTimeout(() => resolve(import("./Pages/Case3")), 4000)
+    )
+);
 const Form = lazy(
   () =>
     new Promise((resolve, reject) =>
@@ -142,6 +160,21 @@ const SubscriptionSusp = () => (
 const CoursesSusp = () => (
   <Suspense fallback={loading}>
     <Courses />
+  </Suspense>
+);
+const CaseSusp = () => (
+  <Suspense fallback={loading}>
+    <Case />
+  </Suspense>
+);
+const Case2Susp = () => (
+  <Suspense fallback={loading}>
+    <Case2 />
+  </Suspense>
+);
+const Case3Susp = () => (
+  <Suspense fallback={loading}>
+    <Case3 />
   </Suspense>
 );
 const FormSusp = (props) => (
@@ -254,6 +287,12 @@ export default function App() {
               <Route path="/Subscription" component={SubscriptionSusp} />
               
               <Route path="/Courses" component={CoursesSusp} />
+              
+              <Route path="/Case" component={CaseSusp} />
+              
+              <Route path="/Case2" component={Case2Susp} />
+              
+              <Route path="/Case3" component={Case3Susp} />
 
               <Route path="/Confirmation" component={ConfirmationSusp} />
 
