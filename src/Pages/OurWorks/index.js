@@ -6,9 +6,9 @@ import "../../components/GlobalStyles/global.css";
 import Arrow from "../../images/forward.png";
 import { Container, Row, Col } from "react-bootstrap";
 import GetStarted from "../../components/GetStarted/GetStarted";
-import Project1 from "../../images/Spotlight.png";
-import Project2 from "../../images/Spotlight2.png";
-import Project3 from "../../images/spotlight3.png";
+import PB from "../../images/parkwaybanner.png";
+import NAB from "../../images/nathanappbanner.png";
+import RB from "../../images/raeannabanner.png";
 
 export default function index() {
   return (
@@ -39,18 +39,21 @@ export default function index() {
             </Col>
           </Row>
           <Row>
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="/parkway" >
               <div className="a-previous-works1">
-                <img src={Project1} alt="" className="imm" />
-                {/* <span>test</span> */}
+                <img src={PB} alt="" className="imm" />
               </div>
             </a>
-            <div className="a-previous-works2">
-              <img src={Project2} alt="" className="imm" />
-            </div>
-            <div className="a-previous-works3">
-              <img src={Project3} alt="" className="imm" />
-            </div>
+            <a href="/NathanApp" >
+              <div className="a-previous-works1">
+                <img src={NAB} alt="" className="imm" />
+              </div>
+            </a>
+            <a href="/Raeanna" >
+              <div className="a-previous-works1">
+                <img src={RB} alt="" className="imm" />
+              </div>
+            </a>
           </Row>
         </Col>
         <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
@@ -69,7 +72,7 @@ export default function index() {
               </div>
             </Col>
           </Row>
-          <Row className="push montserrat blackText">
+          <Row className="push montserrat blackText pt-5">
             <Col xs={6} md={3}>
               <h3 className="mediumText ">Branding</h3>
               <li>Visual Branding</li>

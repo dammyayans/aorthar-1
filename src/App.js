@@ -55,22 +55,28 @@ const Courses = lazy(
       setTimeout(() => resolve(import("./Pages/Courses")), 4000)
     )
 );
-const Case = lazy(
+// const Case = lazy(
+//   () =>
+//     new Promise((resolve, reject) =>
+//       setTimeout(() => resolve(import("./Pages/Case")), 4000)
+//     )
+// );
+const NathanApp = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Case")), 4000)
+      setTimeout(() => resolve(import("./Pages/NathanApp")), 4000)
     )
 );
-const Case2 = lazy(
+const Parkway = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Case2")), 4000)
+      setTimeout(() => resolve(import("./Pages/Parkway")), 4000)
     )
 );
-const Case3 = lazy(
+const Raeanna = lazy(
   () =>
     new Promise((resolve, reject) =>
-      setTimeout(() => resolve(import("./Pages/Case3")), 4000)
+      setTimeout(() => resolve(import("./Pages/Raeanna")), 4000)
     )
 );
 const Form = lazy(
@@ -162,19 +168,24 @@ const CoursesSusp = () => (
     <Courses />
   </Suspense>
 );
-const CaseSusp = () => (
+// const CaseSusp = () => (
+//   <Suspense fallback={loading}>
+//     <Case />
+//   </Suspense>
+// );
+const NathanAppSusp = () => (
   <Suspense fallback={loading}>
-    <Case />
+    <NathanApp />
   </Suspense>
 );
-const Case2Susp = () => (
+const ParkwaySusp = () => (
   <Suspense fallback={loading}>
-    <Case2 />
+    <Parkway />
   </Suspense>
 );
-const Case3Susp = () => (
+const RaeannaSusp = () => (
   <Suspense fallback={loading}>
-    <Case3 />
+    <Raeanna />
   </Suspense>
 );
 const FormSusp = (props) => (
@@ -288,11 +299,13 @@ export default function App() {
               
               <Route path="/Courses" component={CoursesSusp} />
               
-              <Route path="/Case" component={CaseSusp} />
+              {/* <Route path="/Case" component={CaseSusp} /> */}
               
-              <Route path="/Case2" component={Case2Susp} />
+              <Route path="/NathanApp" component={NathanAppSusp} />
               
-              <Route path="/Case3" component={Case3Susp} />
+              <Route path="/Parkway" component={ParkwaySusp} />
+              
+              <Route path="/Raeanna" component={RaeannaSusp} />
 
               <Route path="/Confirmation" component={ConfirmationSusp} />
 

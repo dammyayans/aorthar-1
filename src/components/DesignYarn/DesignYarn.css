@@ -12,6 +12,7 @@
 
 .dyBanner{
     width: 100%;
+    border-radius: 25px;
 }
 
 .dyBanner:hover{
