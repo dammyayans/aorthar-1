@@ -2,3 +2,23 @@
     width: 100%;
     margin-top: 70px;
 }
+
+.style{
+    width: 100%;
+}
+
+.upp{
+    margin-top: 150px;
+}
+
+.doown{
+    padding-top: 30px;
+}
+
+.immmm{
+    background: linear-gradient( to bottom , #72727211, #72727223, url("parkwaybanner.png"));
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;    
+}

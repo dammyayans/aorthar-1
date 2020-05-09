@@ -5,6 +5,7 @@ import Fade from "react-reveal/Fade";
 import "../GlobalStyles/global.css";
 import "./CaseStudy.css";
 import { Container, Col, Row } from "react-bootstrap";
+import FA from '../../images/forward.png';
 
 export default class CaseStudy extends Component {
   render() {
@@ -38,18 +39,25 @@ export default class CaseStudy extends Component {
                 </Fade>
               </Col>
               <Col xs={12} md={4} className="p-2">
-                <Fade bottom delay={300}>
+                <Fade bottom delay={100}>
                   <div className="a-case-study-cards2"></div>
                 </Fade>
               </Col>
               <Col xs={12} md={4} className="p-2">
-                <Fade bottom delay={500}>
+                <Fade bottom delay={100}>
                   <div className="a-case-study-cards3"></div>
                 </Fade>
               </Col>
             </Row>
           </Col>
+          <center className="pt-4">
+            <a href="/ourworks" className="hhh green bold">
+            Check out our process <img src={FA} alt=""  className="arrowforward" />
+            </a>
+          </center>
         </Container>
+          {/* <Row> */}
+          {/* </Row> */}
       </Container>
     );
   }

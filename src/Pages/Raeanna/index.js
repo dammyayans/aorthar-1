@@ -8,6 +8,12 @@ import HeroImage from "../../images/raeannabanner.png";
 import CS1 from "../../images/raeanna1.png";
 import CS2 from "../../images/raeanna2.png";
 import CS3 from "../../images/raeanna3.png";
+import CS4 from "../../images/raeanna4.png";
+import CS7 from "../../images/raeanna7.png";
+import CS8 from "../../images/raeanna8.png";
+import CS9 from "../../images/raeanna9.png";
+import CS10 from "../../images/raeanna10.png";
+import CS11 from "../../images/raeanna11.png";
 import PB from "../../images/parkwaybanner.png";
 import NAB from "../../images/nathanappbanner.png";
 
@@ -54,7 +60,7 @@ export default class Raeanna extends Component {
                 <img src={CS3} alt="" className="gunner" />
               </Col>
               <Col md={6}>
-                <img src={CS3} alt="" className="gunner" />
+                <img src={CS4} alt="" className="gunner" />
               </Col>
             </Row>
           </Col>
@@ -87,9 +93,45 @@ export default class Raeanna extends Component {
               </Col>
             </Row>
           </Col>
+          <Col className="raeannabg pt-3 pb-5">
+            <Row>
+              <Col md={6}>
+                <img src={CS7} alt="" className="gunner" />
+              </Col>
+              <Col md={6}>
+                <img src={CS8} alt="" className="gunner" />
+              </Col>
+              <Col md={12}>
+                <img src={CS9} alt="" className="gunner" />
+              </Col>
+            </Row>
+          </Col>
+          
+          <Col>
+            <Row>
+                <Col md={6}>
+                  <img src={CS10} alt="" className="gunner" />
+                </Col>
+                <Col md={6}>
+                  <h2 className="bigText mt-5">
+                    <span className="blackText">Our <br className="break"/> Approach</span>
+                  </h2>
+                  <p className="smallestText blackText b4 montserrat  doown">
+                    Aorthar has delivered sterling service to a wide array of businesses in 
+                    a variety of industries, leaving a trail of thoroughly satisfied clients. 
+                    Across every engagement, there is one in common, irrepressible theme: out 
+                    commitment to excellence and branding that looks so real; it lives. Here 
+                    some of our previous works.
+                  </p>
+                </Col>
+                <Col md={12}>
+                  <img src={CS11} alt="" className="gunner" />
+                </Col>
+              </Row>
+          </Col>
 
-          <Col className="pt-5 pb-5">
-            <p className="bigText blackText">Check others</p>
+          <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }} className="upp pb-5" >
+            <p className="bigText blackText upp">Check others</p>
             <Row>
               <a href="/parkway" >
                 <div className="a-previous-works1">

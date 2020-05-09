@@ -21,6 +21,10 @@
     margin: 0;
 }
 
+.arrowforward{
+    margin-left: 1%;
+}
+
 .a-case-study-cards1 {
     background-image: url("../../images/Reasone.png");
 }

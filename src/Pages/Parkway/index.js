@@ -182,8 +182,8 @@ export default class Case extends Component {
             </Row>
           </Col>
 
-          <Col className="pt-5 pb-5">
-            <p className="bigText blackText">Check others</p>
+          <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }} className="upp pb-5" >
+            <p className="bigText blackText upp">Check others</p>
             <Row>
               <a href="/raeanna" >
                 <div className="a-previous-works1">
