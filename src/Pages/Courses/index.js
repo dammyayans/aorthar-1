@@ -41,7 +41,7 @@ export default class Courses extends Component {
                                     <Col md={6} sm={12}>
                                         <img src={P1} alt="" className="phldr"/>
                                     </Col>
-                                    <Col md={6} sm={12}>
+                                    <Col md={6} sm={12} className="ptsm">
                                         <p className="green smallBoldText">
                                             Graphics Design Mastery Course
                                         </p>
@@ -56,7 +56,7 @@ export default class Courses extends Component {
                                             becoming a pro, getting clients and more.
                                         </span>
                                     </Col>
-                                    <div className="pt-3">
+                                    <div className="pt-3 pbsm">
                                         <a 
                                             href="https://bit.ly/DnEmoski" 
                                             target="_blank" 
@@ -68,13 +68,13 @@ export default class Courses extends Component {
                                     </div>
                                 </Row>
                             </Col>
-                            <Col md={6} sm={12}>
+                            <Col md={6} sm={12} className="ptsm">
                                 <Row>
                                    <Col md={6} sm={12}>
                                         <img src={P2} alt="" className="phldr"/>
                                     </Col>
                                     <Col md={6} sm={12}>
-                                        <p className="green smallBoldText">
+                                        <p className="green smallBoldText ptsm">
                                             UI/UX Mastery Course
                                         </p>
                                         <div className="white smallestText pb-4">
@@ -86,7 +86,7 @@ export default class Courses extends Component {
                                             you the basics of UI/UX design and how to use Adobe XD and Figma.
                                         </span>
                                     </Col>
-                                    <div className="pt-3">
+                                    <div className="pt-3 pbsm">
                                         <a 
                                             href="https://daba.school/user/signup.php" 
                                             target="_blank" 
@@ -98,13 +98,13 @@ export default class Courses extends Component {
                                     </div>
                                 </Row>
                             </Col>
-                            <Col md={6} sm={12} className="pt-md-5">
+                            <Col md={6} sm={12} className="pt-md-5 ptsm">
                                 <Row>
                                    <Col md={6} sm={12}>
                                         <img src={P3} alt="" className="phldr"/>
                                     </Col>
                                     <Col md={6} sm={12}>
-                                        <p className="green smallBoldText pt-1">
+                                        <p className="green smallBoldText ptsm">
                                             Microsoft Office for "Women"
                                         </p>
                                         <div className="white smallestText pb-4">
@@ -116,7 +116,7 @@ export default class Courses extends Component {
                                             you the basics of UI/UX design and hoe to use Adobe XD and Figma.
                                         </span>
                                     </Col>
-                                    <div className="pt-3">
+                                    <div className="pt-3 pbsm">
                                         <a 
                                             href="https://paystack.com/pay/office4ladiesrecap" 
                                             target="_blank" 
@@ -128,13 +128,13 @@ export default class Courses extends Component {
                                     </div>
                                 </Row>
                             </Col>
-                            <Col md={6} sm={12} className="pt-md-5">
+                            <Col md={6} sm={12} className="pt-md-5 ptsm">
                                 <Row>
                                    <Col md={6} sm={12}>
                                         <img src={P4} alt="" className="phldr"/>
                                     </Col>
                                     <Col md={6} sm={12}>
-                                        <p className="green smallBoldText">
+                                        <p className="green smallBoldText ptsm">
                                             Portfolio for "Men"
                                         </p>
                                         <div className="white smallestText pb-4">
@@ -148,7 +148,7 @@ export default class Courses extends Component {
                                             its too late!
                                         </span>
                                     </Col>
-                                    <div className="pt-3">
+                                    <div className="pt-3 pbsm">
                                         <a 
                                             href="https://bit.ly/Portfolio4Men" 
                                             target="_blank" 

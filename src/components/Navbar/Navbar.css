@@ -126,7 +126,7 @@ nav {
   .explore{
     font-size: .8rem !important;
   }
-  /* .cover{
-    padding: 5px 0 5px !important;
-  } */
+  .cover{
+    padding: 10px 0 1px !important;
+  }
 }

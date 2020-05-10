@@ -40,7 +40,7 @@ export default function TeamLeads() {
             className="a-team-card-holder pushtop"
           >
             <Row>
-              <Col xs={12} md={4} className="a-blog-cards">
+              <Col xs={12} md={4} className="a-blog-cards dd">
                 <img src={Damola} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Adewale Adedamola
@@ -49,7 +49,7 @@ export default function TeamLeads() {
                   Team Lead, CEO
                 </span>
               </Col>
-              <Col xs={12} md={4} className="a-blog-cards">
+              <Col xs={12} md={4} className="a-blog-cards dd">
                 <img src={Pelumi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Eniodunmo Pelumi
@@ -58,7 +58,7 @@ export default function TeamLeads() {
                   Software and Tech
                 </span>
               </Col>
-              <Col xs={12} md={4} className="a-blog-cards">
+              <Col xs={12} md={4} className="a-blog-cards dd">
                 <img src={Naomi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Odidi Naomi
@@ -71,7 +71,7 @@ export default function TeamLeads() {
           </Col>
           <Col md={{ span: 10, offset: 1 }} className="a-blog-card-holder pt-3">
             <Row>
-              <Col xs={12} md={4} className="">
+              <Col xs={12} md={4} className="dd">
                 <img src={Opeyemi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Opeyemi Sanni
@@ -80,7 +80,7 @@ export default function TeamLeads() {
                   Content Development, CIO
                 </span>
               </Col>
-              <Col xs={12} md={4} className="">
+              <Col xs={12} md={4} className="dd">
                 <img src={Pelumi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Jolly Austin
@@ -89,7 +89,7 @@ export default function TeamLeads() {
                   Design and Creatives
                 </span>
               </Col>
-              <Col xs={12} md={4} className="">
+              <Col xs={12} md={4} className="dd">
                 <div>
                   <img src={Erica} alt="" className="img pb-1" />
                   <div className="bold mediumText pb-1 blackText">
@@ -114,7 +114,7 @@ export default function TeamLeads() {
                 </div>
               </Col>
               <Col xs={12} md={8}>
-                <div className="smallestText blackText b4 montserrat">
+                <div className="smallestText blackText b4 montserrat disapppear">
                   A team of all creative persons ranging from Developers, Social
                   Media Manager, Creative Writers, Motion Graphics, Animations,
                   Illustrators, UI/UX, Product Design, Copywriting, Trainers,

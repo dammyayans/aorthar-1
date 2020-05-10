@@ -161,4 +161,8 @@ a:hover{
     .break{
         display: block;
     }
+
+    .coverr{
+        padding: 5px 0 15px !important;
+    }
 }

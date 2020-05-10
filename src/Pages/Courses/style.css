@@ -93,4 +93,13 @@
     .a-response-rate-cards{
         margin-top: 15%;
     }
+    .ptsm{
+        padding-top: 15px;
+    }
+    .pbsm{
+        padding-bottom: 15px;
+    }
+    .startnowarrow {
+        margin-left: 14px;
+    }
 }

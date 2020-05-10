@@ -13,10 +13,6 @@ import Placeholder from "../../images/Opeyemi.png";
 import Placeholder2 from "../../images/Damola.png";
 import Placeholder3 from "../../images/Person4.png";
 
-// import ContactSection from './';
-// import DescSection from './';
-// import OtherLinks from './';
-
 class GetStarted extends Component {
   services = [
     "Branding and Design",

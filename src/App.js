@@ -230,6 +230,10 @@ body{
   background-color: ${(props) =>
     props.theme.mode === "dark" ? "#191919" : "#F3F3F3"};
 }
+.mainWhite{
+  color: ${(props) =>
+    props.theme.mode === "dark" ? "#FFFFFF" : "#076847"};
+}
 .heroheroL{
   display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")};
 }
