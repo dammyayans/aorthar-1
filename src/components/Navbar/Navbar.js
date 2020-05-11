@@ -97,17 +97,17 @@ class NavBar extends Component {
                     <Row>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" href="/apply">
+                          <Nav.Link className="cover coverr" href="/apply">
                             Career
                           </Nav.Link>
                           <Nav.Link
-                            className="cover"
+                            className="cover coverr"
                             href="/courses"
                           >
                             Buy our Design Course
                           </Nav.Link>
                           <Nav.Link
-                            className="cover"
+                            className="cover coverr"
                             href="https://bit.ly/designyarnREG"
                             target="blank"
                           >
@@ -116,21 +116,21 @@ class NavBar extends Component {
                         </div>
                         <div>
                           <Nav.Link
-                            className="cover"
+                            className="cover coverr"
                             href="https://web.facebook.com/Aorthar/"
                             target="blank"
                           >
                             Facebook
                           </Nav.Link>
                           <Nav.Link
-                            className="cover"
+                            className="cover coverr"
                             href="https://twitter.com/aorthar"
                             target="blank"
                           >
                             Twitter
                           </Nav.Link>
                           <Nav.Link
-                            className="cover"
+                            className="cover coverr"
                             href="https://www.instagram.com/aorthar/"
                             target="blank"
                           >
@@ -140,22 +140,22 @@ class NavBar extends Component {
                       </Col>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover" href="#">
+                          <Nav.Link className="cover coverr" href="#">
                             Get Started
                           </Nav.Link>
-                          <Nav.Link className="cover">Placeholder</Nav.Link>
-                          <Nav.Link className="cover" href="/subscription">
+                          <Nav.Link className="cover coverr">Placeholder</Nav.Link>
+                          <Nav.Link className="cover coverr" href="/subscription">
                             Design Subscription
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover" href="/ourworks">
+                          <Nav.Link className="cover coverr" href="/ourworks">
                             Our Works
                           </Nav.Link>
-                          <Nav.Link className="cover" href="/ourworks">
+                          <Nav.Link className="cover coverr" href="/ourworks">
                             Our Process
                           </Nav.Link>
-                          <Nav.Link className="cover" href="/merch">
+                          <Nav.Link className="cover coverr" href="/merch">
                             Rep our Brand
                           </Nav.Link>
                         </div>
@@ -178,19 +178,19 @@ class NavBar extends Component {
                   <Col sm={4} className="text-align-end">
                     <div className="mb-2">
                       <Nav.Link
-                        className="cover"
+                        className="cover coverr"
                         href="https://medium.com/@aorthar/"
                         target="blank"
                       >
                         Blog
                       </Nav.Link>
-                      <Nav.Link className="cover" href="/theteam">
+                      <Nav.Link className="cover coverr" href="/theteam">
                         Meet the Team
                       </Nav.Link>
-                      <Nav.Link className="cover" href="/subscription">
+                      <Nav.Link className="cover coverr" href="/subscription">
                         Pricing
                       </Nav.Link>
-                      <Nav.Link className="cover" href="#">
+                      <Nav.Link className="cover coverr" href="#">
                         Terms and Conditions
                       </Nav.Link>
                     </div>
@@ -198,16 +198,16 @@ class NavBar extends Component {
                       <h4>Talk to us?</h4>
                       <p>
                         <span className="font-weight-bold">Email:</span>{" "}
-                        <a href="mailto:hello@aorthar.com" className="green">
+                        <a href="mailto:hello@aorthar.com" className="mainWhite">
                           hello@aorthar.com
                         </a>
                       </p>
                       <p>
                         {/* <span className="font-weight-bold">WhatsApp:</span> +234(0)8144228160*/}
                         {/* <span> */}
-                        <a href="whatsapp://send/?phone=23480144228160&amp;text=Hello%20Aorthar!" target="blank" className="">
-                          <span className="font-weight-bold">WhatsApp:</span>{" "}
-                          <span className="green">080144228160</span>
+                        <a href="whatsapp://send/?phone=23480144228160&amp;text=Hello%20Aorthar!" target="blank" >
+                          <span className="font-weight-bold mainWhite">WhatsApp:</span>{" "}
+                          <span className="mainWhite">080144228160</span>
                         </a>
                         {/* </span> */}
                       </p>

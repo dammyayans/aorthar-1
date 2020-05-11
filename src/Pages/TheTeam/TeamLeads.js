@@ -9,6 +9,10 @@ import Naomi from "../../images/Naomi.png";
 import Opeyemi from "../../images/Opeyemi.png";
 import Erica from "../../images/Erica.png";
 import ArrowDown from "../../images/arrow_drop_down.svg";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function TeamLeads() {
   const [associates, setAssociates] = useState([
@@ -31,6 +35,14 @@ export default function TeamLeads() {
     newArray[0] = temp;
     setAssociates(newArray);
   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
     <div className="a-team-leads">
       <Container>
@@ -40,7 +52,7 @@ export default function TeamLeads() {
             className="a-team-card-holder pushtop"
           >
             <Row>
-              <Col xs={12} md={4} className="a-blog-cards">
+              <Col xs={12} md={4} className="a-blog-cards dd">
                 <img src={Damola} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Adewale Adedamola
@@ -49,7 +61,7 @@ export default function TeamLeads() {
                   Team Lead, CEO
                 </span>
               </Col>
-              <Col xs={12} md={4} className="a-blog-cards">
+              <Col xs={12} md={4} className="a-blog-cards dd">
                 <img src={Pelumi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Eniodunmo Pelumi
@@ -58,7 +70,7 @@ export default function TeamLeads() {
                   Software and Tech
                 </span>
               </Col>
-              <Col xs={12} md={4} className="a-blog-cards">
+              <Col xs={12} md={4} className="a-blog-cards dd">
                 <img src={Naomi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Odidi Naomi
@@ -71,7 +83,7 @@ export default function TeamLeads() {
           </Col>
           <Col md={{ span: 10, offset: 1 }} className="a-blog-card-holder pt-3">
             <Row>
-              <Col xs={12} md={4} className="">
+              <Col xs={12} md={4} className="dd">
                 <img src={Opeyemi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Opeyemi Sanni
@@ -80,7 +92,7 @@ export default function TeamLeads() {
                   Content Development, CIO
                 </span>
               </Col>
-              <Col xs={12} md={4} className="">
+              <Col xs={12} md={4} className="dd">
                 <img src={Pelumi} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Jolly Austin
@@ -89,7 +101,7 @@ export default function TeamLeads() {
                   Design and Creatives
                 </span>
               </Col>
-              <Col xs={12} md={4} className="">
+              <Col xs={12} md={4} className="dd">
                 <div>
                   <img src={Erica} alt="" className="img pb-1" />
                   <div className="bold mediumText pb-1 blackText">
@@ -117,7 +129,7 @@ export default function TeamLeads() {
                 </div>
               </Col>
               <Col xs={12} md={8}>
-                <div className="smallestText blackText b4 montserrat">
+                <div className="smallestText blackText b4 montserrat disapppear">
                   A team of all creative persons ranging from Developers, Social
                   Media Manager, Creative Writers, Motion Graphics, Animations,
                   Illustrators, UI/UX, Product Design, Copywriting, Trainers,
@@ -150,10 +162,22 @@ export default function TeamLeads() {
                     </Col>
                   ))}
                 </Row>
-                <Row className="d-block d-md-none d-lg-none">
+                <Row className="d-flex d-md-none d-lg-none">
                   <Col sm={2}></Col>
                   <Col sm={8}>
-                    <div></div>
+                    <Slider {...settings}>
+                      {associates.map((item, i) => (
+                        <div key={i}>
+                          <img src={item.img} alt="" width="100%" />
+                          <div className="d-flex justify-content-center mt-2 montserrat">
+                            <p className=" blackText bold mb-1">{item.name}</p>
+                          </div>
+                          <span className="smallestText blackText mb-1 b4 montserrat d-flex justify-content-center">
+                            {item.title}
+                          </span>
+                        </div>
+                      ))}
+                    </Slider>
                   </Col>
                   <Col sm={2}></Col>
                 </Row>

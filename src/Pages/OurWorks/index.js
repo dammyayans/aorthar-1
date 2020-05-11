@@ -187,7 +187,7 @@ export default function index() {
             </Col>
           </Row>
         </Col>
-        <GetStarted />
+        <GetStarted className="px-sm-0" />
       </Container>
     </Container>
   );

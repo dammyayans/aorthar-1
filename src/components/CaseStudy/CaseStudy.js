@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+// import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 import Fade from "react-reveal/Fade";
+import Cases from "../cases/Case";
 
 import "../GlobalStyles/global.css";
 import "./CaseStudy.css";
@@ -55,9 +58,8 @@ export default class CaseStudy extends Component {
             Check out our process <img src={FA} alt=""  className="arrowforward" />
             </a>
           </center>
+          <Cases />
         </Container>
-          {/* <Row> */}
-          {/* </Row> */}
       </Container>
     );
   }

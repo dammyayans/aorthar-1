@@ -14,7 +14,7 @@
 }
 
 .a-the-team-banner img {
-    width: 100%;
+    width: 103%;
 }
 
 .a-blog-card-holder .img {
@@ -40,16 +40,6 @@
     margin-top: 15%;
 }
 
-/* .a-team-bg3{
-    background-image: url('../../images/gallery3.png');
-}
-.a-team-bg2{
-    background-image: url('../../images/gallery2.png');    
-}   
-.a-team-bg1{
-    background-image: url('../../images/gallery1.png');
-} */
-
 .a-team-bg3,
 .a-team-bg2,
 .a-team-bg1 {
@@ -65,4 +55,21 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .a-the-team-banner img {
+        width: 103%;
+        margin-top: 65px;
+    }
+
+    .dd {
+        padding-bottom: 20px;
+    }
+
+    .disappear {
+        display: none;
+    }
+
 }
