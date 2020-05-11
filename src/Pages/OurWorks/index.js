@@ -1,8 +1,6 @@
 import React from "react";
-
 import "./style.css";
 import "../../components/GlobalStyles/global.css";
-
 import Arrow from "../../images/forward.png";
 import { Container, Row, Col } from "react-bootstrap";
 import GetStarted from "../../components/GetStarted/GetStarted";

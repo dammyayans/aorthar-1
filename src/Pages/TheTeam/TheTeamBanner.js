@@ -1,8 +1,5 @@
 import React from 'react'
-
-
 import './style.css';
-
 import { Container } from 'react-bootstrap';
 import TeamBanner from '../../images/theteam.png'
 

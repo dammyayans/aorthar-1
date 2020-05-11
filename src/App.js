@@ -1,19 +1,10 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import storage from "local-storage-fallback";
-
 import "./App.css";
 import "./components/Navbar/Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// import { Container } from "react-bootstrap";
-
-// import Logo from "./images/logo.png";
-// import MenuBar from "./images/menuicon.png";
-// import DarkModeIcon from "./images/darkmodeicon.png";
 import NavBar from "./components/Navbar/Navbar";
-// import Footer from "./components/Footer/Footer";
-
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import loader from "./images/Loader.mp4";
 import Default from "./Pages/404";
@@ -168,11 +159,6 @@ const CoursesSusp = () => (
     <Courses />
   </Suspense>
 );
-// const CaseSusp = () => (
-//   <Suspense fallback={loading}>
-//     <Case />
-//   </Suspense>
-// );
 const NathanAppSusp = () => (
   <Suspense fallback={loading}>
     <NathanApp />

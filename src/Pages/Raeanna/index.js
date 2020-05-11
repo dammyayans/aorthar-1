@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "react-bootstrap";
-
 import "./style.css";
 
 import HeroImage from "../../images/raeannabanner.png";

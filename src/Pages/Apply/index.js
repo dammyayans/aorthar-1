@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-
 import "./style.css";
 import "../../components/GlobalStyles/global.css";
 import { Container, Row, Col } from "react-bootstrap";

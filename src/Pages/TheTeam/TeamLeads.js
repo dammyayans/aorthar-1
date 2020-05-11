@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
-
 import Damola from "../../images/Damola.png";
 import Pelumi from "../../images/Pelumi.png";
 import Naomi from "../../images/Naomi.png";

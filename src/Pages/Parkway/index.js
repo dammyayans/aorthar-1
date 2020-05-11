@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Row, Col } from "react-bootstrap";
-
 import "./style.css";
 
 import HeroImage from "../../images/parkwaybanner.png";
@@ -16,6 +15,9 @@ import PW8 from "../../images/parkway8.png";
 import PW9 from "../../images/parkway9.png";
 import PW10 from "../../images/parkway10.png";
 import PW11 from "../../images/parkway11.png";
+import PW12 from "../../images/parkway12.png";
+import PW13 from "../../images/parkway13.png";
+import PW14 from "../../images/parkway14.png";
 import RB from "../../images/raeannabanner.png";
 import NAB from "../../images/nathanappbanner.png";
 
@@ -121,6 +123,15 @@ export default class Case extends Component {
                     </div>
                   </Col>
                 </Row>
+              </Col>
+              <Col md={12} className="uuup">
+                <img src={PW12} alt="" className="style" />
+              </Col>
+              <Col md={12} className="uuup">
+                <img src={PW13} alt="" className="style" />
+              </Col>
+              <Col md={12} className="uuup">
+                <img src={PW14} alt="" className="style" />
               </Col>
 
               <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>

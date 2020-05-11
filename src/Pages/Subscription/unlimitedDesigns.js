@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-
-// import  { Link }  from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
-
 import './style.css';
-// import HeroImg from '../../images/heroImg.png';
-// import Company1 from '../../images/company1.png';
-// import Company2 from '../../images/company2.png';
-// import Company3 from '../../images/company3.png';
 
 export default class Response extends Component {
     render() {
