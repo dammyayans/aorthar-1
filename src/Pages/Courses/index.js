@@ -39,7 +39,7 @@ export default class Courses extends Component {
                             <Col md={6} sm={12} className="px-0">
                                 <Row>
                                     <Col md={6} sm={12}>
-                                        <img src={P1} alt="" className="phldr"/>
+                                        <img src={P1} alt="" className="phldr style"/>
                                     </Col>
                                     <Col md={6} sm={12} className="ptsm">
                                         <p className="green smallBoldText">

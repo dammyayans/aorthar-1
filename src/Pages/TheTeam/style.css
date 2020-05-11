@@ -14,7 +14,7 @@
 }
 
 .a-the-team-banner img {
-    width: 103%;
+    width: 100%;
 }
 
 .a-blog-card-holder .img {
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 600px) {
     .a-the-team-banner img {
-        width: 103%;
+        width: 100%;
         margin-top: 65px;
     }
 

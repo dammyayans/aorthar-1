@@ -7,7 +7,7 @@ export default function TheTeamBanner() {
     return ( 
         <Container fluid>
            <div class="a-the-team-banner ptsm">
-               <img src={TeamBanner} alt=""/>
+               <img src={TeamBanner} alt="" className="style" />
            </div>
         </Container>
     )

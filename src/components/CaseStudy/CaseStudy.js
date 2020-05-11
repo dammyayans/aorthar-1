@@ -3,12 +3,21 @@ import React, { Component } from "react";
 import 'react-image-lightbox/style.css';
 
 import Fade from "react-reveal/Fade";
-import Cases from "../cases/Case";
 
 import "../GlobalStyles/global.css";
 import "./CaseStudy.css";
 import { Container, Col, Row } from "react-bootstrap";
 import FA from '../../images/forward.png';
+import UI from '../ui/ui';
+import UIW from '../uiuu/uiuu';
+import Branding from '../Branding/branding';
+import SOM from '../socialmedia/socialmedia';
+import Illustration from '../illustration/illustration';
+import Logos from "../Logos/Logos";
+
+
+
+import Cases from "../cases/Case";
 
 export default class CaseStudy extends Component {
   render() {
@@ -19,7 +28,8 @@ export default class CaseStudy extends Component {
             <Row className="pb-5 mp-0">
               <Col xs={12} md={6}>
                 <Fade bottom>
-                  <h2 className="bigText blackText">Case <br className="break" />Study</h2>
+                  <h2 className="bigText blackText">Our <br className="break" />
+                  <span className="green">Portfolio</span></h2>
                 </Fade>
               </Col>
               <Col xs={12} md={6}>
@@ -36,31 +46,27 @@ export default class CaseStudy extends Component {
           </Col>
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
-              <Col xs={12} md={4} className="p-2">
-                <Fade bottom delay={100}>
-                  <div className="a-case-study-cards1"></div>
-                </Fade>
-              </Col>
-              <Col xs={12} md={4} className="p-2">
-                <Fade bottom delay={100}>
-                  <div className="a-case-study-cards2"></div>
-                </Fade>
-              </Col>
-              <Col xs={12} md={4} className="p-2">
-                <Fade bottom delay={100}>
-                  <div className="a-case-study-cards3"></div>
-                </Fade>
-              </Col>
+              <Branding />
+              <Illustration />
+              <UI />
+              <SOM />
+              <Logos />
+              <UIW />
+              <Cases />
             </Row>
           </Col>
-          <center className="pt-4">
+          <center className="pt-5">
             <a href="/ourworks" className="hhh green bold">
             Check out our process <img src={FA} alt=""  className="arrowforward" />
             </a>
           </center>
-          <Cases />
         </Container>
       </Container>
     );
   }
 }
+
+
+// Social Media
+// PRODUCT DESIGN
+// LOGOS

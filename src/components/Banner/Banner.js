@@ -10,6 +10,8 @@ import HeroImgD from "../../images/heroImgD.png";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
+import Company4 from "../../images/company4.png";
+import Company5 from "../../images/company5.png";
 import PlayIcon from "../../images/playIcon.png";
 import video from "../../images/Aorthar Playback.mp4";
 
@@ -200,7 +202,7 @@ export default class Banner extends Component {
                   </Slide>
                   <Slide left duration={1000}>
                     <img
-                      src={Company1}
+                      src={Company2}
                       alt="Company1"
                       className="a-banner-company-img"
                     />
@@ -211,14 +213,14 @@ export default class Banner extends Component {
                 <div>
                   <Slide left duration={1000}>
                     <img
-                      src={Company1}
+                      src={Company3}
                       alt="Company1"
                       className="a-banner-company-img"
                     />
                   </Slide>
                   <Slide left duration={1000}>
                     <img
-                      src={Company2}
+                      src={Company4}
                       alt="Company2"
                       className="a-banner-company-img"
                     />
@@ -229,7 +231,7 @@ export default class Banner extends Component {
                 <div>
                   <Slide left duration={1000}>
                     <img
-                      src={Company1}
+                      src={Company5}
                       alt="Company1"
                       className="a-banner-company-img"
                     />
@@ -237,7 +239,7 @@ export default class Banner extends Component {
 
                   <Slide left duration={1000}>
                     <img
-                      src={Company3}
+                      src={Company1}
                       alt="Company3"
                       className="a-banner-company-img"
                     />

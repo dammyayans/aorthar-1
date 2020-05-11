@@ -6,7 +6,6 @@ import DesignSubscription from "./dSubscription";
 import NewsletterSubscription from "./nSubscription";
 import DesignQuotes from "./designQuotes";
 import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 
 export default class OurPackages extends Component {
   render() {
@@ -28,9 +27,7 @@ export default class OurPackages extends Component {
                 </Col>
               </Col>
               <Col xs={12} md={5}>
-                <Fade right delay={1000}>
                   <DesignQuotes />
-                </Fade>
               </Col>
             </Row>
           </Col>
