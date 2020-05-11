@@ -190,7 +190,6 @@ const MerchSusp = () => (
   </Suspense>
 );
 
-
 const GlobalStyle = createGlobalStyle`
 
 body{
@@ -217,8 +216,7 @@ body{
     props.theme.mode === "dark" ? "#191919" : "#F3F3F3"};
 }
 .mainWhite{
-  color: ${(props) =>
-    props.theme.mode === "dark" ? "#FFFFFF" : "#076847"};
+  color: ${(props) => (props.theme.mode === "dark" ? "#FFFFFF" : "#076847")};
 }
 .heroheroL{
   display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")};
@@ -286,15 +284,15 @@ export default function App() {
               <Route exact path="/" component={HomeSusp} />
 
               <Route path="/Subscription" component={SubscriptionSusp} />
-              
+
               <Route path="/Courses" component={CoursesSusp} />
-              
+
               {/* <Route path="/Case" component={CaseSusp} /> */}
-              
+
               <Route path="/NathanApp" component={NathanAppSusp} />
-              
+
               <Route path="/Parkway" component={ParkwaySusp} />
-              
+
               <Route path="/Raeanna" component={RaeannaSusp} />
 
               <Route path="/Confirmation" component={ConfirmationSusp} />
@@ -310,7 +308,6 @@ export default function App() {
               <Route path="/Apply" component={ApplySusp} />
 
               <Route component={Default} />
-
             </Switch>
             <Suspense fallback={""}>
               <Footer />

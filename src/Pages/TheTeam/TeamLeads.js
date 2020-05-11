@@ -7,6 +7,10 @@ import Naomi from "../../images/Naomi.png";
 import Opeyemi from "../../images/Opeyemi.png";
 import Erica from "../../images/Erica.png";
 import ArrowDown from "../../images/arrow_drop_down.svg";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function TeamLeads() {
   const [associates, setAssociates] = useState([
@@ -28,6 +32,14 @@ export default function TeamLeads() {
     newArray[indexOfNew] = newArray[0];
     newArray[0] = temp;
     setAssociates(newArray);
+  };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
   };
   return (
     <div className="a-team-leads">
@@ -107,7 +119,10 @@ export default function TeamLeads() {
               <Col xs={12} md={4}>
                 <h2 className="bigText blackText">Associates</h2>
 
-                <div md={6} className="a-blog-cards mt-5">
+                <div
+                  md={6}
+                  className="a-blog-cards mt-5 d-sm-none d-none d-md-block"
+                >
                   <img src={associates[0].img} alt="" className="img pb-1" />
                 </div>
               </Col>
@@ -119,7 +134,7 @@ export default function TeamLeads() {
                   Idea Innovators and Brnad Steategist.
                 </div>
                 <Row className="mt-5 montserrat">
-                  <Col md={6} className="mr-3 mb-3">
+                  <Col md={6} className="mr-3 mb-3 d-sm-none d-none d-md-block">
                     <div className="d-flex justify-content-space montserrat">
                       <p className=" blackText bold mb-0">
                         {associates[0].name}
@@ -130,8 +145,9 @@ export default function TeamLeads() {
                       {associates[0].title}
                     </span>
                   </Col>
+
                   {associates.slice(1, 9).map((associate, i) => (
-                    <Col md={6} key={i}>
+                    <Col md={6} key={i} className="d-sm-none d-none d-md-block">
                       <div
                         className="d-flex cursor-pointer justify-content-space"
                         onClick={() => changeIndex(associate)}
@@ -143,6 +159,25 @@ export default function TeamLeads() {
                       </div>
                     </Col>
                   ))}
+                </Row>
+                <Row className="d-flex d-md-none d-lg-none">
+                  <Col sm={2}></Col>
+                  <Col sm={8}>
+                    <Slider {...settings}>
+                      {associates.map((item, i) => (
+                        <div key={i}>
+                          <img src={item.img} alt="" width="100%" />
+                          <div className="d-flex justify-content-center mt-2 montserrat">
+                            <p className=" blackText bold mb-1">{item.name}</p>
+                          </div>
+                          <span className="smallestText blackText mb-1 b4 montserrat d-flex justify-content-center">
+                            {item.title}
+                          </span>
+                        </div>
+                      ))}
+                    </Slider>
+                  </Col>
+                  <Col sm={2}></Col>
                 </Row>
               </Col>
             </Row>

@@ -5,20 +5,22 @@ import "../../components/GlobalStyles/global.css";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Form(props) {
-  const [service, setService] = useState(props.match.params.service);
+  const [service, setService] = useState("");
   return (
     <Container fluid className="formwrapper pb-5 greenbg whiteText">
       <Helmet>
         <meta charset="utf-8" />
-        <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
+        <title>
+          Aorthar | Creative Agency | Brand Identity | Software Development{" "}
+        </title>
       </Helmet>
       <Container>
         <Row>
           <Col
             md={{ span: 8, offset: 1 }}
-            className="a-team-card-holder pushtop"
+            className="a-team-card-holder pushtop mt-4"
           >
-            <div className="bigText">Tell us about your project</div>
+            <div className="bigText mt-4">Tell us about your project</div>
             <p className="smallestText b4 montserrat mt-2">
               Complete this form and we'll reach out ot you
             </p>
