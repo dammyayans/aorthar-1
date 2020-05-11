@@ -1,15 +1,14 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from "react";
 
-import TheTeamBanner from './TheTeamBanner';
-import TeamLeads from './TeamLeads';
-import GetStarted from '../../components/GetStarted/GetStarted';
+import TheTeamBanner from "./TheTeamBanner";
+import TeamLeads from "./TeamLeads";
+import GetStarted from "../../components/GetStarted/GetStarted";
 export default function index() {
-    return ( 
-        <Container fluid className="whitebg">
-            <TheTeamBanner />
-            <TeamLeads />
-            <GetStarted />
-        </Container>
-    )
+  return (
+    <div fluid className="whitebg">
+      <TheTeamBanner />
+      <TeamLeads />
+      <GetStarted />
+    </div>
+  );
 }
