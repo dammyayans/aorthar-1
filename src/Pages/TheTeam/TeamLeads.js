@@ -109,7 +109,10 @@ export default function TeamLeads() {
               <Col xs={12} md={4}>
                 <h2 className="bigText blackText">Associates</h2>
 
-                <div md={6} className="a-blog-cards mt-5">
+                <div
+                  md={6}
+                  className="a-blog-cards mt-5 d-sm-none d-none d-md-block"
+                >
                   <img src={associates[0].img} alt="" className="img pb-1" />
                 </div>
               </Col>
@@ -121,7 +124,7 @@ export default function TeamLeads() {
                   Idea Innovators and Brnad Steategist.
                 </div>
                 <Row className="mt-5 montserrat">
-                  <Col md={6} className="mr-3 mb-3">
+                  <Col md={6} className="mr-3 mb-3 d-sm-none d-none d-md-block">
                     <div className="d-flex justify-content-space montserrat">
                       <p className=" blackText bold mb-0">
                         {associates[0].name}
@@ -132,8 +135,9 @@ export default function TeamLeads() {
                       {associates[0].title}
                     </span>
                   </Col>
+
                   {associates.slice(1, 9).map((associate, i) => (
-                    <Col md={6} key={i}>
+                    <Col md={6} key={i} className="d-sm-none d-none d-md-block">
                       <div
                         className="d-flex cursor-pointer justify-content-space"
                         onClick={() => changeIndex(associate)}
@@ -145,6 +149,13 @@ export default function TeamLeads() {
                       </div>
                     </Col>
                   ))}
+                </Row>
+                <Row className="d-block d-md-none d-lg-none">
+                  <Col sm={2}></Col>
+                  <Col sm={8}>
+                    <div></div>
+                  </Col>
+                  <Col sm={2}></Col>
                 </Row>
               </Col>
             </Row>
