@@ -115,9 +115,9 @@ option {
     z-index: 3;
 }
 
-/* .playButton{
-    height: 10px;
-} */
+.playButton{
+    padding: 0 10px;
+}
 
 .pulse {
     padding: 8px;

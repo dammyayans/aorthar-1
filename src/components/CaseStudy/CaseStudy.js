@@ -22,7 +22,7 @@ import Cases from "../cases/Case";
 export default class CaseStudy extends Component {
   render() {
     return (
-      <Container fluid className="whitebg">
+      <Container fluid className="whitebg" id="ourworks">
         <Container className="a-case-study-wrapper a-case-study-wrapper">
           <Col md={{ span: 8, offset: 2 }}>
             <Row className="pb-5 mp-0">

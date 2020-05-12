@@ -25,7 +25,7 @@ export default class Courses extends Component {
                                 <h2 className="bigText blackText">Our Online <br/> Courses</h2>
                             </Col>
                             <Col xs={12} md={5} sm={12}>
-                                <div className="a-wwa-caption smallestText blackText">
+                                <div className="a-wwa-caption smallestText blackText pt-2">
                                     We host top instructors from design industry to teach students 
                                     how to become professionals. Here are some available courses.
                                     You can get started today.
@@ -139,7 +139,7 @@ export default class Courses extends Component {
                                         </p>
                                         <div className="white smallestText pb-4">
                                             <span className="line-through p-2 greenbg">FREE</span>
-                                            <span className="p-2 greenbg ml-2">PENDING</span>
+                                            <span className="p-2 greenbg ml-2">₦1,000</span>
                                         </div>
                                         <span className="extraSmallText blackText">
                                             --After the out cry of Men towards our to women... We decided 

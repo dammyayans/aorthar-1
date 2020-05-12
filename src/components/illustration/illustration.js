@@ -3,13 +3,16 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css"; // This only needs to be imported once in your app
 import { Col } from "react-bootstrap";
 
-import i2 from "../../images/instalikes.gif";
-import i1 from "../../images/skatinggirl.gif";
-import i3 from "../../images/illustration.jpeg";
-import i4 from "../../images/illustration5.png";
-import i5 from "../../images/ilustration2.jpeg";
+import i1 from "../../images/illustration/i1.png";
+import i2 from "../../images/illustration/i2.gif";
+import i3 from "../../images/illustration/i3.gif";
+import i4 from "../../images/illustration/i4.png";
+import i5 from "../../images/illustration/i5.png";
+import i6 from "../../images/illustration/i6.png";
+import i7 from "../../images/illustration/i7.png";
+import i8 from "../../images/illustration/i8.png";
 
-const ill = [i1, i2, i3, i4, i5];
+const ill = [i1, i2, i3, i4, i5, i6, i7, i8];
 
 export default class LightboxExample extends Component {
   constructor(props) {
@@ -27,7 +30,7 @@ export default class LightboxExample extends Component {
     return (
         <Col md={4} sm={12}>
           <span>
-              <div className="branding style"
+              <div className="branding style pushtt"
               
                 onClick={() => this.setState({ isOpen: true })}
                 ></div>

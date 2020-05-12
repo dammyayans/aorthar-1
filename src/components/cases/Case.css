@@ -40,9 +40,7 @@
     background-image: url("../../images/branding21.png");
   }
 
-  .bbranding{
-    background-image: url("../../images/0000.png");
-  }
+
 
   .codson{
     background-image: url("../../images/uiuu.png");
@@ -51,10 +49,18 @@
   .uiuu{
     background-image: url("../../images/abit.png");
   }
-  .sos{
-    background-image: url("../../images/sos1.png");
-  }
+
 
   .uiuuw{
     background-image: url("../../images/uiuuweb.png");
+  }
+
+  /* CROSSCHECKED */
+
+  .bbranding{
+    background-image: url("../../images/branding21.png");
+  }
+
+  .sos{
+    background-image: url("../../images/Ofelus.png");
   }

@@ -25,20 +25,15 @@
     margin-left: 1%;
 }
 
-.a-case-study-cards1 {
-    background-image: url("../../images/Reasone.png");
+.pushtt{
+    padding-top: 20px !important;
 }
 
-.a-case-study-cards3 {
-    background-image: url("../../images/Raeanna.png");
-}
-
-.a-case-study-cards2 {
-    background-image: url("../../images/Ofelus.png");
-}
 
 @media screen and (max-width: 600px) {
     .a-case-study-wrapper {
         padding: 20% 0 20%;
     }
+
+    
 }

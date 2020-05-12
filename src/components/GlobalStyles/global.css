@@ -145,6 +145,8 @@ a:hover{
     width: 100%;
 }
 
+
+
 @media screen and (max-width: 600px){
     .bigGreenText{
         color: #076847;
@@ -158,11 +160,16 @@ a:hover{
         font-weight: 900;
         font-family: 'Montserrat', sans-serif;
     } 
+
     .break{
         display: block;
     }
 
     .coverr{
         padding: 5px 0 5px !important;
+    }
+
+    .pushtt{
+        margin-top: 20px !important;
     }
 }

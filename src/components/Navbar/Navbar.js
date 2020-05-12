@@ -140,7 +140,7 @@ class NavBar extends Component {
                       </Col>
                       <Col sm={6}>
                         <div className="mb-3">
-                          <Nav.Link className="cover coverr" href="#">
+                          <Nav.Link className="cover coverr" href="/Formuiux">
                             Get Started
                           </Nav.Link>
                           <Nav.Link className="cover coverr">Placeholder</Nav.Link>
@@ -149,7 +149,7 @@ class NavBar extends Component {
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover coverr" href="/ourworks">
+                          <Nav.Link className="cover coverr" href="/#ourworks">
                             Our Works
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/ourworks">

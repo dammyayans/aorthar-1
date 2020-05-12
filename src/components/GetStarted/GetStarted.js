@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 import "./GetStarted.css";
 import "../GlobalStyles/global.css";
 
-import Placeholder from "../../images/Opeyemi.png";
-import Placeholder2 from "../../images/Damola.png";
-import Placeholder3 from "../../images/Person4.png";
+import Placeholder from "../../images/Chris.png";
+import Placeholder2 from "../../images/Emmanuel.png";
+import Placeholder3 from "../../images/rhoda.png";
 
 class GetStarted extends Component {
   services = [
@@ -32,21 +32,21 @@ class GetStarted extends Component {
       quote:
         "Aorthar has immersed itself into the work they do and that has made them outstanding from the rest. They give us so much attention to their work and every little detail matters so much to them.",
       image: Placeholder,
-      author: "Karr Johnson",
+      author: "Chris",
     },
     {
       quote:
         "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with",
       // "If you are above twenty-one(21) in life and you've not started speaking in tongues, ha! my brother, your life is a joke . blah blah blah blah blah blah blah blah",
       image: Placeholder2,
-      author: "Kunle Kiitan",
+      author: "Emmanuel",
     },
     {
       quote:
         // "hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle",
         "I’ve known Damola for only a short time What makes me like him and really connect with him is the simplicity with which he does his designs. Simple and yet classy. I would recommend him anytime anyday",
       image: Placeholder3,
-      author: "Oni Benjamin",
+      author: "Rhoda",
     },
   ];
   randomQuoteGenerator = () =>
@@ -125,42 +125,41 @@ class GetStarted extends Component {
                 </Fade>
               </Col>
               <Col xs={12} md={6} className="">
-                <Fade bottom>
+                {/* <Fade bottom> */}
                   <Row className="justify-content-md-center blackText">
                     <Col md="auto" className="a-get-started-testimonies">
-                      <Zoom spy={this.state.change} duration={600}>
+                      {/* <Zoom spy={this.state.change} duration={600}> */}
                         <img
                           src={this.state.randomQuote.image}
                           alt="person"
-                          className="whitealways"
                         />
-                      </Zoom>
+                      {/* </Zoom> */}
                       <div>
                         <div className="a-get-started-words blackText smallText blackText b4">
-                          <Zoom
-                            spy={this.state.change}
+                          {/* <Zoom */}
+                            {/* spy={this.state.change}
                             delay={200}
-                            duration={800}
-                          >
+                            duration={800}? */}
+                          
                             <p className="white">
                               {this.state.randomQuote.quote}
                             </p>
-                          </Zoom>
-                          <Zoom
-                            spy={this.state.change}
+                          {/* </Zoom> */}
+                          {/* <Zoom */}
+                            {/* spy={this.state.change}
                             delay={300}
-                            duration={1000}
-                          >
+                            duration={1000} >*/}
+                          
                             <p className="white bold">
                               <span>- </span>
                               {this.state.randomQuote.author}
                             </p>
-                          </Zoom>
+                          {/* </Zoom> */}
                         </div>
                       </div>
                     </Col>
                   </Row>
-                </Fade>
+                {/* </Fade> */}
               </Col>
             </Row>
           </Col>

@@ -21,7 +21,7 @@
 .a-get-started-testimonies img {
     display: flex;
     margin: 0 auto;
-    border: 7px solid #fff;
+    border: none !important;
     border-radius: 50%;
     height: 150px;
     min-height: 150px;
@@ -76,7 +76,7 @@
 
     .a-get-started-testimonies {
         background-color: #076847;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         height: 50%;
         margin: 20% 4% 0;
     }
@@ -84,8 +84,7 @@
     .a-get-started-testimonies img {
         display: flex;
         margin: 0 auto;
-        border: 7px solid #fff;
-        border-radius: 50%;
+        border: none !important;
         height: 110px;
         margin-top: -15%;
     }

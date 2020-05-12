@@ -5,7 +5,42 @@ import Damola from "../../images/Damola.png";
 import Pelumi from "../../images/Pelumi.png";
 import Naomi from "../../images/Naomi.png";
 import Opeyemi from "../../images/Opeyemi.png";
+import Jolly from "../../images/Jolly.png";
 import Erica from "../../images/Erica.png";
+
+import Deji from "../../images/Deji.png";
+import Benn from "../../images/Benn.png";
+import Ibukun from "../../images/Ibukun.png";
+import Mubarak from "../../images/Mubarak.png";
+import Nancy from "../../images/Nancy.png";
+import Emma from "../../images/Emmanuell.png";
+
+// import g1 from "../../images/gallery/g1.png";
+// import g2 from "../../images/gallery/g2.png";
+// import g3 from "../../images/gallery/g3.png";
+// import g4 from "../../images/gallery/g4.png";
+// import g5 from "../../images/gallery/g5.png";
+// import g6 from "../../images/gallery/g6.png";
+// import g7 from "../../images/gallery/g7.png";
+// import g8 from "../../images/gallery/g8.png";
+// import g9 from "../../images/gallery/g9.png";
+// import g10 from "../../images/gallery/g10.png";
+// import g11 from "../../images/gallery/g11.png";
+// import g12 from "../../images/gallery/g12.png";
+// import g13 from "../../images/gallery/g13.png";
+// import g14 from "../../images/gallery/g14.png";
+// import g15 from "../../images/gallery/g15.png";
+// import g16 from "../../images/gallery/g16.png";
+// import g17 from "../../images/gallery/g17.png";
+// import g18 from "../../images/gallery/g18.png";
+// import g19 from "../../images/gallery/g19.png";
+// import g20 from "../../images/gallery/g20.png";
+// import g21 from "../../images/gallery/g21.png";
+// import g22 from "../../images/gallery/g22.png";
+// import g23 from "../../images/gallery/g23.png";
+// import g24 from "../../images/gallery/g24.png";
+
+
 import ArrowDown from "../../images/arrow_drop_down.svg";
 import Slider from "react-slick";
 
@@ -14,16 +49,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function TeamLeads() {
   const [associates, setAssociates] = useState([
-    { name: "Uwa Benjamin", title: "Under Review", img: Pelumi },
-    { name: "Deji Dev", title: "Back End Dev", img: Erica },
-    { name: "Blessing Okebe", title: "Front End Des", img: Damola },
-    { name: "Ibukun Neema", title: "Content Dev", img: Naomi },
-    { name: "Nancy", title: "Full Stack Dev", img: Erica },
-    { name: "Mubarak", title: "Front End Dev", img: Naomi },
-    { name: "Gideon", title: "Under Review", img: Naomi },
-    { name: "Fola", title: "Under Review", img: Naomi },
-    { name: "Alabi Emmanuel", title: "Content Dev", img: Erica },
-    { name: "Olayemi", title: "Content Dev", img: Erica },
+    { name: "Uwa Benjamin", title: "Wordpress Developer", img: Benn },
+    { name: "Abdulazeez Adeyiga", title: "FrontEnd Developer", img: Deji },
+    { name: "Ibukun Adezemi", title: "Motion and Illustration Designer", img: Ibukun },
+    { name: "Mubarak Adesina", title: "UI/UX Designer", img: Mubarak },
+    { name: "Nancy Amaku", title: "General Intern", img: Nancy },
+    { name: "Alabi Emmanuel", title: "Graphics Desiner", img: Emma }    
   ]);
   const changeIndex = (associate) => {
     let indexOfNew = associates.indexOf(associate);
@@ -91,7 +122,7 @@ export default function TeamLeads() {
                 </span>
               </Col>
               <Col xs={12} md={4} className="dd">
-                <img src={Pelumi} alt="" className="img pb-1" />
+                <img src={Jolly} alt="" className="img pb-1" />
                 <div className="bold mediumText pb-1 blackText">
                   Jolly Austin
                 </div>
@@ -202,9 +233,26 @@ export default function TeamLeads() {
         <Row>
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
-              <Col xs={12} md={4} className="a-team-bg1"></Col>
-              <Col xs={12} md={4} className="a-team-bg2"></Col>
-              <Col xs={12} md={4} className="a-team-bg3"></Col>
+                <Col xs={12} md={4} className="">
+                  1
+                </Col>
+                <Col xs={12} md={4} className="">
+                  2
+                </Col>
+                <Col xs={12} md={4} className="">
+                  3
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="">
+                  1
+                </Col>
+                <Col xs={12} md={4} className="">
+                  2
+                </Col>
+                <Col xs={12} md={4} className="">
+                  3
+                </Col>
             </Row>
           </Col>
         </Row>

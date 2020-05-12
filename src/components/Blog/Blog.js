@@ -18,7 +18,7 @@ export default class Blog extends Component {
                         <Col md={{ span: 10, offset: 1 }} className="a-blog-heading">
                             <p className="bigText blackText montserrat">From the Blog</p>    
                         </Col>
-                        <Col md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1}} className="a-blog-card-holder">
+                        <Col md={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1}} className="a-blog-card-holder pt-4">
                             <Row>
                                 <Col xs={12} md={4} className="a-blog-cards">
                                     <a href="https://medium.com/@aorthar/art-generally-has-been-viewed-as-the-most-thriving-force-evolving-the-universe-with-its-alluring-fa0232fa7dc5" target="blank">

@@ -4,13 +4,14 @@ import "react-image-lightbox/style.css";
 import { Col } from "react-bootstrap";
 
 
-import u1 from "../../images/uii.png";
-import u2 from "../../images/ui1.png";
-import u3 from "../../images/ui2.png";
-import u4 from "../../images/ui3.png";
-import u5 from "../../images/ui4.jpg";
+import u1 from "../../images/ui/u1.png";
+import u2 from "../../images/ui/u2.png";
+import u3 from "../../images/ui/u3.png";
+import u4 from "../../images/ui/u4.png";
+import u5 from "../../images/ui/u5.png";
+import u6 from "../../images/ui/u6.gif";
 
-const ui = [u1, u2, u3, u4, u5];
+const ui = [u1, u2, u3, u4, u5, u6];
 
 export default class LightboxExample extends Component {
   constructor(props) {
@@ -28,7 +29,7 @@ export default class LightboxExample extends Component {
     return (
         <Col md={4} sm={12}>
           <span>
-              <div className="uiuu style"
+              <div className="uiuu style pushtt"
               
                 onClick={() => this.setState({ isOpen: true })}
                 ></div>
