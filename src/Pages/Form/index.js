@@ -14,12 +14,12 @@ export default function Form({ props }) {
         <title>Aorthar | Creative Agency | Brand Identity | Software Development </title>
       </Helmet>
       <Container>
-        <Row>
+        <Row className="mt-5">
           <Col
             md={{ span: 8, offset: 1 }}
-            className="a-team-card-holder pushtop"
+            className="a-team-card-holder pushtop mt-5"
           >
-            <div className="bigText blackText">Tell us about your project</div>
+            <div className="bigText blackText mt-4">Tell us about your project</div>
             <p className="smallestText blackText b4 montserrat mt-2">
               Complete this form and we'll reach out ot you
             </p>
@@ -33,6 +33,7 @@ export default function Form({ props }) {
                     type="text"
                     placeholder="Your Name or Company Name"
                     className="black smallestText"
+                    required
                   />
                 </Col>
               </Row>
@@ -43,6 +44,7 @@ export default function Form({ props }) {
                     type="email"
                     placeholder="youremail@domain.com"
                     className="black smallestText"
+                    required
                   />
                 </Col>
               </Row>
@@ -53,10 +55,11 @@ export default function Form({ props }) {
                     type="tel"
                     placeholder="+123 4567 890"
                     className="black smallestText"
+                    required
                   />
                 </Col>
                 <Col md={6}>
-                  <p className="blackText bold">Project Type</p>
+                  <p className="blackText bold smpt">Project Type</p>
                   {/* <input type="email" placeholder="youremail@domain.com" className="black"/> */}
                   <select
                     className="blackText serviceOptions smallestText"
@@ -85,18 +88,23 @@ export default function Form({ props }) {
                     type="number"
                     placeholder="How much do you plan to spend"
                     className="black smallestText"
+                    required
                   />
                 </Col>
                 <Col md={6}>
-                  <p className="blackText bold">Timeline</p>
+                  <p className="blackText bold smpt">Timeline</p>
                   <input
                     type="email"
                     placeholder="How long do you want your project to take"
                     className="black smallestText"
+                    required
                   />
                 </Col>
               </Row>
               <Row className="mt-4">
+                <Col md={12}>
+                  <p className="blackText bold">Project Documentation</p>
+                </Col>
                 <Col>
                   <input type="file" />
                 </Col>
@@ -107,6 +115,7 @@ export default function Form({ props }) {
                   <textarea
                     className="black smallestText"
                     placeholder="what else would you like us to know?"
+                    required
                   />
 
                   <button type="submit" className="submitButton mt-3 black">
