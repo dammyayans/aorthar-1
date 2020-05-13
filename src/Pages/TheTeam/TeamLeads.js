@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Fade from "react-reveal/Fade";
 import Damola from "../../images/Damola.png";
 import Pelumi from "../../images/Pelumi.png";
 import Naomi from "../../images/Naomi.png";
@@ -14,6 +15,7 @@ import Ibukun from "../../images/Ibukun.png";
 import Mubarak from "../../images/Mubarak.png";
 import Nancy from "../../images/Nancy.png";
 import Emma from "../../images/Emmanuell.png";
+import FA from "../../images/forward.png";
 
 // import g1 from "../../images/gallery/g1.png";
 // import g2 from "../../images/gallery/g2.png";
@@ -40,7 +42,6 @@ import Emma from "../../images/Emmanuell.png";
 // import g23 from "../../images/gallery/g23.png";
 // import g24 from "../../images/gallery/g24.png";
 
-
 import ArrowDown from "../../images/arrow_drop_down.svg";
 import Slider from "react-slick";
 
@@ -51,11 +52,16 @@ export default function TeamLeads() {
   const [associates, setAssociates] = useState([
     { name: "Uwa Benjamin", title: "Wordpress Developer", img: Benn },
     { name: "Abdulazeez Adeyiga", title: "FrontEnd Developer", img: Deji },
-    { name: "Ibukun Adezemi", title: "Motion and Illustration Designer", img: Ibukun },
+    {
+      name: "Ibukun Adezemi",
+      title: "Motion and Illustration Designer",
+      img: Ibukun,
+    },
     { name: "Mubarak Adesina", title: "UI/UX Designer", img: Mubarak },
     { name: "Nancy Amaku", title: "General Intern", img: Nancy },
-    { name: "Alabi Emmanuel", title: "Graphics Desiner", img: Emma }    
+    { name: "Alabi Emmanuel", title: "Graphics Desiner", img: Emma },
   ]);
+  const [more, setMore] = useState(false);
   const changeIndex = (associate) => {
     let indexOfNew = associates.indexOf(associate);
     let newArray = [...associates];
@@ -233,27 +239,42 @@ export default function TeamLeads() {
         <Row>
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
-                <Col xs={12} md={4} className="">
-                  1
+              <Col xs={12} md={4} className="">
+                1
+              </Col>
+              <Col xs={12} md={4} className="">
+                2
+              </Col>
+              <Col xs={12} md={4} className="">
+                3
+              </Col>
+              {!more && (
+                <Col xs={12} md={12} className="d-flex justify-content-center">
+                  <span
+                    className="see_more green bold"
+                    onClick={() => setMore(!more)}
+                  >
+                    see more
+                    <img src={FA} alt="" className="arrowforward" />
+                  </span>
                 </Col>
-                <Col xs={12} md={4} className="">
-                  2
-                </Col>
-                <Col xs={12} md={4} className="">
-                  3
-                </Col>
+              )}
             </Row>
-            <Row>
-                <Col xs={12} md={4} className="">
-                  1
-                </Col>
-                <Col xs={12} md={4} className="">
-                  2
-                </Col>
-                <Col xs={12} md={4} className="">
-                  3
-                </Col>
-            </Row>
+            {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={12} md={4} className="">
+                    1
+                  </Col>
+                  <Col xs={12} md={4} className="">
+                    2
+                  </Col>
+                  <Col xs={12} md={4} className="">
+                    3
+                  </Col>
+                </Row>
+              </Fade>
+            )}
           </Col>
         </Row>
       </Container>
