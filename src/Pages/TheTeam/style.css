@@ -57,6 +57,26 @@
     cursor: pointer;
 }
 
+.arrowforward {
+    transform: rotate(90deg);
+    margin-left: 8px;
+    height: 32px;
+}
+
+.see_more {
+    animation: arrow alternate 1s infinite ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    0% {
+        transform: translateY(8px);
+    }
+}
 
 @media screen and (max-width: 600px) {
     .a-the-team-banner img {
