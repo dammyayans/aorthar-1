@@ -5,8 +5,8 @@ import { Container, Row, Col, Modal, Dropdown } from "react-bootstrap";
 import "../GlobalStyles/global.css";
 import "./Banner.css";
 
-import HeroImg from "../../images/heroImg.png";
-import HeroImgD from "../../images/heroImgD.png";
+import HeroImg from "../../images/heroImg.svg";
+import HeroImgD from "../../images/heroImgD.svg";
 import Company1 from "../../images/company1.png";
 import Company2 from "../../images/company2.png";
 import Company3 from "../../images/company3.png";
@@ -258,7 +258,7 @@ export default class Banner extends Component {
                   </Slide>
                 </div>
               </Slide>
-              <Slide left duration={3000}>
+              {/* <Slide left duration={3000}>
                 <div>
                   <Slide left duration={1000}>
                     <img
@@ -290,7 +290,7 @@ export default class Banner extends Component {
                     />
                   </Slide>
                 </div>
-              </Slide>
+              </Slide> */}
             </Carousel>
           </Col>
         </Row>

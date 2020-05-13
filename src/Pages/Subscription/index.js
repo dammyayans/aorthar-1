@@ -18,12 +18,9 @@ export default class Confirmation extends Component {
                             </Col>
                             <Col xs={12} md={5} sm={12}>
                                 <div className="a-wwa-caption smallestText blackText montserrat">
-                                Aorthar has delivered sterling service to a wide array of 
-                                businesses in a variety of industries, leaving a trail of 
-                                thoroughly satisfied clients. Across every engagement,
-                                there is one in common, irrepressible theme: out commitment 
-                                to excellence and branding that looks so real; it lives. Here
-                                some of our previous works.
+                                Subscribe to our unlimited designs service every month at
+                                a very cheap rate. Enjoy excellent deliveries and access to
+                                reviews and speed.
                                 </div>
                             </Col>
                         </Row> 
@@ -56,9 +53,11 @@ export default class Confirmation extends Component {
                             </Col>
                             <Col xs={12} md={5} sm={12}>
                                 <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                                    At Aorthar, our singular task is to help make brandsburst into life. 
-                                    Our goal is to create  a distinct and memorable experience through 
-                                    compelling visual and verbal cues.
+                                Looking to communicate its proven track record in a clear,
+                                distinctive style that improves customer engagement of your
+                                brand, secure better leads and boosts overall sales, here are the
+                                value we charge in exchange for the excellent service you
+                                deserve.
                                 </div>
                             </Col>
                         </Row>

@@ -131,6 +131,8 @@ a:hover{
 }
 .a-banner-heroImgL{
     margin: 0 auto;
+    width: 100%;
+    display: block !important;
 }
 
 .break{

@@ -30,23 +30,21 @@ class GetStarted extends Component {
   myQuotes = [
     {
       quote:
-        "Aorthar has immersed itself into the work they do and that has made them outstanding from the rest. They give us so much attention to their work and every little detail matters so much to them.",
+        "Adedamola and his team are like my personal Designer, He is fast and delivers with high level excellence and professionalism, he knows how to pick my imaginations for a design and bring it to life.",
       image: Placeholder,
-      author: "Chris",
+      author: "Chris Ani (CEO, DABA and Cryptohub.club)",
     },
     {
       quote:
-        "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with",
-      // "If you are above twenty-one(21) in life and you've not started speaking in tongues, ha! my brother, your life is a joke . blah blah blah blah blah blah blah blah",
+        "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with.",
       image: Placeholder2,
-      author: "Emmanuel",
+      author: "Emmanuel Olorunshola (CEO, Digiville)",
     },
     {
       quote:
-        // "hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle hustle",
-        "I’ve known Damola for only a short time What makes me like him and really connect with him is the simplicity with which he does his designs. Simple and yet classy. I would recommend him anytime anyday",
+      "Aorthar has immersed themselves so much into the work they do and that has made them outstanding from the rest. They have great respect for their art, that they give so much attention to their work and every little detail matters so much to them.",
       image: Placeholder3,
-      author: "Rhoda",
+      author: "Rhoda Robinson (Executive Director, HACEY Health Inititive)",
     },
   ];
   randomQuoteGenerator = () =>
@@ -150,7 +148,7 @@ class GetStarted extends Component {
                             delay={300}
                             duration={1000} >*/}
                           
-                            <p className="white bold">
+                            <p className="white bold smallestText">
                               <span>- </span>
                               {this.state.randomQuote.author}
                             </p>

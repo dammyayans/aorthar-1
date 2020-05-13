@@ -218,12 +218,6 @@ body{
 .mainWhite{
   color: ${(props) => (props.theme.mode === "dark" ? "#FFFFFF" : "#076847")};
 }
-.heroheroL{
-  display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")};
-}
-.heroheroD{
-  display: ${(props) => (props.theme.mode === "dark" ? "block" : "none")};
-}
 .a-get-started-testimonies img{
   border: ${(props) =>
     props.theme.mode === "dark" ? "7px solid #343434" : "7px solid #fff"};

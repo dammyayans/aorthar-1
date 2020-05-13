@@ -31,18 +31,18 @@ export default class Raeanna extends Component {
           <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
             <Row className="pt-5 pb-1">
               <Col xs={12} md={6} sm={12}>
-                <h2 className="bigText">
-                  <span className="blackText">Our Approach</span>
+                <h2>
+                  <span className=" bigText blackText">Client Overview</span>
+                  <p className="smallestText blackText b8">Raeanna Nigeria Limited </p>
                 </h2>
               </Col>
               <Col xs={12} md={6} sm={12}>
-                <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
+                <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
+                  RNL is a telecommunications infrastructure supplier
+                  servicing markets in Nigeria and sub-Saharan Africa. The
+                  company, ncorporated in the year 2000, has offices and
+                  maintenance centers in 45 locations across 27 states in
+                  Nigeria.
                 </div>
               </Col>
             </Row>
@@ -71,36 +71,49 @@ export default class Raeanna extends Component {
                 </h2>
               </Col>
               <Col xs={12} md={6} sm={12}>
-                <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
+                <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
+                  The company currently uses a WordPress website. It is
+                  usually considered more tasteful and professional to utilize
+                  a custom website build instead, especially in view of RNL’s
+                  size and track record. The website design is severely limited
+                  and is currently lacking in the finesse and class that a
+                  custom built website exudes.
                 </div>
               </Col>
               <Col xs={12} md={6} sm={12}>
-                <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
+                <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
+                  Similar to its LinkedIn, Facebook and Twitter posts, RNL’s
+                  engagement on these platforms indicates limitations as
+                  well. There is an absence of tastefully designed e-flyers and
+                  carefully crafted content that drive customer engagement.
+
                 </div>
               </Col>
             </Row>
           </Col>
           <Col className="raeannabg pt-3 pb-5">
             <Row>
-              <Col md={6}>
+              <Col md={{span: 6, offset: 1}}>
                 <img src={CS7} alt="" className="gunner" />
+                <Col  md={{span: 10, offset: 1}} className="pt-4">
+                  <h2 className="bigText">
+                      <span className="blackText pt-3">The Aorthar Difference</span>
+                  </h2>
+                  <p className="white montserrat smallestText">
+                    To help your company elevate its brand and infuse it with
+                    vitality, we propose to:
+                  </p>
+                  <span className="white montserrat smallestText">
+                    <span className="b8 montserrat smallestText">1. Redesign your website</span><br/>
+                    We implemented top notch UI/UX and providing content
+                    that positively glows with RNL’s unique value proposition
+                  </span>
+                </Col>
               </Col>
-              <Col md={6}>
+              <Col md={4}>
                 <img src={CS8} alt="" className="gunner" />
               </Col>
-              <Col md={12}>
+              <Col md={{span: 10, offset: 1}}>
                 <img src={CS9} alt="" className="gunner" />
               </Col>
             </Row>
@@ -110,18 +123,28 @@ export default class Raeanna extends Component {
             <Row>
                 <Col md={6}>
                   <img src={CS10} alt="" className="gunner" />
+
                 </Col>
-                <Col md={6}>
-                  <h2 className="bigText mt-5">
-                    <span className="blackText">Our <br className="break"/> Approach</span>
+                <Col  md={5} className="pt-4">
+                  <h2 className="bigText">
+                      <span className="blackText pt-3">The Aorthar Difference</span>
                   </h2>
-                  <p className="smallestText blackText b4 montserrat  doown">
-                    Aorthar has delivered sterling service to a wide array of businesses in 
-                    a variety of industries, leaving a trail of thoroughly satisfied clients. 
-                    Across every engagement, there is one in common, irrepressible theme: out 
-                    commitment to excellence and branding that looks so real; it lives. Here 
-                    some of our previous works.
-                  </p>
+                  <span className="white montserrat smallestText">
+                    <span className="b8 montserrat smallestText">2. Social Media Ad</span><br/>
+                      We designed tasteful e-flyers for posts on social media.
+                  </span><br/><br/>
+                  <span className="white montserrat smallestText">
+                    <span className="b8 montserrat smallestText">3. Content Creation</span><br/>
+                    Create compelling content that impresses the authority of <br/> the RNL brand and communicates the company’s value<br/> proposition.
+                  </span><br/><br/>
+                  <span className="white montserrat smallestText">
+                    <span className="b8 montserrat smallestText">4. Social Media Management</span><br/>
+                    We assisted with management of RNL’s customer <br/>engagement platforms, including website and social media.
+                  </span><br/><br/>
+                  <span className="white montserrat smallestText">
+                    <span className="b8 montserrat smallestText">5. Other Design Services</span><br/>
+                    Provide such other design and branding services that the <br/>company requires.
+                  </span><br/><br/>
                 </Col>
                 <Col md={12}>
                   <img src={CS11} alt="" className="gunner" />

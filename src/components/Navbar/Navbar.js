@@ -4,8 +4,8 @@ import "./Navbar.css";
 import "../GlobalStyles/global.css";
 import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 
-import Logo from "../../images/logo.png";
-import sLogo from "../../images/slogo.png";
+import Logo from "../../images/logo.svg";
+import sLogo from "../../images/slogo.svg";
 import MenuBar from "../../images/menuicon.png";
 import DarkModeIcon from "../../images/darkmodeicon.png";
 import ArrowUp from "../../images/arrow_drop_up.svg";

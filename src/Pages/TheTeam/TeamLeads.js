@@ -15,30 +15,30 @@ import Mubarak from "../../images/Mubarak.png";
 import Nancy from "../../images/Nancy.png";
 import Emma from "../../images/Emmanuell.png";
 
-// import g1 from "../../images/gallery/g1.png";
-// import g2 from "../../images/gallery/g2.png";
-// import g3 from "../../images/gallery/g3.png";
-// import g4 from "../../images/gallery/g4.png";
-// import g5 from "../../images/gallery/g5.png";
-// import g6 from "../../images/gallery/g6.png";
-// import g7 from "../../images/gallery/g7.png";
-// import g8 from "../../images/gallery/g8.png";
-// import g9 from "../../images/gallery/g9.png";
-// import g10 from "../../images/gallery/g10.png";
-// import g11 from "../../images/gallery/g11.png";
-// import g12 from "../../images/gallery/g12.png";
-// import g13 from "../../images/gallery/g13.png";
-// import g14 from "../../images/gallery/g14.png";
-// import g15 from "../../images/gallery/g15.png";
-// import g16 from "../../images/gallery/g16.png";
-// import g17 from "../../images/gallery/g17.png";
-// import g18 from "../../images/gallery/g18.png";
-// import g19 from "../../images/gallery/g19.png";
-// import g20 from "../../images/gallery/g20.png";
-// import g21 from "../../images/gallery/g21.png";
-// import g22 from "../../images/gallery/g22.png";
-// import g23 from "../../images/gallery/g23.png";
-// import g24 from "../../images/gallery/g24.png";
+import g1 from "../../images/gallery/g1.png";
+import g2 from "../../images/gallery/g2.png";
+import g3 from "../../images/gallery/g3.png";
+import g4 from "../../images/gallery/g4.png";
+import g5 from "../../images/gallery/g5.png";
+import g6 from "../../images/gallery/g6.png";
+import g7 from "../../images/gallery/g7.png";
+import g8 from "../../images/gallery/g8.png";
+import g9 from "../../images/gallery/g9.png";
+import g10 from "../../images/gallery/g10.png";
+import g11 from "../../images/gallery/g11.png";
+import g12 from "../../images/gallery/g12.png";
+import g13 from "../../images/gallery/g13.png";
+import g14 from "../../images/gallery/g14.png";
+import g15 from "../../images/gallery/g15.png";
+import g16 from "../../images/gallery/g16.png";
+import g17 from "../../images/gallery/g17.png";
+import g18 from "../../images/gallery/g18.png";
+import g19 from "../../images/gallery/g19.png";
+import g20 from "../../images/gallery/g20.png";
+import g21 from "../../images/gallery/g21.png";
+import g22 from "../../images/gallery/g22.png";
+import g23 from "../../images/gallery/g23.png";
+import g24 from "../../images/gallery/g24.png";
 
 
 import ArrowDown from "../../images/arrow_drop_down.svg";
@@ -162,7 +162,7 @@ export default function TeamLeads() {
                   A team of all creative persons ranging from Developers, Social
                   Media Manager, Creative Writers, Motion Graphics, Animations,
                   Illustrators, UI/UX, Product Design, Copywriting, Trainers,
-                  Idea Innovators and Brnad Steategist.
+                  Idea Innovators and Brand Steategist.
                 </div>
                 <Row className="mt-5 montserrat">
                   <Col md={6} className="mr-3 mb-3 d-sm-none d-none d-md-block">
@@ -234,24 +234,90 @@ export default function TeamLeads() {
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
                 <Col xs={12} md={4} className="">
-                  1
+                  <img src={g1} alt="" className="style" />
                 </Col>
                 <Col xs={12} md={4} className="">
-                  2
+                  <img src={g2} alt="" className="style" />
                 </Col>
                 <Col xs={12} md={4} className="">
-                  3
+                  <img src={g3} alt="" className="style" />
                 </Col>
             </Row>
             <Row>
-                <Col xs={12} md={4} className="">
-                  1
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g4} alt="" className="style" />
                 </Col>
-                <Col xs={12} md={4} className="">
-                  2
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g5} alt="" className="style" />
                 </Col>
-                <Col xs={12} md={4} className="">
-                  3
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g6} alt="" className="style" />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g7} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g8} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g9} alt="" className="style" />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g10} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g11} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g12} alt="" className="style" />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g13} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g14} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g15} alt="" className="style" />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g16} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g17} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g18} alt="" className="style" />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g19} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g20} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g21} alt="" className="style" />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g22} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g23} alt="" className="style" />
+                </Col>
+                <Col xs={12} md={4} className="pt-4">
+                  <img src={g24} alt="" className="style" />
                 </Col>
             </Row>
           </Col>

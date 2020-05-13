@@ -32,18 +32,18 @@ export default class Parkway extends Component {
           <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
             <Row className="pt-5">
               <Col xs={12} md={6} sm={12}>
-                <h2 className="bigText">
-                  <span className="blackText">Our Approach</span>
+                <h2>
+                  <span className=" bigText blackText">Client Overview</span>
+                  <p className="smallestText blackText b8">Nathan App </p>
                 </h2>
               </Col>
               <Col xs={12} md={6} sm={12}>
-                <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
+                <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
+                  Nathan App - an ecommerce mobile application. We are
+                  very known for interface designs especially when you want
+                  to make it high profile type. Our team carried out this
+                  distinct and usable applications along side research and
+                  User Experience
                 </div>
               </Col>
             </Row>
@@ -58,31 +58,34 @@ export default class Parkway extends Component {
                   <span className="blackText">Our Approach</span>
                 </h2>
               </Col>
-              <Col xs={12} md={6} sm={12}>
-                <div className="smallestText blackText b4 montserrat">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
-                </div>
-                <div className="smallestText blackText b4 montserrat pt-4">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
-                </div>
-                <div className="smallestText blackText b4 montserrat pt-4">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
-                </div>
+              <Col xs={12} md={6} sm={12} className="montserrat smallestText blackText text-justify">
+                  <span className="">
+                    <span className="b8">1. Interpreting Project Brief</span><br/>
+                      To analyse requirements of the Nathan App, we followed
+                      modern standard user research methods. We Conducted
+                      brainstorming sessions with clients and as a team to show
+                      them existing products in line with their market to get their
+                      feedback.
+                  </span>
+                  <br/><br/>
+                  <span>
+                    <span className="b8">2. Research</span><br/>
+                    Our Design Team Kept their eyes on the latest UI trends,
+                    design principles and your existing user experience
+                    guidelines.
+                    While doing our research, we started exploring the
+                    possibilities in layouts and options to provide the desired
+                    experience. We studied their competitors’ approaches,
+                    similar features in their market, checked up latest UI/UX
+                    trends, to establish a good UX guidelines.
+
+                  </span><br/><br/>
+                  <span>
+                    <span className="b8">3. Wireframes and Sketch</span><br/>
+                    Our team engaged in paper sketches, white board flows
+                    and wireframes to share with our client before going
+                    forward to design User Interface
+                  </span><br/><br/>
               </Col>
             </Row>
           </Col>
@@ -90,52 +93,33 @@ export default class Parkway extends Component {
           <Col className="pt-5">
             <img src={NA2} alt="" className="style" />
           </Col>
-          <Row>
-
-            <Col md={6} sm={12}>
-              <div className="smallestText blackText b4 montserrat pt-4">
-                Aorthar has delivered sterling service to a wide array of
-                businesses in a variety of industries, leaving a trail of
-                thoroughly satisfied clients. Across every engagement, there
-                is one in common, irrepressible theme: out commitment to
-                excellence and branding that looks so real; it lives. Here
-                some of our previous works.
-              </div>
-            </Col>
-            
-            <Col md={6} sm={12}>
-              <div className="smallestText blackText b4 montserrat pt-4">
-                Aorthar has delivered sterling service to a wide array of
-                businesses in a variety of industries, leaving a trail of
-                thoroughly satisfied clients. Across every engagement, there
-                is one in common, irrepressible theme: out commitment to
-                excellence and branding that looks so real; it lives. Here
-                some of our previous works.
-              </div>
-            </Col>
-          
-            <Col md={6} sm={12}>
-              <div className="smallestText blackText b4 montserrat pt-4">
-                Aorthar has delivered sterling service to a wide array of
-                businesses in a variety of industries, leaving a trail of
-                thoroughly satisfied clients. Across every engagement, there
-                is one in common, irrepressible theme: out commitment to
-                excellence and branding that looks so real; it lives. Here
-                some of our previous works.
-              </div>
-            </Col>
-            
-            <Col md={6} sm={12}>
-              <div className="smallestText blackText b4 montserrat pt-4">
-                Aorthar has delivered sterling service to a wide array of
-                businesses in a variety of industries, leaving a trail of
-                thoroughly satisfied clients. Across every engagement, there
-                is one in common, irrepressible theme: out commitment to
-                excellence and branding that looks so real; it lives. Here
-                some of our previous works.
-              </div>
-            </Col>
-          </Row>
+          <Col md={{span: 10, offset: 1}}>
+            <Row>
+              <Col md={6} sm={12}>
+                <div className="smallestText blackText b4 montserrat pt-4 text-justify">
+                  <span className="b8">4. Design</span><br/>
+                    We finally got to define the layout and flow of the required
+                    interface, we created mockups to great-looking images
+                    with theme and styles applied to them.
+                    We prepared and shared the design specifications
+                    (principles, guidelines, colors, typography, iconography) to
+                    Development team
+                </div>
+              </Col>
+              
+              <Col md={6} sm={12}>
+                <div className="smallestText blackText b4 montserrat pt-4 text-justify">
+                  <span className="b8">5. Implement and Development</span><br/>
+                  Our technical team started with the implementation of the
+                  whole interface.
+                  The Development Team built back end functionality first
+                  and connects it with UI. The Implementation of back-end
+                  functionality and front interface started with complete
+                  functionality and experience.
+                </div>
+              </Col>
+            </Row>
+          </Col>
 
           <Col>
             <img src={NA3} alt="" className="style upp" />
@@ -147,13 +131,11 @@ export default class Parkway extends Component {
                 <h2 className="bigText upp">
                   <span className="blackText">Icongraphy</span>
                 </h2>
-                <div className="smallestText blackText b4 montserrat pt-4">
-                  Aorthar has delivered sterling service to a wide array of <br/>
-                  businesses in a variety of industries, leaving a trail of <br/>
-                  thoroughly satisfied clients. Across every engagement, <br/>
-                  there is one in common, irrepressible theme: out <br/>
-                  commitment to excellence and branding that looks so real; <br/>
-                  it lives. Here some of our previous works.
+                <div className="smallestText blackText b4 montserrat pt-4 text-justify">
+                  Using iconography to enhance UX design. Iconography is a 
+                  visual language used to represent features, functionality, or 
+                  content. Icons are meant to be simple, visual elements that 
+                  are recognized and understood immediately.
                 </div>
               </Col>
               <Col sm={6}>
@@ -170,13 +152,12 @@ export default class Parkway extends Component {
                   <Col md={2}>
                     <img src={NA6} alt=""/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pb-3">
-                    Aorthar has delivered sterling service to a wide array of 
-                    businesses in a variety of industries, leaving a trail of 
-                    thoroughly satisfied clients. Across every engagement, 
-                    there is one in common, irrepressible theme: out 
-                    commitment to excellence and branding that looks so real; 
-                    it lives. Here some of our previous works.
+                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify">
+                    Understanding who our project audience was very crucial,
+                    knowing how they interpret the icons you've used is
+                    absolutely key. We don’t want icons that are beautifully
+                    designed but could have so many different meanings, and
+                    ambiguity leads to frustration.
                   </Col>
                 </Row>
                 
@@ -184,13 +165,12 @@ export default class Parkway extends Component {
                   <Col md={2}>
                     <img src={NA7} alt=""/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pb-3">
-                    Aorthar has delivered sterling service to a wide array of 
-                    businesses in a variety of industries, leaving a trail of 
-                    thoroughly satisfied clients. Across every engagement, 
-                    there is one in common, irrepressible theme: out 
-                    commitment to excellence and branding that looks so real; 
-                    it lives. Here some of our previous works.
+                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify">
+                   We conducted a some questionnaire that gave us the best
+                    insight into how your target audience thinks and operates.
+                    We never assumed they know or they think they
+                    understand the icon meanings; that was the result from
+                    the survey, engaging conversation, and testing.
                   </Col>
                 </Row>
                 
@@ -198,13 +178,11 @@ export default class Parkway extends Component {
                   <Col md={2}>
                     <img src={NA8} alt=""/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pb-3">
-                    Aorthar has delivered sterling service to a wide array of 
-                    businesses in a variety of industries, leaving a trail of 
-                    thoroughly satisfied clients. Across every engagement, 
-                    there is one in common, irrepressible theme: out 
-                    commitment to excellence and branding that looks so real; 
-                    it lives. Here some of our previous works.
+                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify">
+                    We used a collection (family) of icons that all look and feel
+                    as if they belong with each other creates a degree of
+                    consistency, which equals uniformity. Integrating this into
+                    an organisation’s style guide emits a strong brand identity.
                   </Col>
                 </Row>
                
@@ -212,13 +190,12 @@ export default class Parkway extends Component {
                   <Col md={2}>
                     <img src={NA9} alt=""/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pt-md-2 pb-md-3">
-                    Aorthar has delivered sterling service to a wide array of 
-                    businesses in a variety of industries, leaving a trail of 
-                    thoroughly satisfied clients. Across every engagement, 
-                    there is one in common, irrepressible theme: out 
-                    commitment to excellence and branding that looks so real; 
-                    it lives. Here some of our previous works.
+                  <Col md={10} className="smallestText blackText b4 montserrat pt-md-2 pb-md-3 text-justify">
+                    The scale of our work dictates what the combination of icon
+                    and words get our message across faster. Icons have the
+                    unique ability of breaking down language barriers, we
+                    believe Nathan app can go as far as reaching global market
+                    and we need to eliminate any type of language barrier.
                   </Col>
                 </Row>
 
