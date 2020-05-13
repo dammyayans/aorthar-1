@@ -5,7 +5,7 @@ import TeamLeads from "./TeamLeads";
 import GetStarted from "../../components/GetStarted/GetStarted";
 export default function index() {
   return (
-    <div fluid className="whitebg">
+    <div className="whitebg">
       <TheTeamBanner />
       <TeamLeads />
       <GetStarted />
