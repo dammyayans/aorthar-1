@@ -17,30 +17,30 @@ import Nancy from "../../images/Nancy.png";
 import Emma from "../../images/Emmanuell.png";
 import FA from "../../images/forward.png";
 
-// import g1 from "../../images/gallery/g1.png";
-// import g2 from "../../images/gallery/g2.png";
-// import g3 from "../../images/gallery/g3.png";
-// import g4 from "../../images/gallery/g4.png";
-// import g5 from "../../images/gallery/g5.png";
-// import g6 from "../../images/gallery/g6.png";
-// import g7 from "../../images/gallery/g7.png";
-// import g8 from "../../images/gallery/g8.png";
-// import g9 from "../../images/gallery/g9.png";
-// import g10 from "../../images/gallery/g10.png";
-// import g11 from "../../images/gallery/g11.png";
-// import g12 from "../../images/gallery/g12.png";
-// import g13 from "../../images/gallery/g13.png";
-// import g14 from "../../images/gallery/g14.png";
-// import g15 from "../../images/gallery/g15.png";
-// import g16 from "../../images/gallery/g16.png";
-// import g17 from "../../images/gallery/g17.png";
-// import g18 from "../../images/gallery/g18.png";
-// import g19 from "../../images/gallery/g19.png";
-// import g20 from "../../images/gallery/g20.png";
-// import g21 from "../../images/gallery/g21.png";
-// import g22 from "../../images/gallery/g22.png";
-// import g23 from "../../images/gallery/g23.png";
-// import g24 from "../../images/gallery/g24.png";
+import g1 from "../../images/gallery/g1.png";
+import g2 from "../../images/gallery/g2.png";
+import g3 from "../../images/gallery/g3.png";
+import g4 from "../../images/gallery/g4.png";
+import g5 from "../../images/gallery/g5.png";
+import g6 from "../../images/gallery/g6.png";
+import g7 from "../../images/gallery/g7.png";
+import g8 from "../../images/gallery/g8.png";
+import g9 from "../../images/gallery/g9.png";
+import g10 from "../../images/gallery/g10.png";
+import g11 from "../../images/gallery/g11.png";
+import g12 from "../../images/gallery/g12.png";
+import g13 from "../../images/gallery/g13.png";
+import g14 from "../../images/gallery/g14.png";
+import g15 from "../../images/gallery/g15.png";
+import g16 from "../../images/gallery/g16.png";
+import g17 from "../../images/gallery/g17.png";
+import g18 from "../../images/gallery/g18.png";
+import g19 from "../../images/gallery/g19.png";
+import g20 from "../../images/gallery/g20.png";
+import g21 from "../../images/gallery/g21.png";
+import g22 from "../../images/gallery/g22.png";
+import g23 from "../../images/gallery/g23.png";
+import g24 from "../../images/gallery/g24.png";
 
 import ArrowDown from "../../images/arrow_drop_down.svg";
 import Slider from "react-slick";
@@ -239,15 +239,14 @@ export default function TeamLeads() {
         <Row>
           <Col md={{ span: 10, offset: 1 }}>
             <Row>
-
-              <Col xs={12} md={4} className="">
-                1
+              <Col xs={12} md={4} className="pt-2">
+                <img src={g1} alt="" className="style" />
               </Col>
-              <Col xs={12} md={4} className="">
-                2
+              <Col xs={12} md={4} className="pt-2">
+                <img src={g2} alt="" className="style" />
               </Col>
-              <Col xs={12} md={4} className="">
-                3
+              <Col xs={12} md={4} className="pt-2">
+                <img src={g3} alt="" className="style" />
               </Col>
               {!more && (
                 <Col xs={12} md={12} className="d-flex justify-content-center">
@@ -258,21 +257,110 @@ export default function TeamLeads() {
                     see more
                     <img src={FA} alt="" className="arrowforward" />
                   </span>
-{/* >>>>>>> 878c0fee260ac8563fe5795fa58a21cf6a6bdae5 */}
                 </Col>
               )}
             </Row>
             {more && (
               <Fade up>
                 <Row>
-                  <Col xs={12} md={4} className="">
-                    1
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g4} alt="" className="style" />
                   </Col>
-                  <Col xs={12} md={4} className="">
-                    2
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g5} alt="" className="style" />
                   </Col>
-                  <Col xs={12} md={4} className="">
-                    3
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g6} alt="" className="style" />
+                  </Col>
+                </Row>
+              </Fade>
+            )}
+            {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g7} alt="" className="style" />
+                  </Col>
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g8} alt="" className="style" />
+                  </Col>
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g9} alt="" className="style" />
+                  </Col>
+                </Row>
+              </Fade>
+            )}
+            {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g10} alt="" className="style" />
+                  </Col>
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g11} alt="" className="style" />
+                  </Col>
+                  <Col xs={12} md={4} className="pt-4">
+                    <img src={g12} alt="" className="style" />
+                  </Col>
+                </Row>
+              </Fade>
+            )}
+             {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={13} md={4} className="pt-4">
+                    <img src={g13} alt="" className="style" />
+                  </Col>
+                  <Col xs={14} md={4} className="pt-4">
+                    <img src={g14} alt="" className="style" />
+                  </Col>
+                  <Col xs={15} md={4} className="pt-4">
+                    <img src={g15} alt="" className="style" />
+                  </Col>
+                </Row>
+              </Fade>
+            )}
+            {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={13} md={4} className="pt-4">
+                    <img src={g16} alt="" className="style" />
+                  </Col>
+                  <Col xs={14} md={4} className="pt-4">
+                    <img src={g17} alt="" className="style" />
+                  </Col>
+                  <Col xs={15} md={4} className="pt-4">
+                    <img src={g18} alt="" className="style" />
+                  </Col>
+                </Row>
+              </Fade>
+            )}
+             {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={13} md={4} className="pt-4">
+                    <img src={g19} alt="" className="style" />
+                  </Col>
+                  <Col xs={14} md={4} className="pt-4">
+                    <img src={g20} alt="" className="style" />
+                  </Col>
+                  <Col xs={15} md={4} className="pt-4">
+                    <img src={g21} alt="" className="style" />
+                  </Col>
+                </Row>
+              </Fade>
+            )}
+            {more && (
+              <Fade up>
+                <Row>
+                  <Col xs={13} md={4} className="pt-4">
+                    <img src={g22} alt="" className="style" />
+                  </Col>
+                  <Col xs={14} md={4} className="pt-4">
+                    <img src={g23} alt="" className="style" />
+                  </Col>
+                  <Col xs={15} md={4} className="pt-4">
+                    <img src={g24} alt="" className="style" />
                   </Col>
                 </Row>
               </Fade>
