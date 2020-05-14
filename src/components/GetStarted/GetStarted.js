@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Fade from "react-reveal/Fade";
-// import Zoom from "react-reveal/Zoom";
 
 import "./GetStarted.css";
 import "../GlobalStyles/global.css";
+import "../Banner/Banner.css";
 
 import Placeholder from "../../images/Chris.png";
 import Placeholder2 from "../../images/Emmanuel.png";
@@ -42,7 +42,7 @@ class GetStarted extends Component {
     },
     {
       quote:
-      "Aorthar has immersed themselves so much into the work they do and that has made them outstanding from the rest. They have great respect for their art, that they give so much attention to their work and every little detail matters so much to them.",
+        "Aorthar has immersed themselves so much into the work they do and that has made them outstanding from the rest. They have great respect for their art, that they give so much attention to their work and every little detail matters so much to them.",
       image: Placeholder3,
       author: "Rhoda Robinson (Executive Director, HACEY Health Inititive)",
     },
@@ -124,39 +124,34 @@ class GetStarted extends Component {
               </Col>
               <Col xs={12} md={6} className="">
                 {/* <Fade bottom> */}
-                  <Row className="justify-content-md-center blackText">
-                    <Col md="auto" className="a-get-started-testimonies">
-                      {/* <Zoom spy={this.state.change} duration={600}> */}
-                        <img
-                          src={this.state.randomQuote.image}
-                          alt="person"
-                        />
-                      {/* </Zoom> */}
-                      <div>
-                        <div className="a-get-started-words blackText smallText blackText b4">
-                          {/* <Zoom */}
-                            {/* spy={this.state.change}
+                <Row className="justify-content-md-center blackText">
+                  <Col md="auto" className="a-get-started-testimonies">
+                    {/* <Zoom spy={this.state.change} duration={600}> */}
+                    <img src={this.state.randomQuote.image} alt="person" />
+                    {/* </Zoom> */}
+                    <div>
+                      <div className="a-get-started-words blackText smallText blackText b4">
+                        {/* <Zoom */}
+                        {/* spy={this.state.change}
                             delay={200}
                             duration={800}? */}
-                          
-                            <p className="white">
-                              {this.state.randomQuote.quote}
-                            </p>
-                          {/* </Zoom> */}
-                          {/* <Zoom */}
-                            {/* spy={this.state.change}
+
+                        <p className="white">{this.state.randomQuote.quote}</p>
+                        {/* </Zoom> */}
+                        {/* <Zoom */}
+                        {/* spy={this.state.change}
                             delay={300}
                             duration={1000} >*/}
-                          
-                            <p className="white bold smallestText">
-                              <span>- </span>
-                              {this.state.randomQuote.author}
-                            </p>
-                          {/* </Zoom> */}
-                        </div>
+
+                        <p className="white bold smallestText">
+                          <span>- </span>
+                          {this.state.randomQuote.author}
+                        </p>
+                        {/* </Zoom> */}
                       </div>
-                    </Col>
-                  </Row>
+                    </div>
+                  </Col>
+                </Row>
                 {/* </Fade> */}
               </Col>
             </Row>

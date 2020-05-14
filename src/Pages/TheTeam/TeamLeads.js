@@ -248,6 +248,24 @@ export default function TeamLeads() {
               <Col xs={12} md={4} className="pt-2">
                 <img src={g3} alt="" className="style" />
               </Col>
+              <Col xs={12} md={4} className="pt-4">
+                <img src={g4} alt="" className="style" />
+              </Col>
+              <Col xs={12} md={4} className="pt-4">
+                <img src={g5} alt="" className="style" />
+              </Col>
+              <Col xs={12} md={4} className="pt-4">
+                <img src={g6} alt="" className="style" />
+              </Col>
+              <Col xs={12} md={4} className="pt-4">
+                <img src={g7} alt="" className="style" />
+              </Col>
+              <Col xs={12} md={4} className="pt-4">
+                <img src={g8} alt="" className="style" />
+              </Col>
+              <Col xs={12} md={4} className="pt-4">
+                <img src={g9} alt="" className="style" />
+              </Col>
               {!more && (
                 <Col xs={12} md={12} className="d-flex justify-content-center">
                   <span
@@ -260,36 +278,7 @@ export default function TeamLeads() {
                 </Col>
               )}
             </Row>
-            {more && (
-              <Fade up>
-                <Row>
-                  <Col xs={12} md={4} className="pt-4">
-                    <img src={g4} alt="" className="style" />
-                  </Col>
-                  <Col xs={12} md={4} className="pt-4">
-                    <img src={g5} alt="" className="style" />
-                  </Col>
-                  <Col xs={12} md={4} className="pt-4">
-                    <img src={g6} alt="" className="style" />
-                  </Col>
-                </Row>
-              </Fade>
-            )}
-            {more && (
-              <Fade up>
-                <Row>
-                  <Col xs={12} md={4} className="pt-4">
-                    <img src={g7} alt="" className="style" />
-                  </Col>
-                  <Col xs={12} md={4} className="pt-4">
-                    <img src={g8} alt="" className="style" />
-                  </Col>
-                  <Col xs={12} md={4} className="pt-4">
-                    <img src={g9} alt="" className="style" />
-                  </Col>
-                </Row>
-              </Fade>
-            )}
+
             {more && (
               <Fade up>
                 <Row>
@@ -305,7 +294,7 @@ export default function TeamLeads() {
                 </Row>
               </Fade>
             )}
-             {more && (
+            {more && (
               <Fade up>
                 <Row>
                   <Col xs={13} md={4} className="pt-4">
@@ -335,7 +324,7 @@ export default function TeamLeads() {
                 </Row>
               </Fade>
             )}
-             {more && (
+            {more && (
               <Fade up>
                 <Row>
                   <Col xs={13} md={4} className="pt-4">

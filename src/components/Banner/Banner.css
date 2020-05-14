@@ -21,6 +21,7 @@
 
 img.a-banner-company-img {
     width: 100px;
+    height: 80px;
 }
 
 .a-banner-caption p {
@@ -116,7 +117,7 @@ option {
     z-index: 3;
 }
 
-.playButton{
+.playButton {
     padding: 0 10px;
 }
 

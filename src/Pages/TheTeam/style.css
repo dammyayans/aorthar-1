@@ -66,6 +66,7 @@
 .see_more {
     animation: arrow alternate 1s infinite ease-in-out;
     cursor: pointer;
+    margin-top: 8px;
 }
 
 @keyframes arrow {
