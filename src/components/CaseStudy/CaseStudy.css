@@ -21,8 +21,13 @@
     margin: 0;
 }
 
-.arrowforward{
+.arrow{
     margin-left: 1%;
+    height: 35px;
+}
+
+.hhh:hover{
+    opacity: 70%;
 }
 
 .pushtt{
@@ -34,6 +39,4 @@
     .a-case-study-wrapper {
         padding: 20% 0 20%;
     }
-
-    
 }

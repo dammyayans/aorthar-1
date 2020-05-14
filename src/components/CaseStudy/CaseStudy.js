@@ -56,8 +56,8 @@ export default class CaseStudy extends Component {
             </Row>
           </Col>
           <center className="pt-5">
-            <a href="/ourworks" className="hhh green bold">
-            Check out our process <img src={FA} alt=""  className="arrowforward" />
+            <a href="/ourworks" className="hhh green b8 smallestText montserrat">
+            Check out our process <img src={FA} alt=""  className="arrow" />
             </a>
           </center>
         </Container>
