@@ -59,7 +59,7 @@ export default class OurServices extends Component {
                 <h4 className="mediumText blackText">Software Development</h4>
                 <p className="blackText montserrat smallestText">
                   We develop your apps and websites into a <br />
-                  perfect working prototype as we deliver <br />
+                  perfect working product as we deliver <br />
                   design, front-end and back-end service.
                 </p>
               </Zoom>

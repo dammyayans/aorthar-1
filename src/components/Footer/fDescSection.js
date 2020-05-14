@@ -52,7 +52,7 @@ class fDescSection extends Component {
                                 Download our Rate Card
                             </span>
                         </a>
-                        <a href="/">
+                        <a href="/apply">
                             <img src={Career} alt="Rate Card"  className="sm-pt"/> 
                             <span>
                                 Career & Internship

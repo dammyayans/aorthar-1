@@ -24,7 +24,7 @@ class GetStarted extends Component {
   ];
 
   state = {
-    randomQuote: { quote: "", image: "", author: "" },
+    randomQuote: { quote: "", image: "", author: "", title: "" },
     change: false,
   };
   myQuotes = [
@@ -32,19 +32,22 @@ class GetStarted extends Component {
       quote:
         "Adedamola and his team are like my personal Designer, He is fast and delivers with high level excellence and professionalism, he knows how to pick my imaginations for a design and bring it to life.",
       image: Placeholder,
-      author: "Chris Ani (CEO, DABA and Cryptohub.club)",
+      author: "Chris Ani ",
+      title: "(CEO, DABA and Cryptohub.club)",
     },
     {
       quote:
         "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with.",
       image: Placeholder2,
-      author: "Emmanuel Olorunshola (CEO, Digiville)",
+      author: "Emmanuel Olorunshola",
+      title: "(CEO, Digiville)",
     },
     {
       quote:
         "Aorthar has immersed themselves so much into the work they do and that has made them outstanding from the rest. They have great respect for their art, that they give so much attention to their work and every little detail matters so much to them.",
       image: Placeholder3,
-      author: "Rhoda Robinson (Executive Director, HACEY Health Inititive)",
+      author: "Rhoda Robinson",
+      title: "(Executive Director, HACEY Health Inititive)",
     },
   ];
   randomQuoteGenerator = () =>
@@ -107,7 +110,7 @@ class GetStarted extends Component {
                       </Dropdown.Menu>
                     </Dropdown>
                   </div>
-                </Fade>
+            </Fade>
                 <Fade bottom delay={800} className="sendmail">
                   <p className="a-get-started-contact blackText montserrat b7">
                     Send us a mail via{" "}
@@ -123,36 +126,29 @@ class GetStarted extends Component {
                 </Fade>
               </Col>
               <Col xs={12} md={6} className="">
-                {/* <Fade bottom> */}
-                <Row className="justify-content-md-center blackText">
-                  <Col md="auto" className="a-get-started-testimonies">
-                    {/* <Zoom spy={this.state.change} duration={600}> */}
-                    <img src={this.state.randomQuote.image} alt="person" />
-                    {/* </Zoom> */}
-                    <div>
-                      <div className="a-get-started-words blackText smallText blackText b4">
-                        {/* <Zoom */}
-                        {/* spy={this.state.change}
-                            delay={200}
-                            duration={800}? */}
 
-                        <p className="white">{this.state.randomQuote.quote}</p>
-                        {/* </Zoom> */}
-                        {/* <Zoom */}
-                        {/* spy={this.state.change}
-                            delay={300}
-                            duration={1000} >*/}
 
-                        <p className="white bold smallestText">
-                          <span>- </span>
-                          {this.state.randomQuote.author}
-                        </p>
-                        {/* </Zoom> */}
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
-                {/* </Fade> */}
+
+                  <Row className="justify-content-md-center blackText">
+                    <Col md="auto" className="a-get-started-testimonies tttt">
+
+                        <img
+                          src={this.state.randomQuote.image}
+                          alt="person"
+                        />           
+                
+                        <div className="a-get-started-words blackText smallText blackText b4">                    
+                          <p className="white">
+                            {this.state.randomQuote.quote}
+                          </p>
+                          <div className="white smallestText">
+                            <span className="b8">- {this.state.randomQuote.author}</span>
+                            <p className="pll">{this.state.randomQuote.title}</p>
+                          </div>                               
+                        </div>
+                    </Col>
+                  </Row>
+
               </Col>
             </Row>
           </Col>

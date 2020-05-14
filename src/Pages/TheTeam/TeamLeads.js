@@ -3,7 +3,7 @@ import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import Damola from "../../images/Damola.png";
-import Pelumi from "../../images/Pelumi.png";
+import Pelumi from "../../images/pp.png";
 import Naomi from "../../images/Naomi.png";
 import Opeyemi from "../../images/Opeyemi.png";
 import Jolly from "../../images/Jolly.png";
@@ -164,12 +164,14 @@ export default function TeamLeads() {
                 </div>
               </Col>
               <Col xs={12} md={8}>
-                <div className="smallestText blackText b4 montserrat disapppear">
-                  A team of all creative persons ranging from Developers, Social
-                  Media Manager, Creative Writers, Motion Graphics, Animations,
-                  Illustrators, UI/UX, Product Design, Copywriting, Trainers,
-                  Idea Innovators and Brand Steategist.
-                </div>
+                <Col xs={12} md={10}>
+                  <div className="smallestText blackText b4 montserrat disapppear">
+                    A complete structure of Management and Creatives , a team of all creatives 
+                    persons ranging from Developers, Social Media Manager, Creative Writers,
+                    Motion Graphics, Animators, Illustrators, UI/UX, Product Design, Copywritter, 
+                    Trainers, Idea Innovators and Brand Strategist.
+                  </div>
+                </Col>
                 <Row className="mt-5 montserrat">
                   <Col md={6} className="mr-3 mb-3 d-sm-none d-none d-md-block">
                     <div className="d-flex justify-content-space montserrat">
@@ -189,7 +191,7 @@ export default function TeamLeads() {
                         className="d-flex cursor-pointer justify-content-space"
                         onClick={() => changeIndex(associate)}
                       >
-                        <p className=" blackText bold">{associate.name}</p>
+                        <p className="blackText bold">{associate.name}</p>
                         <span>
                           <img src={ArrowDown} alt="associate" />
                         </span>
@@ -205,7 +207,7 @@ export default function TeamLeads() {
                         <div key={i}>
                           <img src={item.img} alt="" width="100%" />
                           <div className="d-flex justify-content-center mt-2 montserrat">
-                            <p className=" blackText bold mb-1">{item.name}</p>
+                            <p className=" blackText b8 mb-1">{item.name}</p>
                           </div>
                           <span className="smallestText blackText mb-1 b4 montserrat d-flex justify-content-center">
                             {item.title}
@@ -226,11 +228,11 @@ export default function TeamLeads() {
               <Col xs={12} md={3}>
                 <h2 className="bigText blackText">Gallery</h2>
               </Col>
-              <Col xs={12} md={5}>
+              <Col xs={12} md={6}>
                 <div className="smallestText blackText b4 montserrat">
                   At Aorthar, our singular task is to help make brands burst
                   into life. Our goal is to create distinct and memorable
-                  experience through compelling visual and verbal
+                  experience through compelling visual and verbal.
                 </div>
               </Col>
             </Row>

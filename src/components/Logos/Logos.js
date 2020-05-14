@@ -49,7 +49,7 @@ export default class LightboxExample extends Component {
     return (
         <Col md={4} sm={12}>
           <span>
-              <div className="codson style pusht"
+              <div className="codson style pushtt"
               
                 onClick={() => this.setState({ isOpen: true })}
                 ></div>

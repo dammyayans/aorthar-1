@@ -55,6 +55,14 @@
     z-index: 1;
 }
 
+.tttt{
+    margin-top: 35px;
+}
+
+.pll{
+    margin-left: 9px;
+}
+
 @media screen and (max-width: 600px) {
     .a-get-started-wrapper {
         padding: 20% 0 20%;
