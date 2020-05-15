@@ -37,17 +37,17 @@ export default function index() {
             </Col>
           </Row>
           <Row>
-            <a href="/parkway" >
+            <a href="/parkway">
               <div className="a-previous-works1">
                 <img src={PB} alt="" className="imm" />
               </div>
             </a>
-            <a href="/NathanApp" >
+            <a href="/NathanApp">
               <div className="a-previous-works1">
                 <img src={NAB} alt="" className="imm" />
               </div>
             </a>
-            <a href="/Raeanna" >
+            <a href="/Raeanna">
               <div className="a-previous-works1">
                 <img src={RB} alt="" className="imm" />
               </div>
@@ -183,7 +183,7 @@ export default function index() {
             </Col>
           </Row>
         </Col>
-        <GetStarted className="px-sm-0" />
+        <GetStarted />
       </Container>
     </Container>
   );
