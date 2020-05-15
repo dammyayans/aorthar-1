@@ -115,6 +115,30 @@ class NavBar extends Component {
                           </Nav.Link>
                         </div>
                         <div>
+                          <Nav.Link className="cover coverr" href="/merch">
+                            Rep our Brand
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="/subscription">
+                            Design Subscription
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="">
+                            Write us a Feedback
+                          </Nav.Link>
+                        </div>
+                      </Col>
+                      <Col sm={6}>
+                        <div className="mb-3">
+                          <Nav.Link className="cover coverr" href="/Formuiux">
+                            Get Started
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="/#ourworks">
+                            Our Works
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="/ourworks">
+                            Our Process
+                          </Nav.Link>
+                        </div>
+                        <div>
                           <Nav.Link
                             className="cover coverr"
                             href="https://web.facebook.com/Aorthar/"
@@ -135,30 +159,6 @@ class NavBar extends Component {
                             target="blank"
                           >
                             Instagram
-                          </Nav.Link>
-                        </div>
-                      </Col>
-                      <Col sm={6}>
-                        <div className="mb-3">
-                          <Nav.Link className="cover coverr" href="/Formuiux">
-                            Get Started
-                          </Nav.Link>
-                          <Nav.Link className="cover coverr" href="/#ourworks">
-                            Our Works
-                          </Nav.Link>
-                          <Nav.Link className="cover coverr" href="/ourworks">
-                            Our Process
-                          </Nav.Link>
-                        </div>
-                        <div>
-                          <Nav.Link className="cover coverr" href="/merch">
-                            Rep our Brand
-                          </Nav.Link>
-                          <Nav.Link className="cover coverr" href="/subscription">
-                            Design Subscription
-                          </Nav.Link>
-                          <Nav.Link className="cover coverr" href="">
-                            Write us a Feedback
                           </Nav.Link>
                         </div>
                       </Col>
@@ -205,8 +205,7 @@ class NavBar extends Component {
                         </a>
                       </p>
                       <p>
-                        {/* <a href="whatsapp://send/?phone=2348144228160&amp;text=Hello%20Aorthar!" target="blank" > */}
-                        <a href="https://wa.me/2348144228160?text=Hello%20Aorthar!%20testing" target="blank" >
+                        <a href="https://wa.me/2348144228160?text=Hello%20Aorthar!" target="blank" >
                           <span className="font-weight-bold mainWhite">WhatsApp:</span>{" "}
                           <span className="mainWhite">080144228160</span>
                         </a>

@@ -106,7 +106,13 @@ export default function Form({ props }) {
                   <p className="blackText bold">Project Documentation</p>
                 </Col>
                 <Col>
-                  <input type="file" />
+                  <input type="file" className="file" id="file" accept="images/*, .pdf, .doc" required/>
+                  <Col>
+                    <label for="file" className="smallestText">
+                      <span className="green b7">Upload Media</span> &nbsp; 
+                      <span className="blackText">(jpeg, pdf, docx)</span>
+                    </label>
+                  </Col>
                 </Col>
               </Row>
               <Row className="mt-3">

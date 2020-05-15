@@ -65,7 +65,8 @@ export default function Form(props) {
                     </Col>
                     <Col md={4}>
                       <p className="bold smpt">Upload Resume</p>
-                      <input type="file" className="file" required/>
+                      <input type="file" className="file" id="file" accept="images/*, .pdf, .doc" required/>
+                      <label for="file" className="smallestText">Choose File</label>
                     </Col>
                   </Row>
 
@@ -88,9 +89,7 @@ export default function Form(props) {
                 </form>
               </Col>
             </Col>
-          <Col md={4} className="ben">
-            {/* <img src={Ben10} alt="" className="style"/> */}
-          </Col>
+          <Col md={4} className="ben"></Col>
         </Row>
       </Container>
     </Container>

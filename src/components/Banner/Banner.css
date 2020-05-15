@@ -128,7 +128,7 @@ option {
     cursor: pointer;
     box-shadow: 0 0 0 #076847;
     animation: pulse 2s infinite;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .pulse:hover {

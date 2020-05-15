@@ -1,5 +1,5 @@
 .merch-banner {
-    height: 65vh;
+    height: 550px;
     width: 100%;
     padding: 0;
     padding-bottom: 24px;
@@ -131,6 +131,41 @@ input {
 
 .counter img {
     cursor: pointer;
+}
+
+.merch-banner3,
+.merch-banner2,
+.merch-banner1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.merch-banner1{
+    /* background-image: url("../../images/uuuu.png"); */
+    background: linear-gradient( to bottom, #00000071, #0000005a), url("../../images/uuuu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.merch-banner1:hover{
+    background: linear-gradient(to bottom, #00000042, #00000042), url("../../images/uuuu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.merch-banner2{
+    background-image: linear-gradient( to bottom, #00000071, #0000005a), url("../../images/fait beauty2.png");
+    
+}
+
+.merch-banner3{
+    background-image: linear-gradient( to bottom, #00000071, #0000005a), url("../../images/pelumi4.png");
+    
 }
 
 @media only screen and (max-width:950px) {

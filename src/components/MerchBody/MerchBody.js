@@ -135,7 +135,7 @@ const MerchBody = () => {
       />
 
       <Container className="a-case-study-wrapper">
-        <Row>
+        <Row className="pt-4">
           <Col md={{ span: 9, offset: 2 }}>
             <Row>
               <Col sm={12} md={6}>
