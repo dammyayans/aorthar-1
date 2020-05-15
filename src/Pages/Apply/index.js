@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "./style.css";
-import Ben10 from "../../images/Ben10.png";
+// import Ben10 from "../../images/Ben10.png";
 import "../../components/GlobalStyles/global.css";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -88,8 +88,8 @@ export default function Form(props) {
                 </form>
               </Col>
             </Col>
-          <Col md={2}>
-            <img src={Ben10} alt="" className="style"/>
+          <Col md={4} className="ben">
+            {/* <img src={Ben10} alt="" className="style"/> */}
           </Col>
         </Row>
       </Container>

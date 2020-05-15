@@ -3,7 +3,7 @@ import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import Damola from "../../images/Damola.png";
-import Pelumi from "../../images/pp.png";
+import Pelumi from "../../images/pppp.png";
 import Naomi from "../../images/Naomi.png";
 import Opeyemi from "../../images/Opeyemi.png";
 import Jolly from "../../images/Jolly.png";

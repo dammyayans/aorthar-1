@@ -38,8 +38,10 @@ textarea{
     border: 0;
 }
 
-.smpt{
-    /* padding-top: 0 !important; */
+.ben{
+    background-image: url("../../images/Ben10.png");
+    background-size: cover;
+    background-position: center;
 }
 
 @media screen and (max-width: 600px){

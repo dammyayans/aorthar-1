@@ -36,31 +36,43 @@ export default class Case extends Component {
           <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
             <Row className="pt-5 pb-5">
               <Col xs={12} md={6} sm={12}>
-                <h2 className="bigText">
-                  <span className="blackText">Our <br className="break"/> Approach</span>
+                <h2>
+                  <span className=" bigText blackText">Client Overview</span>
+                  <p className="smallestText blackText b8">Parkway Limited </p>
                 </h2>
               </Col>
               <Col xs={12} md={6} sm={12}>
                 <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                  Aorthar has delivered sterling service to a wide array of
-                  businesses in a variety of industries, leaving a trail of
-                  thoroughly satisfied clients. Across every engagement, there
-                  is one in common, irrepressible theme: out commitment to
-                  excellence and branding that looks so real; it lives. Here
-                  some of our previous works.
+                Parkway Limited is a Nigerian civil engineering and
+                construction company with a diverse portfolio including
+                haulage, mining, asphalt/granite production and
+                government services. With several project locations all over
+                the country, including Edo, Lagos, Jigawa, Rivers and Imo
+                state, the company has risen to become one of the most
+                well-sought after indigenous construction companies in
+                Nigeria.
                 </div>
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col md={{span: 10, offset: 1}}>
             <Row>
               <Col md={6}>
-                <p className="smallestText blackText b4 montserrat pt-md-5">
-                  Aorthar has delivered sterling service to a wide array of businesses in 
-                  a variety of industries, leaving a trail of thoroughly satisfied clients. 
-                  Across every engagement, there is one in common, irrepressible theme: out 
-                  commitment to excellence and branding that looks so real; it lives. Here 
-                  some of our previous works.
+                <p className="smallestText blackText b4 montserrat pt-md-5 pb-md-4">
+                  Parkway Limited approached us to assist with the creation
+                  of an entirely new identity. The client was in the midst of
+                  upgrading its corporate branding to better showcase its
+                  values, accomplishments and class. Our remit was to create
+                  a total branding package that was both simple and
+                  sophisticated.
+                </p>
+                <p className="smallestText blackText b4 montserrat">
+                  Aorthar was to take charge of the company’s entire identity
+                  including its logo, colors, fonts, letterhead, company
+                  paraphernalia and other items that constitute its entire
+                  brand. This was no small task but with our highly skilled
+                  designers and copywriters, we are proud to say we
+                  delivered exactly to the client’s taste.
                 </p>
               </Col>
               <Col md={6}>
@@ -91,12 +103,20 @@ export default class Case extends Component {
                 <h2 className="bigText upp">
                   <span className="blackText">Our <br className="break"/> Approach</span>
                 </h2>
-                <p className="smallestText blackText b4 montserrat  doown">
-                  Aorthar has delivered sterling service to a wide array of businesses in 
-                  a variety of industries, leaving a trail of thoroughly satisfied clients. 
-                  Across every engagement, there is one in common, irrepressible theme: out 
-                  commitment to excellence and branding that looks so real; it lives. Here 
-                  some of our previous works.
+                <p className="smallestText blackText b4 montserrat doown">
+                  Considering the precedent of the client, our approach was
+                  to take the qualities Parkway Limited was best known for
+                  and infuse these into an identity that is both recognizable
+                  and evocative. We intended to put the heart into Parkway’s
+                  identity and we knew exactly where to start.
+                </p>
+                <p className="smallestText blackText b4 montserrat">
+                  The new logo and colour scheme we developed for Parkway
+                  Limited had two main colours, orange and black. Orange is
+                  a colour that is associated with the soil. Apart from being a
+                  builder’s colour, it showcases enthusiasm, determination,
+                  creativity, encouragement and success, all attributes that
+                  showcased our client’s identity.
                 </p>
               </Col>
               <Col md={12} className="upp">
@@ -114,12 +134,11 @@ export default class Case extends Component {
                   </Col>
                   <Col xs={12} md={6} sm={12}>
                     <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                      Aorthar has delivered sterling service to a wide array of
-                      businesses in a variety of industries, leaving a trail of
-                      thoroughly satisfied clients. Across every engagement, there
-                      is one in common, irrepressible theme: out commitment to
-                      excellence and branding that looks so real; it lives. Here
-                      some of our previous works.
+                    In line with the client’s requirements, we created an identity
+                    that is unique, simple, sophisticated and visionary. A brand
+                    worthy of not only an indigenous firm putting down strong
+                    roots in Nigeria and West Africa, but one that will eventually
+                    spread and achieve a global presence.
                     </div>
                   </Col>
                 </Row>
@@ -135,7 +154,7 @@ export default class Case extends Component {
               </Col>
 
               <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
-                <Row className="pt-5 pb-5">
+                <Row className="pt-md-5 pb-md-5">
                   <Col xs={12} md={6} sm={12}>
                     <h2 className="bigText">
                       <span className="blackText">Our <br className="break"/> Approach</span>
@@ -143,12 +162,18 @@ export default class Case extends Component {
                   </Col>
                   <Col xs={12} md={6} sm={12}>
                     <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                      Aorthar has delivered sterling service to a wide array of
-                      businesses in a variety of industries, leaving a trail of
-                      thoroughly satisfied clients. Across every engagement, there
-                      is one in common, irrepressible theme: out commitment to
-                      excellence and branding that looks so real; it lives. Here
-                      some of our previous works.
+                      <p>
+                        With the life infused into the company’s identity through
+                        Aorthar’s branding efforts, Parkway Limited was able to rise
+                        beyond a company with a generic identity to one with a
+                        brand that speaks well for the company.
+                      </p>
+                      <p>
+                        Simplicity and sophistication were what the client and this
+                        was exactly what we delivered. We are delighted to have
+                        been part of Parkway’s story and cannot wait to be part of
+                        yours.
+                      </p>
                     </div>
                   </Col>
                 </Row>

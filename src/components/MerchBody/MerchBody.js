@@ -459,7 +459,7 @@ const MerchBody = () => {
                       </button>
                     </Col>
                     <Col md={6} className="d-flex justify-content-center">
-                      <h2 className=" green bold">
+                      <h2 className=" green b8">
                         {total === 1000
                           ? "Please Select a Product above"
                           : `N${total}`}

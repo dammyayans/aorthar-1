@@ -143,20 +143,22 @@ class NavBar extends Component {
                           <Nav.Link className="cover coverr" href="/Formuiux">
                             Get Started
                           </Nav.Link>
-                          <Nav.Link className="cover coverr">Placeholder</Nav.Link>
-                          <Nav.Link className="cover coverr" href="/subscription">
-                            Design Subscription
-                          </Nav.Link>
-                        </div>
-                        <div>
                           <Nav.Link className="cover coverr" href="/#ourworks">
                             Our Works
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/ourworks">
                             Our Process
                           </Nav.Link>
+                        </div>
+                        <div>
                           <Nav.Link className="cover coverr" href="/merch">
                             Rep our Brand
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="/subscription">
+                            Design Subscription
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="">
+                            Write us a Feedback
                           </Nav.Link>
                         </div>
                       </Col>
@@ -195,7 +197,7 @@ class NavBar extends Component {
                       </Nav.Link>
                     </div>
                     <div>
-                      <h4>Talk to us?</h4>
+                      <h4 className="pt-3">Talk to us?</h4>
                       <p>
                         <span className="font-weight-bold">Email:</span>{" "}
                         <a href="mailto:hello@aorthar.com" className="mainWhite">
@@ -203,13 +205,10 @@ class NavBar extends Component {
                         </a>
                       </p>
                       <p>
-                        {/* <span className="font-weight-bold">WhatsApp:</span> +234(0)8144228160*/}
-                        {/* <span> */}
                         <a href="whatsapp://send/?phone=23480144228160&amp;text=Hello%20Aorthar!" target="blank" >
                           <span className="font-weight-bold mainWhite">WhatsApp:</span>{" "}
                           <span className="mainWhite">080144228160</span>
                         </a>
-                        {/* </span> */}
                       </p>
                     </div>
                   </Col>

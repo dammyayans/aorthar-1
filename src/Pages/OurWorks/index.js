@@ -61,18 +61,16 @@ export default function index() {
             </Col>
             <Col xs={12} md={6} sm={12}>
               <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                Aorthar has delivered sterling service to a wide array of
-                businesses in a variety of industries, leaving a trail of
-                thoroughly satisfied clients. Across every engagement, there is
-                one in common, irrepressible theme: out commitment to excellence
-                and branding that looks so real; it lives. Here some of our
-                previous works.
+                Our work range shows how widely capable we are loaded,
+                to help the company improve branding and customer
+                engagement, identify the process we will take to achieve
+                any specified goal and provide samples of what we can do.
               </div>
             </Col>
           </Row>
           <Row className="push montserrat blackText pt-5">
-            <Col xs={6} md={3}>
-              <h3 className="mediumText ">Branding</h3>
+            <Col xs={6} md={3} className="smallestText">
+              <h3 className="mediumtext">Branding</h3>
               <li>Visual Branding</li>
               <li>Product Branding</li>
               <li>Event Branding</li>
@@ -81,8 +79,8 @@ export default function index() {
               <li>Graphics Design</li>
               <li>Brand Guide Development</li>
             </Col>
-            <Col xs={6} md={3}>
-              <h3 className="mediumText ">Product Design</h3>
+            <Col xs={6} md={3} className="smallestText">  
+              <h3 className="mediumtext">Product Design</h3>
               <li>Web Design</li>
               <li>App Design</li>
               <li>User Interface Design</li>
@@ -91,15 +89,15 @@ export default function index() {
               <li>Wireframe</li>
               <li>Wordpress</li>
             </Col>
-            <Col xs={6} md={3} className="move">
-              <h3 className="mediumText ">Content Marketing</h3>
+            <Col xs={6} md={3} className="move smallestText">
+              <h3 className="mediumtext ">Content Marketing</h3>
               <li>Article Writing</li>
               <li>Story Telling</li>
               <li>Content Development</li>
               <li>Social Media Management</li>
             </Col>
-            <Col xs={6} md={3} className="move">
-              <h3 className="mediumText ">Software Development</h3>
+            <Col xs={6} md={3} className="move smallestText">
+              <h3 className="mediumtext ">Software Development</h3>
               <li>Front End Web Development</li>
               <li>Back End Web Development</li>
               <li>SEO</li>
@@ -126,7 +124,7 @@ export default function index() {
               </div>
             </Col>
           </Row>
-          <Row className="a-our-work-process smallText">
+          <Row className="a-our-work-process smallText blackText b8">
             <Col xs={6} md={3}>
               <Row>
                 <Col md={6}>

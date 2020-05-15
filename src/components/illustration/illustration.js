@@ -6,13 +6,12 @@ import { Col } from "react-bootstrap";
 import i1 from "../../images/illustration/i1.png";
 import i2 from "../../images/illustration/i2.gif";
 import i3 from "../../images/illustration/i3.gif";
-import i4 from "../../images/illustration/i4.png";
 import i5 from "../../images/illustration/i5.png";
 import i6 from "../../images/illustration/i6.png";
 import i7 from "../../images/illustration/i7.png";
 import i8 from "../../images/illustration/i8.png";
 
-const ill = [i1, i2, i3, i4, i5, i6, i7, i8];
+const ill = [i1, i2, i3, i5, i6, i7, i8];
 
 export default class LightboxExample extends Component {
   constructor(props) {

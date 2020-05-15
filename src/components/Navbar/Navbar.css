@@ -67,6 +67,10 @@ nav {
   top: 88px;
 }
 
+.mainWhite:hover{
+  color: #076847;
+}
+
 @keyframes card {
   0% {
     top: -60px;
