@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import { Container, Col, Row } from "react-bootstrap";
-import LightSpeed from "react-reveal/LightSpeed";
 import states from "./states.json";
 import MerchBanner from "./MerchBanner";
 
@@ -140,17 +139,14 @@ const MerchBody = () => {
           <Col md={{ span: 9, offset: 2 }}>
             <Row>
               <Col sm={12} md={6}>
-                <LightSpeed left>
                   <h3
                     className="bigText blackText"
                     style={{ fontSize: "2.3rem" }}
                   >
                     Our Ambassador, Our friend
                   </h3>
-                </LightSpeed>
               </Col>
               <Col sm={12} md={6}>
-                <LightSpeed right>
                   <div className="a-case-study-caption smallestText blackText b4 montserrat">
                     Aorthar has delivered sterling service to a wide array of
                     businesses in a variety of industries, leaving a trail of
@@ -159,7 +155,6 @@ const MerchBody = () => {
                     execellence and branding that looks so real, it lives.
                     Here's some of our previous work
                   </div>
-                </LightSpeed>
               </Col>
             </Row>
             <Row>

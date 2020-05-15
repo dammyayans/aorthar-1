@@ -7,11 +7,11 @@ import addToCart from "../../images//add to cart.png";
 import { Row } from "react-bootstrap";
 import img from "../../images/Mask Group 31.png";
 import img2 from "../../images/fait beauty2.png";
-import img3 from "../../images/Person4.png";
+import img3 from "../../images/pelumi4.png";
 export default function MerchBanner(props) {
   return (
     <Row className="a-the-merch-banner mt-5">
-      <ProductWrapper className=" col-md-4 col-sm-4 p-0 col-4">
+      <ProductWrapper className="col-md-4 col-sm-4 p-0 col-4">
         <div className="merch-banner">
           <img src={img} alt="" style={{ height: "100%", width: "100%" }} />
           <div className="d-flex justify-content-space align-items-center inner-merch-banner">
@@ -29,7 +29,7 @@ export default function MerchBanner(props) {
           </div>
         </div>
       </ProductWrapper>
-      <ProductWrapper className=" col-md-4 col-sm-4 p-0 col-4">
+      <ProductWrapper className="col-md-4 col-sm-4 p-0 col-4">
         <div className="merch-banner">
           <img src={img2} alt="" style={{ height: "100%", width: "100%" }} />
           <div className="d-flex justify-content-space align-items-center inner-merch-banner">
@@ -47,7 +47,7 @@ export default function MerchBanner(props) {
           </div>
         </div>
       </ProductWrapper>
-      <ProductWrapper className=" col-md-4 col-sm-4 p-0 col-4">
+      <ProductWrapper className="col-md-4 col-sm-4 p-0 col-4">
         <div className="merch-banner">
           <img src={img3} alt="" style={{ height: "100%", width: "100%" }} />
           <div className="d-flex justify-content-space align-items-center inner-merch-banner">

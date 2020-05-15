@@ -165,4 +165,8 @@ input {
     .inner-merch-banner p {
         font-size: 15px;
     }
+
+    .shirt img {
+        max-width: 100%;
+    }
 }

@@ -205,7 +205,8 @@ class NavBar extends Component {
                         </a>
                       </p>
                       <p>
-                        <a href="whatsapp://send/?phone=23480144228160&amp;text=Hello%20Aorthar!" target="blank" >
+                        {/* <a href="whatsapp://send/?phone=2348144228160&amp;text=Hello%20Aorthar!" target="blank" > */}
+                        <a href="https://wa.me/2348144228160?text=Hello%20Aorthar!%20testing" target="blank" >
                           <span className="font-weight-bold mainWhite">WhatsApp:</span>{" "}
                           <span className="mainWhite">080144228160</span>
                         </a>
