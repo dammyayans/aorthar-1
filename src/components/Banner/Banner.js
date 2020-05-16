@@ -207,7 +207,7 @@ export default class Banner extends Component {
                     <img
                       src={Company2}
                       alt="Company1"
-                      className="a-banner-company-img"
+                      className="a-banner-company-img cheetah"
                     />
                   </Slide>
                   <Slide left duration={1000}>
@@ -239,7 +239,7 @@ export default class Banner extends Component {
                     <img
                       src={Company6}
                       alt="Company2"
-                      className="a-banner-company-img"
+                      className="a-banner-company-img daba"
                     />
                   </Slide>
                   <Slide left duration={1000}>
@@ -258,39 +258,6 @@ export default class Banner extends Component {
                   </Slide>
                 </div>
               </Slide>
-              {/* <Slide left duration={3000}>
-                <div>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company1}
-                      alt="Company1"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company2}
-                      alt="Company3"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company3}
-                      alt="Company3"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-                  <Slide left duration={1000}>
-                    <img
-                      src={Company4}
-                      alt="Company3"
-                      className="a-banner-company-img"
-                    />
-                  </Slide>
-                </div>
-              </Slide> */}
             </Carousel>
           </Col>
         </Row>

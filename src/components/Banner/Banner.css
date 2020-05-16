@@ -21,7 +21,17 @@
 
 img.a-banner-company-img {
     width: 100px;
-    height: 80px;
+    height: 70px;
+}
+
+.daba{
+    width: 50px !important;
+    height: 80px !important;
+}
+
+.cheetah{
+    width: 100px;
+    height: 60px !important;
 }
 
 .a-banner-caption p {
@@ -134,6 +144,8 @@ option {
 .pulse:hover {
     animation: none;
 }
+
+
 
 @keyframes pulse {
     0% {

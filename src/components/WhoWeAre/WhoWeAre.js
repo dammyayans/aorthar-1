@@ -41,7 +41,7 @@ export default class WhoWeAre extends Component {
                     </p>
                     <div>
                       <Link
-                        to="/"
+                        to="/theteam"
                         className="a-wwa-readmore green b7 smallestText montserrat"
                       >
                         Read more <img src={Forward} alt="forward" />

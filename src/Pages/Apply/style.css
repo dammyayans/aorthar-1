@@ -38,11 +38,7 @@ textarea{
     border: 0;
 }
 
-.ben{
-    background-image: url("../../images/Ben10.png");
-    background-size: cover;
-    background-position: center;
-}
+
 
 input[type="file"]{
     display: none;
