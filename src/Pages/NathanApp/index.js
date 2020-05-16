@@ -150,9 +150,9 @@ export default class Parkway extends Component {
                
                 <Row>
                   <Col md={2}>
-                    <img src={NA6} alt=""/>
+                    <img src={NA6} alt="" className="smt"/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify">
+                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify smt">
                     Understanding who our project audience was very crucial,
                     knowing how they interpret the icons you've used is
                     absolutely key. We don’t want icons that are beautifully
@@ -163,9 +163,9 @@ export default class Parkway extends Component {
                 
                 <Row>
                   <Col md={2}>
-                    <img src={NA7} alt=""/>
+                    <img src={NA7} alt="" className="smt"/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify">
+                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify smt">
                    We conducted a some questionnaire that gave us the best
                     insight into how your target audience thinks and operates.
                     We never assumed they know or they think they
@@ -176,9 +176,9 @@ export default class Parkway extends Component {
                 
                 <Row>
                   <Col md={2}>
-                    <img src={NA8} alt=""/>
+                    <img src={NA8} alt="" className="smt"/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify">
+                  <Col md={10} className="smallestText blackText b4 montserrat pb-3 text-justify smt">
                     We used a collection (family) of icons that all look and feel
                     as if they belong with each other creates a degree of
                     consistency, which equals uniformity. Integrating this into
@@ -188,9 +188,9 @@ export default class Parkway extends Component {
                
                 <Row>
                   <Col md={2}>
-                    <img src={NA9} alt=""/>
+                    <img src={NA9} alt="" className="smt"/>
                   </Col>
-                  <Col md={10} className="smallestText blackText b4 montserrat pt-md-2 pb-md-3 text-justify">
+                  <Col md={10} className="smallestText blackText b4 montserrat pt-md-2 pb-md-3 text-justify smt">
                     The scale of our work dictates what the combination of icon
                     and words get our message across faster. Icons have the
                     unique ability of breaking down language barriers, we
@@ -201,7 +201,7 @@ export default class Parkway extends Component {
 
               </Col>
               <Col sm={6}>
-                <img src={NA4} alt=""/>
+                <img src={NA4} alt="" className="style" />
               </Col>
             </Row>
           </Col>
@@ -219,11 +219,6 @@ export default class Parkway extends Component {
                   <img src={PB} alt="" className="gunner" />
                 </div>
               </a>
-              {/* <a href="/" className="immmm">
-                <span className="">
-                    lorem
-                </span>
-              </a> */}
             </Row>
           </Col>
 
