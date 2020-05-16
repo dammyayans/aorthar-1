@@ -77,6 +77,8 @@ export default function TeamLeads() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
   return (
     <div className="a-team-leads">
@@ -166,10 +168,11 @@ export default function TeamLeads() {
               <Col xs={12} md={8}>
                 <Col xs={12} md={10}>
                   <div className="smallestText blackText b4 montserrat disapppear">
-                    A complete structure of Management and Creatives , a team of all creatives 
-                    persons ranging from Developers, Social Media Manager, Creative Writers,
-                    Motion Graphics, Animators, Illustrators, UI/UX, Product Design, Copywritter, 
-                    Trainers, Idea Innovators and Brand Strategist.
+                    A complete structure of Management and Creatives , a team of
+                    all creatives persons ranging from Developers, Social Media
+                    Manager, Creative Writers, Motion Graphics, Animators,
+                    Illustrators, UI/UX, Product Design, Copywritter, Trainers,
+                    Idea Innovators and Brand Strategist.
                   </div>
                 </Col>
                 <Row className="mt-5 montserrat">
