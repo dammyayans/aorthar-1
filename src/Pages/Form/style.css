@@ -1,5 +1,5 @@
 input{
-    background: transparent;
+    background: none;
     display: block;
     border: 0;
     border-bottom: 1px solid #343434;
@@ -25,10 +25,6 @@ textarea,
 textarea{
     height: 100px;    
 }
-/* select{
-    text-decoration: none;
-    font-weight: 100;
-} */
 
 .submitButton{
     padding: 10px 40px;
@@ -37,10 +33,6 @@ textarea{
     color: #fff;
 }
 
-/* .smpt{
-    padding-top: 8px !important;
-} */
-
 input[type="file"]{
     display: none;
 }
@@ -48,7 +40,7 @@ input[type="file"]{
 label{
     height: 40px;
     width: 100%;
-    background-color: #c7c7c7;
+    /* background-color: #c7c7c7; */
     position: absolute; 
     margin: auto;
     bottom: 0;

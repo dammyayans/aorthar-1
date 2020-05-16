@@ -32,7 +32,7 @@ export default function Form({ props }) {
                   <input
                     type="text"
                     placeholder="Your Name or Company Name"
-                    className="black smallestText"
+                    className="blackinput smallestText"
                     required
                   />
                 </Col>
@@ -43,7 +43,7 @@ export default function Form({ props }) {
                   <input
                     type="email"
                     placeholder="youremail@domain.com"
-                    className="black smallestText"
+                    className="blackinput smallestText"
                     required
                   />
                 </Col>
@@ -54,7 +54,7 @@ export default function Form({ props }) {
                   <input
                     type="tel"
                     placeholder="+123 4567 890"
-                    className="black smallestText"
+                    className="blackinput smallestText"
                     required
                   />
                 </Col>
@@ -87,16 +87,16 @@ export default function Form({ props }) {
                   <input
                     type="number"
                     placeholder="How much do you plan to spend"
-                    className="black smallestText"
+                    className="blackinput smallestText"
                     required
                   />
                 </Col>
                 <Col md={6}>
                   <p className="blackText bold smpt">Timeline</p>
                   <input
-                    type="email"
+                    type="letter"
                     placeholder="How long do you want your project to take"
-                    className="black smallestText"
+                    className="blackinput smallestText"
                     required
                   />
                 </Col>
@@ -119,7 +119,7 @@ export default function Form({ props }) {
                 <Col>
                   <p className="blackText bold">Project Brief</p>
                   <textarea
-                    className="black smallestText"
+                    className="blackinput smallestText"
                     placeholder="what else would you like us to know?"
                     required
                   />

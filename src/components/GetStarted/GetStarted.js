@@ -30,14 +30,14 @@ class GetStarted extends Component {
   myQuotes = [
     {
       quote:
-        "Adedamola and his team are like my personal Designer, He is fast and delivers with high level excellence and professionalism, he knows how to pick my imaginations for a design and bring it to life.",
+        "Adedamola and his team are like my personal Designer, Thay are fast and deliver with high level excellence and professionalism, They knows how to pick my imaginations for a design and bring it to life.",
       image: Placeholder,
       author: "Chris Ani ",
       title: "(CEO, DABA and Cryptohub.club)",
     },
     {
       quote:
-        "His fast delivery and attention to detail makes him one of the best designers I’ve ever worked with.",
+        "Their fast delivery and attention to detail makes them one of the best designers I’ve ever worked with.",
       image: Placeholder2,
       author: "Emmanuel Olorunshola",
       title: "(CEO, Digiville)",

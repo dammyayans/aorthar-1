@@ -161,14 +161,6 @@ input {
     transition-timing-function: ease-in;
 }
 
-<<<<<<< HEAD
-.merch-banner2{
-    background-image: linear-gradient( to bottom, #00000071, #0000005a), url("../../images/fait beauty2.png");
-}
-
-.merch-banner3{
-    background-image: linear-gradient( to bottom, #00000071, #0000005a), url("../../images/pelumi4.png");
-=======
 .merch-banner2:hover {
     background: linear-gradient(to bottom, #00000042, #00000042), url("../../images/fait beauty2.png");
     background-size: cover;
@@ -185,7 +177,6 @@ input {
     background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in;
->>>>>>> 40bfdde74d2171230f3b42a346c2ce2ffd670b83
 }
 
 .merch-banner2 {

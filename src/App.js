@@ -203,6 +203,12 @@ body{
 .blackText{
   color: ${(props) => (props.theme.mode === "dark" ? "#FFF" : "#343434")};
 }
+.blackinput{
+  color: ${(props) => (props.theme.mode === "dark" ? "#FFF" : "#343434")};
+}
+.uploadColor{
+  color: ${(props) => (props.theme.mode === "dark" ? "#FFF" : "#2d2d2d")};
+}
 .whitebg{
   background-color: ${(props) =>
     props.theme.mode === "dark" ? "#000" : "#FFF"};
@@ -221,6 +227,10 @@ body{
 .a-get-started-testimonies img{
   border: ${(props) =>
     props.theme.mode === "dark" ? "7px solid #343434" : "7px solid #fff"};
+}
+.textarea{
+  border-bottom: ${(props) =>
+    props.theme.mode === "dark" ? "1px solid #343434" : "1px solid #343434"};
 }
 .toggleButton{
   background-color: ${(props) =>

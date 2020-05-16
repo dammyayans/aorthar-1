@@ -58,8 +58,8 @@ export default function TeamLeads() {
       img: Ibukun,
     },
     { name: "Mubarak Adesina", title: "UI/UX Designer", img: Mubarak },
-    { name: "Nancy Amaku", title: "General Intern", img: Nancy },
-    { name: "Alabi Emmanuel", title: "Graphics Desiner", img: Emma },
+    { name: "Nancy Amaku", title: "Intern", img: Nancy },
+    { name: "Alabi Emmanuel", title: "Graphics Designer", img: Emma },
   ]);
   const [more, setMore] = useState(false);
   const changeIndex = (associate) => {

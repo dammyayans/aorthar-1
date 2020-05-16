@@ -17,7 +17,7 @@ class fDescSection extends Component {
            <div className="footer-desc-section">
                 <p className="text-center footer-desc-section-item">
                     <span>Office: </span>
-                    <span> No. 19a, Ogundana Street, Off Allen Avenue, Ikeja, Lagos State.</span>
+                    <span> 33, Adeshina Ave, Iju, Lagos.</span>
                 </p>
                 <div className="footer-contact-section">
                     <div>
@@ -40,7 +40,7 @@ class fDescSection extends Component {
                                 Terms & Conditions
                             </span>
                         </a>
-                        <a href="/">
+                        <a href="mailto:hello@aorthar.com" >
                             <img src={Feedback} alt="Feedback"  className="sm-pt"/> 
                             <span>
                                 Write us a Feedback

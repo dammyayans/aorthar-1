@@ -30,9 +30,9 @@ export default class WhoWeAre extends Component {
               <Col xs={12} md={6} sm={12}>
                 <Fade bottom>
                   <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                    We are a team of great minds to serve our consumers with
-                    excellent delivery service to achieve the function of usable
-                    products and help our client improve in sales and revenue.{" "}
+                    We are a team of great minds dedicated to serving our consumers with 
+                    excellent delivery service to achieve functional and usable products 
+                    thus enabling our clients improve sales and revenue.{" "}
                     <br />
                     <br />
                     <p>

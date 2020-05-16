@@ -116,12 +116,12 @@ class NavBar extends Component {
                         </div>
                         <div>
                           <Nav.Link className="cover coverr" href="/merch">
-                            Rep our Brand
+                            Rep our Brand!
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/subscription">
                             Design Subscription
                           </Nav.Link>
-                          <Nav.Link className="cover coverr" href="">
+                          <Nav.Link className="cover coverr" href="mailto:hello@aorthar.com">
                             Write us a Feedback
                           </Nav.Link>
                         </div>
@@ -131,7 +131,7 @@ class NavBar extends Component {
                           <Nav.Link className="cover coverr" href="/Formuiux">
                             Get Started
                           </Nav.Link>
-                          <Nav.Link className="cover coverr" href="/#ourworks">
+                          <Nav.Link className="cover coverr" href="/raeanna">
                             Our Works
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/ourworks">
