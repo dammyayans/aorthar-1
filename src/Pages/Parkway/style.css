@@ -18,3 +18,9 @@
 .doown{
     padding-top: 30px;
 }
+
+@media screen and (max-width: 600px){
+    .smpt{
+        margin-top: 40px !important;
+    }
+}

@@ -218,6 +218,9 @@ const MerchBody = () => {
                         onClick={() => setColor({ ...color, hoodie: "white" })}
                       ></div>
                     </div>
+                    <div className="pt-2 smallestText blackText">
+                      <span>Select preferred color</span>
+                    </div>
                   </div>
                 ) : null}
 
@@ -279,6 +282,9 @@ const MerchBody = () => {
                         className="color"
                         onClick={() => setColor({ ...color, greenie: "white" })}
                       ></div>
+                    </div>
+                    <div className="pt-2 smallestText blackText">
+                      <span>Select preferred color</span>
                     </div>
                   </div>
                 ) : null}
@@ -342,6 +348,9 @@ const MerchBody = () => {
                         onClick={() => setColor({ ...color, blackie: "white" })}
                       ></div>
                     </div>
+                    <div className="pt-2 smallestText blackText">
+                      <span>Select preferred color</span>
+                    </div>
                   </div>
                 ) : null}
               </Col>
@@ -390,7 +399,7 @@ const MerchBody = () => {
                           No
                         </button>
                       </div>
-                      <p className="blackText bold">
+                      <p className="blackText bold smallestText">
                         Pickup available at our office. Delivery outside Lagos
                         attracts extra fee
                       </p>

@@ -97,7 +97,7 @@ export default class Raeanna extends Component {
                 <img src={CS7} alt="" className="gunner" />
                 <Col  md={{span: 10, offset: 1}} className="pt-4">
                   <h2 className="bigText">
-                      <span className="blackText pt-3">The Aorthar Difference</span>
+                      <span className="white pt-3">The Aorthar Difference</span>
                   </h2>
                   <p className="white montserrat smallestText">
                     To help your company elevate its brand and infuse it with
@@ -125,23 +125,23 @@ export default class Raeanna extends Component {
                   <img src={CS10} alt="" className="gunner" />
 
                 </Col>
-                <Col  md={5} className="pt-4">
+                <Col  md={5} className="pt-4  smallestText blackText b4 montserrat text-justify">
                   <h2 className="bigText">
                       <span className="blackText pt-3">The Aorthar Difference</span>
                   </h2>
-                  <span className="white montserrat smallestText">
+                  <span className="smallestText blackText b4 montserrat text-justify">
                     <span className="b8 montserrat smallestText">2. Social Media Ad</span><br/>
                       We designed tasteful e-flyers for posts on social media.
                   </span><br/><br/>
-                  <span className="white montserrat smallestText">
+                  <span className="smallestText blackText b4 montserrat text-justify">
                     <span className="b8 montserrat smallestText">3. Content Creation</span><br/>
                     Create compelling content that impresses the authority of <br/> the RNL brand and communicates the company’s value<br/> proposition.
                   </span><br/><br/>
-                  <span className="white montserrat smallestText">
+                  <span className="smallestText blackText b4 montserrat text-justify">
                     <span className="b8 montserrat smallestText">4. Social Media Management</span><br/>
                     We assisted with management of RNL’s customer <br/>engagement platforms, including website and social media.
                   </span><br/><br/>
-                  <span className="white montserrat smallestText">
+                  <span className="smallestText blackText b4 montserrat text-justify">
                     <span className="b8 montserrat smallestText">5. Other Design Services</span><br/>
                     Provide such other design and branding services that the <br/>company requires.
                   </span><br/><br/>

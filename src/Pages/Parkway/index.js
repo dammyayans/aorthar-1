@@ -183,37 +183,22 @@ export default class Case extends Component {
                 <Row className="pt-5 pb-5">
                   <Col xs={12} md={6} sm={12}>
                   <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                      Aorthar has delivered sterling service to a wide array of
-                      businesses in a variety of industries, leaving a trail of
-                      thoroughly satisfied clients. Across every engagement, there
-                      is one in common, irrepressible theme: out commitment to
-                      excellence and branding that looks so real; it lives. Here
-                      some of our previous works.
+                      With the life infused into the company’s identity through
+                      Aorthar’s branding efforts, Parkway Limited was able to rise
+                      beyond a company with a generic identity to one with a
+                      brand that speaks well for the company.
+                    </div><br /><br/>
+                    <div className="a-wwa-caption smallestText blackText b4 montserrat">
+                      Simplicity and sophistication were what the client and this
+                      was exactly what we delivered. We are delighted to have
+                      been part of Parkway’s story and cannot wait to be part of
+                      yours                    
                     </div>
                   </Col>
-                  <Col xs={12} md={6} sm={12}>
-                    <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                      Aorthar has delivered sterling service to a wide array of
-                      businesses in a variety of industries, leaving a trail of
-                      thoroughly satisfied clients. Across every engagement, there
-                      is one in common, irrepressible theme: out commitment to
-                      excellence and branding that looks so real; it lives. Here
-                      some of our previous works.
-                    </div>
+                  <Col xs={12} md={6} sm={12} className="smpt">
+                      <img src={PW10} alt="" className="style" />
                   </Col>
                 </Row>
-              </Col>
-            </Row>
-            
-            <Row className="pt-5 pb-5">
-             <Col md={4}>
-               <img src={PW10} alt="" className="style" />
-              </Col>
-             <Col md={4}>
-               <img src={PW10} alt="" className="style" />
-              </Col>
-             <Col md={4}>
-               <img src={PW10} alt="" className="style" />
               </Col>
             </Row>
           </Col>
