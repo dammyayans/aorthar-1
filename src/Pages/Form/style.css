@@ -40,7 +40,7 @@ input[type="file"]{
 label{
     height: 40px;
     width: 100%;
-    /* background-color: #c7c7c7; */
+    background-color: #c7c7c7;
     position: absolute; 
     margin: auto;
     bottom: 0;
@@ -50,6 +50,10 @@ label{
     justify-content: center;
     align-items: center;
 }
+
+/* .upload{
+    padding-top: 50px;
+} */
 
 @media screen and (max-width: 600px){
     .smpt{

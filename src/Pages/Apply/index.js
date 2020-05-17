@@ -21,7 +21,7 @@ export default function Form(props) {
               <Col
                 className="a-team-card-holder pushtop mt-5"
               >
-                <div className="bigText mt-4">Wanna join the team?</div>
+                <div className="bigText mt-4">We'll love to have you too</div>
                 <p className="smallestText b4 montserrat mt-2">
                   Complete this form and we'll reach out ot you
                 </p>
@@ -69,27 +69,11 @@ export default function Form(props) {
                       <label for="file" className="smallestText uploadColor">Choose File</label>
                     </Col>
                   </Row>
-
-                  {/* <Row className="mt-3">
-                    <Col md={8}>
-                      <p className="bold">About you</p>
-                      <textarea
-                        className="smallestText"
-                        placeholder="what else would you like us to know?"
-                      />
-                      <button
-                        type="submit"
-                        className="submitButton mt-3 green"
-                      >
-                        Submit
-                      </button>
-                    </Col>
-                  </Row> */}
                   <Row className="mt-3">
-                    <Col>
-                        <p className="blackText bold">Project Brief</p>
+                    <Col md={8}>
+                        <p className="blackText bold">Cover Letter</p>
                         <textarea
-                          className="blackinput smallestText"
+                          className="blackinput smallestText textarea"
                           placeholder="what else would you like us to know?"
                           required
                         />

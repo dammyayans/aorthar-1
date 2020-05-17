@@ -207,7 +207,7 @@ body{
   color: ${(props) => (props.theme.mode === "dark" ? "#FFF" : "#343434")};
 }
 .uploadColor{
-  color: ${(props) => (props.theme.mode === "dark" ? "#FFF" : "#2d2d2d")};
+  color: ${(props) => (props.theme.mode === "dark" ? "#000" : "#2d2d2d")};
 }
 .whitebg{
   background-color: ${(props) =>
@@ -259,6 +259,14 @@ body{
 .a-banner-heroImgD{
   display: ${(props) =>
     props.theme.mode === "dark" ? "block !important" : "none !important"}
+}
+.closeIconD{
+  display: ${(props) =>
+    props.theme.mode === "dark" ? "block" : "none"}
+}
+.closeIconL{
+  display: ${(props) =>
+    props.theme.mode === "dark" ? "none" : "block"}
 }
 `;
 function getInitialTheme() {

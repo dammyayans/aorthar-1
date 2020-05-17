@@ -110,7 +110,7 @@ export default function Form({ props }) {
                   <Col>
                     <label for="file" className="smallestText">
                       <span className="green b7">Upload Media</span> &nbsp; 
-                      <span className="blackText">(jpeg, pdf, docx)</span>
+                      <span className="blackText upload">(jpeg, pdf, docx)</span>
                     </label>
                   </Col>
                 </Col>
