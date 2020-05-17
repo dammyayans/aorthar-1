@@ -8,9 +8,31 @@ import { Container, Col, Row } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 
-import Person4 from "../../images/pelumis.png";
-import Person3 from "../../images/Person3.png";
+// import Person4 from "../../images/pelumis.png";
+// import Person3 from "../../images/Person3.png";
+import S1 from "../../images/slide1.png";
+import S2 from "../../images/slide2.png";
+import S3 from "../../images/slide3.png";
+import S4 from "../../images/slide4.png";
 import Forward from "../../images/forward.png";
+
+import makeCarousel from "react-reveal/makeCarousel";
+import Slide from "react-reveal/Slide";
+import styled from "styled-components";
+
+const SliderContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  min-height: 50px;
+  height: 5rem;
+  width: 100%;
+`;
+
+const CarouselUI = ({ children }) => (
+  <SliderContainer>{children}</SliderContainer>
+);
+const Carousel = makeCarousel(CarouselUI);
+
 
 export default class WhoWeAre extends Component {
   render() {
@@ -52,20 +74,50 @@ export default class WhoWeAre extends Component {
               </Col>
             </Row>
           </Col>
-          <Row className="pt-4">
+          <Row className="pt-4 storySection">
             <Col md={2}></Col>
             <Col md={8}>
               <Row>
-                <Col md={6} className="image">
-                  <Fade bottom>
-                    <img src={Person3} alt="Person1" className="image-single" />
-                  </Fade>
-                </Col>
-                <Col md={6} className="image">
-                  <Fade bottom delay={200}>
-                    <img src={Person4} alt="Person2" className="image-single" />
-                  </Fade>
-                </Col>
+
+              <Carousel defaultWait={5000}>
+                <Slide left duration={3000}>
+                  <div>
+                    <Slide left duration={1000}>
+                      <img
+                        src={S1}
+                        alt="Company1"
+                        className="ourStory"
+                      />
+                    </Slide>
+                    <Slide left duration={1000}>
+                      <img
+                        src={S2}
+                        alt="Company1"
+                        className="ourStory"
+                      />
+                    </Slide>
+                  </div>
+                </Slide>
+                <Slide left duration={3000}>
+                  <div>
+                    <Slide left duration={1000}>
+                      <img
+                        src={S3}
+                        alt="Company1"
+                        className="ourStory"
+                      />
+                    </Slide>
+                    <Slide left duration={1000}>
+                      <img
+                        src={S4}
+                        alt="Company2"
+                        className="ourStory"
+                      />
+                    </Slide>
+                  </div>
+                </Slide>
+              </Carousel>
+
               </Row>
             </Col>
             <Col md={2} sm={8} className="a-wwa-sideline">

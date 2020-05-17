@@ -26,6 +26,14 @@
     height: 35px;
     margin-left: 1%;
 }
+.ourStory{
+    height: 500px;
+    width: 50%;
+    padding: 10px;
+}
+.storySection{
+    height: 400px;
+}
 
 .a-wwa-readmore:hover{
     text-decoration: none;
