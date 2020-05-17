@@ -132,7 +132,7 @@ class NavBar extends Component {
                             Get Started
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/raeanna">
-                            Our Works
+                            Case Studies
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/ourworks">
                             Our Process

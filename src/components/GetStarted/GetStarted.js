@@ -72,6 +72,7 @@ class GetStarted extends Component {
             <Row>
               <Col xs={12} md={6}>
                 <Fade bottom>
+                <a href="https://wa.me/2348144228160?text=Hello%20Aorthar!" target="blank" >
                   <div className="bigText">
                     <div className="blackText">Ready</div>
                     <div className="blackText">to start</div>
@@ -79,6 +80,7 @@ class GetStarted extends Component {
                       with <span className="green">us?</span>
                     </div>
                   </div>
+                </a>
                 </Fade>
                 <Fade bottom delay={500}>
                   <p className="a-get-started-caption blackText smallestText blackText b4 montserrat">

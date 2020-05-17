@@ -10,7 +10,7 @@ class fContactSection extends Component {
         return (
             <Row>
                 <Col md={{ span: 8, offset: 2 }} xs={{ span: 10, offset: 1 }} className="a-footer-desc">
-                    Aorthar is a full-service designing agency. We have worked with several companies 
+                    Aorthar /ay-OR-tar/ is a full-service designing agency. We have worked with several companies 
                     to communicate their unique value proposition to target audiences in a perfectly 
                     relatable and compelling manner.
                     We believe that not just good, but top-noting branding and design will keep your 
