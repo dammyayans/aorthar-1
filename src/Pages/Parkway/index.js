@@ -42,7 +42,7 @@ export default class Case extends Component {
                 </h2>
               </Col>
               <Col xs={12} md={6} sm={12}>
-                <div className="a-wwa-caption smallestText blackText b4 montserrat">
+                <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
                 Parkway Limited is a Nigerian civil engineering and
                 construction company with a diverse portfolio including
                 haulage, mining, asphalt/granite production and
@@ -55,10 +55,10 @@ export default class Case extends Component {
               </Col>
             </Row>
           </Col>
-          <Col md={{span: 10, offset: 1}}>
+          <Col md={{span: 10, offset: 1}} className="text-justify">
             <Row>
               <Col md={6}>
-                <p className="smallestText blackText b4 montserrat pt-md-5 pb-md-4">
+                <p className="smallestText blackText b4 montserrat pt-md-5 pb-md-4 text-justify">
                   Parkway Limited approached us to assist with the creation
                   of an entirely new identity. The client was in the midst of
                   upgrading its corporate branding to better showcase its
@@ -103,14 +103,14 @@ export default class Case extends Component {
                 <h2 className="bigText upp">
                   <span className="blackText">Our <br className="break"/> Approach</span>
                 </h2>
-                <p className="smallestText blackText b4 montserrat doown">
+                <p className="smallestText blackText b4 montserrat doown text-justify">
                   Considering the precedent of the client, our approach was
                   to take the qualities Parkway Limited was best known for
                   and infuse these into an identity that is both recognizable
                   and evocative. We intended to put the heart into Parkway’s
                   identity and we knew exactly where to start.
                 </p>
-                <p className="smallestText blackText b4 montserrat">
+                <p className="smallestText blackText b4 montserrat text-justify">
                   The new logo and colour scheme we developed for Parkway
                   Limited had two main colours, orange and black. Orange is
                   a colour that is associated with the soil. Apart from being a
@@ -133,7 +133,7 @@ export default class Case extends Component {
                     </h2>
                   </Col>
                   <Col xs={12} md={6} sm={12}>
-                    <div className="a-wwa-caption smallestText blackText b4 montserrat">
+                    <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
                     In line with the client’s requirements, we created an identity
                     that is unique, simple, sophisticated and visionary. A brand
                     worthy of not only an indigenous firm putting down strong
@@ -161,7 +161,7 @@ export default class Case extends Component {
                     </h2>
                   </Col>
                   <Col xs={12} md={6} sm={12}>
-                    <div className="a-wwa-caption smallestText blackText b4 montserrat">
+                    <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
                       <p>
                         With the life infused into the company’s identity through
                         Aorthar’s branding efforts, Parkway Limited was able to rise
@@ -182,13 +182,13 @@ export default class Case extends Component {
               <Col md={{ span: 10, offset: 1 }} sm={{ span: 10, offset: 1 }}>
                 <Row className="pt-5 pb-5">
                   <Col xs={12} md={6} sm={12}>
-                  <div className="a-wwa-caption smallestText blackText b4 montserrat">
+                  <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
                       With the life infused into the company’s identity through
                       Aorthar’s branding efforts, Parkway Limited was able to rise
                       beyond a company with a generic identity to one with a
                       brand that speaks well for the company.
                     </div><br /><br/>
-                    <div className="a-wwa-caption smallestText blackText b4 montserrat">
+                    <div className="a-wwa-caption smallestText blackText b4 montserrat text-justify">
                       Simplicity and sophistication were what the client and this
                       was exactly what we delivered. We are delighted to have
                       been part of Parkway’s story and cannot wait to be part of

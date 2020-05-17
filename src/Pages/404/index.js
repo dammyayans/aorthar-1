@@ -1,8 +1,10 @@
 import React from "react";
 
 function ErrorPage() {
-  return <div style={{minHeight:"70vh"}}>Error
-    
+  return <div style={{minHeight:"70vh"}}>
+    <span className="biggestText text-center">
+      Oops!
+    </span>
   </div>;
 }
 

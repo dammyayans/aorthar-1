@@ -186,11 +186,11 @@ class NavBar extends Component {
                       >
                         Blog
                       </Nav.Link>
-                      <Nav.Link className="cover coverr" href="/theteam">
-                        Meet the Team
-                      </Nav.Link>
                       <Nav.Link className="cover coverr" href="/subscription">
                         Pricing
+                      </Nav.Link>
+                      <Nav.Link className="cover coverr" href="/theteam">
+                        Meet the Team
                       </Nav.Link>
                       <Nav.Link className="cover coverr" href="#">
                         Terms and Conditions

@@ -65,7 +65,7 @@ export default function Form(props) {
                     </Col>
                     <Col md={4}>
                       <p className="bold smpt blackText">Upload Resume</p>
-                      <input type="file" className="file" id="file" accept="images/*, .pdf, .doc" required/>
+                      <input type="file" className="file" id="file" accept="images/*, .pdf, .doc, .docx" required/>
                       <label for="file" className="smallestText uploadColor">Choose File</label>
                     </Col>
                   </Row>
