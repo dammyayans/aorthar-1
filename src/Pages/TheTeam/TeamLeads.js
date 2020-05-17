@@ -113,7 +113,7 @@ export default function TeamLeads() {
                   Odidi Naomi
                 </div>
                 <span className="smallestText blackText b4">
-                  Business Developer, COO
+                  Business Developer
                 </span>
               </Col>
             </Row>

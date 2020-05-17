@@ -37,6 +37,10 @@ const MerchBody = () => {
     greenie: true,
     blackie: false,
   });
+  const [formInput, setFormInput] = useState({
+    fullname: "",
+    phonenum: "",
+  });
   const [total, setTotal] = useState(0);
   useEffect(() => {
     let dfee = 1000;
@@ -96,6 +100,21 @@ const MerchBody = () => {
       return <img src={greenieblack} alt="aorthar black shirt" />;
     }
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const details = [];
+    details.push(
+      shirtNumber,
+      shirtPrice,
+      color,
+      { totalPrice: total },
+      { location: location },
+      { delivery: delivery ? "yes" : "no" },
+      formInput
+    );
+
+    console.log(details);
+  };
   return (
     <div>
       <MerchBanner
@@ -139,22 +158,22 @@ const MerchBody = () => {
           <Col md={{ span: 9, offset: 2 }}>
             <Row>
               <Col sm={12} md={6}>
-                  <h3
-                    className="bigText blackText"
-                    style={{ fontSize: "2.3rem" }}
-                  >
-                    Our Ambassador, Our friend
-                  </h3>
+                <h3
+                  className="bigText blackText"
+                  style={{ fontSize: "2.3rem" }}
+                >
+                  Our Ambassador, Our friend
+                </h3>
               </Col>
               <Col sm={12} md={6}>
-                  <div className="a-case-study-caption smallestText blackText b4 montserrat">
-                    Aorthar has delivered sterling service to a wide array of
-                    businesses in a variety of industries, leaving a trail of
-                    thoroughly satisfied clients. Acoss every engagement, there
-                    is one common, irrespressible theme: Our commitment to
-                    execellence and branding that looks so real, it lives.
-                    Here's some of our previous work
-                  </div>
+                <div className="a-case-study-caption smallestText blackText b4 montserrat">
+                  Aorthar has delivered sterling service to a wide array of
+                  businesses in a variety of industries, leaving a trail of
+                  thoroughly satisfied clients. Acoss every engagement, there is
+                  one common, irrespressible theme: Our commitment to
+                  execellence and branding that looks so real, it lives. Here's
+                  some of our previous work
+                </div>
               </Col>
             </Row>
             <Row>
@@ -355,7 +374,11 @@ const MerchBody = () => {
                 ) : null}
               </Col>
               <Col md={7} className="a-team-card-holder">
-                <form action="" className="mt-5 pb-5 montserrat">
+                <form
+                  action=""
+                  onSubmit={(e) => handleSubmit(e)}
+                  className="mt-5 pb-5 montserrat"
+                >
                   <Row>
                     <Col>
                       <p className="blackText bold">Your Full Name*</p>
@@ -363,6 +386,13 @@ const MerchBody = () => {
                         type="text"
                         placeholder="Your Name or Company Name"
                         className="black smallestText"
+                        value={formInput.fullname}
+                        onChange={(e) =>
+                          setFormInput({
+                            ...formInput,
+                            fullname: e.target.value,
+                          })
+                        }
                       />
                     </Col>
                   </Row>
@@ -373,6 +403,13 @@ const MerchBody = () => {
                         type="text"
                         placeholder="08100000000"
                         className="black smallestText"
+                        value={formInput.phonenum}
+                        onChange={(e) =>
+                          setFormInput({
+                            ...formInput,
+                            phonenum: e.target.value,
+                          })
+                        }
                       />
                     </Col>
                   </Row>
@@ -470,8 +507,12 @@ const MerchBody = () => {
                         I Want this!
                       </button>
                     </Col>
-                    <Col md={6} className="d-flex justify-content-center lgscreen">
-                      <span className="mediumText">Total:</span><br/> { }
+                    <Col
+                      md={6}
+                      className="d-flex justify-content-center lgscreen"
+                    >
+                      <span className="mediumText">Total:</span>
+                      <br /> {}
                       <h2 className=" green b8">
                         {total === 1000
                           ? "Please Select a Product above"
