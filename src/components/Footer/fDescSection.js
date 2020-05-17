@@ -17,7 +17,7 @@ class fDescSection extends Component {
            <div className="footer-desc-section">
                 <p className="text-center footer-desc-section-item">
                     <span>Office: </span>
-                    <span> 33, Adeshina Ave, Iju, Lagos.</span>
+                    <span> 33, Adeshina Avenue, Iju-Ishaga, Lagos.</span>
                 </p>
                 <div className="footer-contact-section">
                     <div>
