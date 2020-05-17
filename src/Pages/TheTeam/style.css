@@ -69,6 +69,21 @@
     margin-top: 8px;
 }
 
+.team-wrapper{
+    background-image: url("../../images/theteam.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    height: 700px;
+}
+
+.team-caption{
+    position: absolute;
+    top: 70%;
+}
+
 @keyframes arrow {
     0% {
         transform: translateY(0px);
@@ -92,5 +107,8 @@
     .disappear {
         display: none;
     }
-
+    .team-caption {
+        position: absolute;
+        top: 60%;
+    }
 }
