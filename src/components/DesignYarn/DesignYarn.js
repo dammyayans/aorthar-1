@@ -20,8 +20,8 @@ export default class DesignYarn extends Component {
                 </Fade>
                 <Fade bottom duration={100}>
                   <div className="a-case-study-caption smallestText blackText b4 montserrat pb-4">
-                    Discuss Design Journey and Experience with Top Designers in <br />
-                    The industry every week
+                    Discuss Design Journey and Experience with Top Designers in 
+                    The Design Industry every week
                   </div>
                 </Fade>
                 <Fade bottom delay={400}>

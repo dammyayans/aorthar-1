@@ -126,10 +126,10 @@ export default class Raeanna extends Component {
 
                 </Col>
                 <Col  md={5} className="pt-4  smallestText blackText b4 montserrat text-justify">
-                  <h2 className="bigText">
-                      <span className="blackText pt-3">The Aorthar Difference</span>
-                  </h2>
-                  <span className="smallestText blackText b4 montserrat text-justify">
+                  {/* <h2 className="bigText">
+                      <span className="blackText #">The Aorthar Difference</span>
+                  </h2> */}
+                  <span className="smallestText blackText b4 montserrat text-justify pt-3">
                     <span className="b8 montserrat smallestText">2. Social Media Ad</span><br/>
                       We designed tasteful e-flyers for posts on social media.
                   </span><br/><br/>

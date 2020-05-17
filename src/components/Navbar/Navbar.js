@@ -115,27 +115,27 @@ class NavBar extends Component {
                           </Nav.Link>
                         </div>
                         <div>
-                          <Nav.Link className="cover coverr" href="/merch">
-                            Rep our Brand!
-                          </Nav.Link>
-                          <Nav.Link className="cover coverr" href="/subscription">
-                            Design Subscription
-                          </Nav.Link>
-                          <Nav.Link className="cover coverr" href="mailto:hello@aorthar.com">
-                            Write us a Feedback
-                          </Nav.Link>
-                        </div>
-                      </Col>
-                      <Col sm={6}>
-                        <div className="mb-3">
-                          <Nav.Link className="cover coverr" href="/Formuiux">
-                            Get Started
-                          </Nav.Link>
                           <Nav.Link className="cover coverr" href="/raeanna">
                             Case Studies
                           </Nav.Link>
                           <Nav.Link className="cover coverr" href="/ourworks">
                             Our Process
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="/Formuiux">
+                            Get Started
+                          </Nav.Link>
+                        </div>
+                      </Col>
+                      <Col sm={6}>
+                        <div className="mb-3">
+                          <Nav.Link className="cover coverr" href="/subscription">
+                            Design Subscription
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="/merch">
+                            Rep our Brand!
+                          </Nav.Link>
+                          <Nav.Link className="cover coverr" href="mailto:hello@aorthar.com">
+                            Write us a Feedback
                           </Nav.Link>
                         </div>
                         <div>

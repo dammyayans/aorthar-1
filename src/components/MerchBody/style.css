@@ -189,6 +189,14 @@ input {
 
 }
 
+.lgsrceen{
+    display: block;
+}
+
+.smscreen{
+    display: none !important;
+}
+
 
 @media only screen and (max-width:767px) {
     .merch-banner {
@@ -207,6 +215,14 @@ input {
     .merch-banner2:hover,
     .merch-banner1:hover {
         background-position-y: center;
+    }
+
+    .lgscreen{
+        display: none !important;
+    }
+
+    .smscreen{
+        display: block !important;
     }
 
 }

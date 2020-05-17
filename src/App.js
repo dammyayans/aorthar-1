@@ -252,6 +252,10 @@ body{
   background-color: ${(props) =>
     props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
 }
+option{
+  background-color: ${(props) =>
+    props.theme.mode === "dark" ? "#191919 !important" : "#fff !important"};
+}
 .a-banner-heroImgL{
   display: ${(props) =>
     props.theme.mode === "dark" ? "none !important" : "block !important"}

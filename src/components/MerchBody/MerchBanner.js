@@ -34,8 +34,8 @@ export default function MerchBanner(props) {
               style={{ width: "96vw" }}
             >
               {/* <img src={img} alt="" style={{ height: "100%", width: "100%" }} /> */}
-              <div className="d-flex justify-content-space align-items-center inner-merch-banner">
-                <p className="m-0 whiteText">The Big Heart</p>
+              <div className="d-flex justify-content-space align-items-center inner-merch-banner smallestText">
+                <p className="m-0 whiteText">Hoodie</p>
                 <button className="cartButton" onClick={props.setHoodie}>
                   {props.hoodie ? (
                     "In cart "
@@ -60,7 +60,7 @@ export default function MerchBanner(props) {
               className="merch-banner merch-banner2"
               style={{ width: "96vw" }}
             >
-              <div className="d-flex justify-content-space align-items-center inner-merch-banner">
+              <div className="d-flex justify-content-space align-items-center inner-merch-banner smallestText">
                 <p className="m-0 whiteText">The Big Heart</p>
                 <button className="cartButton" onClick={props.setGreenie}>
                   {props.greenie ? (
@@ -87,8 +87,8 @@ export default function MerchBanner(props) {
               style={{ width: "96vw" }}
             >
               {/* <img src={img3} alt="" style={{ height: "100%", width: "100%" }}/> */}
-              <div className="d-flex justify-content-space align-items-center inner-merch-banner">
-                <p className="m-0 whiteText">The Big Heart</p>
+              <div className="d-flex justify-content-space align-items-center inner-merch-banner smallestText">
+                <p className="m-0 whiteText">Simple</p>
                 <button className="cartButton" onClick={props.setBlackie}>
                   {props.blackie ? (
                     "In cart "
@@ -114,8 +114,8 @@ export default function MerchBanner(props) {
         <ProductWrapper className="col-md-4 col-sm-4 p-0 col-4 d-sm-none d-none d-md-block">
           <div className="merch-banner merch-banner1">
             {/* <img src={img} alt="" style={{ height: "100%", width: "100%" }} /> */}
-            <div className="d-flex justify-content-space align-items-center inner-merch-banner">
-              <p className="m-0 whiteText">The Big Heart</p>
+            <div className="d-flex justify-content-space align-items-center inner-merch-banner smallestText">
+              <p className="m-0 whiteText">Hoodie</p>
               <button className="cartButton" onClick={props.setHoodie}>
                 {props.hoodie ? (
                   "In cart "
@@ -137,7 +137,7 @@ export default function MerchBanner(props) {
         <ProductWrapper className="col-md-4 col-sm-4 p-0 col-4 d-sm-none d-none d-md-block">
           <div className="merch-banner merch-banner2">
             {/* <img src={img2} alt="" style={{ height: "100%", width: "100%" }} /> */}
-            <div className="d-flex justify-content-space align-items-center inner-merch-banner">
+            <div className="d-flex justify-content-space align-items-center inner-merch-banner smallestText">
               <p className="m-0 whiteText">The Big Heart</p>
               <button className="cartButton" onClick={props.setGreenie}>
                 {props.greenie ? (
@@ -160,8 +160,8 @@ export default function MerchBanner(props) {
         <ProductWrapper className="col-md-4 col-sm-4 p-0 col-4 d-sm-none d-none d-md-block">
           <div className="merch-banner merch-banner3">
             {/* <img src={img3} alt="" style={{ height: "100%", width: "100%" }}/> */}
-            <div className="d-flex justify-content-space align-items-center inner-merch-banner">
-              <p className="m-0 whiteText">The Big Heart</p>
+            <div className="d-flex justify-content-space align-items-center inner-merch-banner smallestText">
+              <p className="m-0 whiteText">Simple</p>
               <button className="cartButton" onClick={props.setBlackie}>
                 {props.blackie ? (
                   "In cart "

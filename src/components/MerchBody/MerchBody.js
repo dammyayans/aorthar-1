@@ -458,11 +458,20 @@ const MerchBody = () => {
                             : "N1000"}
                         </p>
                       </div>
+                      <div className="smscreen">
+                        <span className="mediumText">Total:</span>
+                        <h2 className=" green b8">
+                          {total === 1000
+                            ? "Please Select a Product above"
+                            : `N${total}`}
+                        </h2>
+                      </div>
                       <button type="submit" className="submitButton mt-3 black">
                         I Want this!
                       </button>
                     </Col>
-                    <Col md={6} className="d-flex justify-content-center">
+                    <Col md={6} className="d-flex justify-content-center lgscreen">
+                      <span className="mediumText">Total:</span><br/> { }
                       <h2 className=" green b8">
                         {total === 1000
                           ? "Please Select a Product above"
