@@ -40,16 +40,25 @@ export default function index() {
             <a href="/parkway">
               <div className="a-previous-works1">
                 <img src={PB} alt="" className="imm" />
+                <span className="float-right mt-2 ">
+                  <img src={Arrow} alt="" />
+                </span>
               </div>
             </a>
             <a href="/NathanApp">
               <div className="a-previous-works1">
                 <img src={NAB} alt="" className="imm" />
+                <span className="float-right mt-2">
+                  <img src={Arrow} alt="" />
+                </span>
               </div>
             </a>
             <a href="/Raeanna">
               <div className="a-previous-works1">
                 <img src={RB} alt="" className="imm" />
+                <span className="float-right mt-2">
+                  <img src={Arrow} alt="" />
+                </span>
               </div>
             </a>
           </Row>
@@ -61,10 +70,10 @@ export default function index() {
             </Col>
             <Col xs={12} md={6} sm={12}>
               <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                Our work range shows how widely capable we are loaded,
-                to help the company improve branding and customer
-                engagement, identify the process we will take to achieve
-                any specified goal and provide samples of what we can do.
+                Our work range shows how widely capable we are loaded, to help
+                the company improve branding and customer engagement, identify
+                the process we will take to achieve any specified goal and
+                provide samples of what we can do.
               </div>
             </Col>
           </Row>
@@ -79,7 +88,7 @@ export default function index() {
               <li>Graphics Design</li>
               <li>Brand Guide Development</li>
             </Col>
-            <Col xs={6} md={3} className="smallestText">  
+            <Col xs={6} md={3} className="smallestText">
               <h3 className="mediumtext">Product Design</h3>
               <li>Web Design</li>
               <li>App Design</li>
@@ -127,13 +136,13 @@ export default function index() {
           <Row className="a-our-work-process smallText blackText b8">
             <Col xs={6} md={3}>
               <Row>
-                <Col md={6}>
+                <Col md={8}>
                   <span>
                     {" "}
                     Discovery <br /> Meeting
                   </span>
                 </Col>
-                <Col md={6}>
+                <Col md={4}>
                   <span>
                     <img src={Arrow} alt="" />
                   </span>
@@ -158,13 +167,13 @@ export default function index() {
 
             <Col xs={6} md={3}>
               <Row>
-                <Col md={6}>
+                <Col md={7} className="p-md-0">
                   <span>
                     Project <br />
                     Development
                   </span>
                 </Col>
-                <Col md={6}>
+                <Col md={5} className="pl-md-4">
                   <span>
                     <img src={Arrow} alt="" />
                   </span>

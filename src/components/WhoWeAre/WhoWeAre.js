@@ -24,15 +24,14 @@ const SliderContainer = styled.div`
   position: relative;
   overflow: hidden;
   min-height: 50px;
-  height: 5rem;
+  height: 21rem;
   width: 100%;
 `;
 
 const CarouselUI = ({ children }) => (
-  <SliderContainer>{children}</SliderContainer>
+  <SliderContainer className="row">{children}</SliderContainer>
 );
 const Carousel = makeCarousel(CarouselUI);
-
 
 export default class WhoWeAre extends Component {
   render() {
@@ -44,7 +43,8 @@ export default class WhoWeAre extends Component {
               <Col xs={12} md={6} sm={12}>
                 <Fade bottom>
                   <h2 className="bigText">
-                    <span className="blackText">Our </span> <br className="break" />
+                    <span className="blackText">Our </span>{" "}
+                    <br className="break" />
                     <span className="green">Story</span>
                   </h2>
                 </Fade>
@@ -52,10 +52,10 @@ export default class WhoWeAre extends Component {
               <Col xs={12} md={6} sm={12}>
                 <Fade bottom>
                   <div className="a-wwa-caption smallestText blackText b4 montserrat">
-                    We are a team of great minds dedicated to serving our consumers with 
-                    excellent delivery service to achieve functional and usable products 
-                    thus enabling our clients improve sales and revenue.{" "}
-                    <br />
+                    We are a team of great minds dedicated to serving our
+                    consumers with excellent delivery service to achieve
+                    functional and usable products thus enabling our clients
+                    improve sales and revenue. <br />
                     <br />
                     <p>
                       We believe not just good, but top-notch branding and
@@ -76,51 +76,31 @@ export default class WhoWeAre extends Component {
           </Col>
           <Row className="pt-4 storySection">
             <Col md={2}></Col>
-            <Col md={8}>
-              <Row>
-
+            <Col md={8} sm={12} className="p-md-0">
               <Carousel defaultWait={5000}>
                 <Slide left duration={3000}>
                   <div>
                     <Slide left duration={1000}>
-                      <img
-                        src={S1}
-                        alt="Company1"
-                        className="ourStory"
-                      />
+                      <img src={S1} alt="Company1" className="ourStory" />
                     </Slide>
                     <Slide left duration={1000}>
-                      <img
-                        src={S2}
-                        alt="Company1"
-                        className="ourStory"
-                      />
+                      <img src={S2} alt="Company1" className="ourStory" />
                     </Slide>
                   </div>
                 </Slide>
                 <Slide left duration={3000}>
                   <div>
                     <Slide left duration={1000}>
-                      <img
-                        src={S3}
-                        alt="Company1"
-                        className="ourStory"
-                      />
+                      <img src={S3} alt="Company1" className="ourStory" />
                     </Slide>
                     <Slide left duration={1000}>
-                      <img
-                        src={S4}
-                        alt="Company2"
-                        className="ourStory"
-                      />
+                      <img src={S4} alt="Company2" className="ourStory" />
                     </Slide>
                   </div>
                 </Slide>
               </Carousel>
-
-              </Row>
             </Col>
-            <Col md={2} sm={8} className="a-wwa-sideline">
+            <Col md={2} className="a-wwa-sideline">
               <Flip top delay={600}>
                 <div>
                   <p className="smallText b7 blackText montserrat">
@@ -149,7 +129,10 @@ export default class WhoWeAre extends Component {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.google.com/search?q=aorthar&oq=aorthar&aqs=chrome..69i57j69i59l2j69i60l5.5559j0j7&sourceid=chrome&ie=UTF-8" target="blank">
+                      <a
+                        href="https://www.google.com/search?q=aorthar&oq=aorthar&aqs=chrome..69i57j69i59l2j69i60l5.5559j0j7&sourceid=chrome&ie=UTF-8"
+                        target="blank"
+                      >
                         Google
                       </a>
                     </li>
