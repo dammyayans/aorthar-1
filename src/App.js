@@ -144,9 +144,9 @@ const OurWorksSusp = () => (
     <OurWorks />
   </Suspense>
 );
-const ConfirmationSusp = () => (
+const ConfirmationSusp = (props) => (
   <Suspense fallback={loading}>
-    <Confirmation />
+    <Confirmation props={props} />
   </Suspense>
 );
 const SubscriptionSusp = () => (
@@ -179,14 +179,14 @@ const FormSusp = (props) => (
     <Form props={props} />
   </Suspense>
 );
-const ApplySusp = () => (
+const ApplySusp = (props) => (
   <Suspense fallback={loading}>
-    <Apply />
+    <Apply props={props} />
   </Suspense>
 );
-const MerchSusp = () => (
+const MerchSusp = (props) => (
   <Suspense fallback={loading}>
-    <Merch />
+    <Merch props={props} />
   </Suspense>
 );
 
@@ -265,12 +265,10 @@ option{
     props.theme.mode === "dark" ? "block !important" : "none !important"}
 }
 .closeIconD{
-  display: ${(props) =>
-    props.theme.mode === "dark" ? "block" : "none"}
+  display: ${(props) => (props.theme.mode === "dark" ? "block" : "none")}
 }
 .closeIconL{
-  display: ${(props) =>
-    props.theme.mode === "dark" ? "none" : "block"}
+  display: ${(props) => (props.theme.mode === "dark" ? "none" : "block")}
 }
 `;
 function getInitialTheme() {
@@ -311,7 +309,10 @@ export default function App() {
 
               <Route path="/Raeanna" component={RaeannaSusp} />
 
-              <Route path="/Confirmation" component={ConfirmationSusp} />
+              <Route
+                path="/Confirmation/name=:name"
+                component={ConfirmationSusp}
+              />
 
               <Route path="/OurWorks" component={OurWorksSusp} />
 

@@ -18,7 +18,6 @@ export default function Form({ props }) {
   });
   const handleSumbit = (e) => {
     e.preventDefault();
-    console.log(formInput);
     setFormInput({
       customername: "",
       email: "",
@@ -29,6 +28,9 @@ export default function Form({ props }) {
       timeline: "",
       projectdoc: "",
     });
+    console.log(formInput);
+
+    props.history.push(`/confirmation/name=${formInput.customername}`);
   };
   return (
     <Container fluid className="whitebg formwrapper pb-5">

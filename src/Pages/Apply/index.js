@@ -5,7 +5,7 @@ import "./style.css";
 import "../../components/GlobalStyles/global.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-export default function Form(props) {
+export default function Form({ props }) {
   const [formInput, setFormInput] = useState({
     fullname: "",
     email: "",
@@ -17,6 +17,7 @@ export default function Form(props) {
   const handleSumbit = (e) => {
     e.preventDefault();
     console.log(formInput);
+    props.history.push(`/confirmation/name=${formInput.fullname}`);
   };
 
   return (

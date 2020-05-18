@@ -14,7 +14,7 @@ import hoodiewhite from "../../images/hoodie3.png";
 import hoodiegreen from "../../images/hoodie2.png";
 
 import "./style.css";
-const MerchBody = () => {
+const MerchBody = ({ props }) => {
   const [location, setLocation] = useState("");
   const [delivery, setDelivery] = useState(true);
   const [shirtNumber, setShirtNumber] = useState({
@@ -114,6 +114,8 @@ const MerchBody = () => {
     );
 
     console.log(details);
+
+    props.history.push(`/confirmation/name=${formInput.fullname}`);
   };
   return (
     <div>
