@@ -24,17 +24,18 @@ export default class NewsletterSubscription extends Component {
         email: "",
         messageboo: true,
       });
+      setInterval(() => this.setState({ messageboo: false }), 4000);
     } else {
       this.setState({
         message: "Please enter a valid email",
         color: "red",
         messageboo: true,
       });
+      setInterval(() => this.setState({ messageboo: false }), 4000);
     }
     console.log(this.state.email);
   }
   render() {
-    setInterval(() => this.setState({ messageboo: false }), 4000);
     return (
       <Col xs={12} md={12} className="px-0 a-our-packages-heading push">
         <h1 className="bigText blackText">
